@@ -1,10 +1,7 @@
-# Skill: Domain Mind Integration
-
-## Metadata
-
-- name: domain-mind
-- description: Execute runtime reasoning across the synthesized knowledge base using progressive disclosure and down-drilling limits, resolving tensions and returning cognitive decisions for new domain questions.
-
+---
+name: domain-mind
+description: Execute runtime reasoning across the synthesized knowledge base using progressive disclosure and down-drilling limits, resolving tensions and returning cognitive decisions for new domain questions.
+---
 ## 1. Runtime Reasoning Flow (运行时推理流水线)
 
 当用户或上层 Agent 针对新领域问题进行提问时，推理必须刚性经历以下四步：

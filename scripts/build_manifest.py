@@ -25,6 +25,40 @@ KNOWN_DUPLICATES = {
 DIRECT_MAX = 200_000
 HIER_SOFT = 500_000
 
+REQUIRED_SECTIONS = [
+    "Metadata",
+    "核心问题",
+    "核心论证结构",
+    "世界模型",
+    "核心概念",
+    "主要判断",
+    "因果模型",
+    "思考方式",
+    "判断规则",
+    "隐含前提",
+    "重要变量",
+    "边界条件",
+    "内部张力",
+    "失败模式",
+    "可迁移原则",
+    "思考习惯",
+    "跨书连接",
+    "Analyst Cautions",
+    "Coverage Report",
+]
+ID_PATTERNS = {
+    "C": re.compile(r"\bC\d{3}\b"),
+    "CL": re.compile(r"\bCL\d{3}\b"),
+    "CM": re.compile(r"\bCM\d{3}\b"),
+    "H": re.compile(r"\bH\d{3}\b"),
+    "P": re.compile(r"\bP\d{3}\b"),
+}
+EVIDENCE_HINT = re.compile(r"(Evidence|evidence|lines?\s*\d+|corpus/raw/)", re.I)
+LINE_RANGE = re.compile(
+    r"(?:source:\s*)?(corpus/raw/[^\s,]+\.md)?[^\n]{0,80}?lines?\s*[:=]?\s*(\d+)(?:\s*[-–—]\s*(\d+))?",
+    re.I,
+)
+
 
 def sha256_file(path: Path) -> str:
     h = hashlib.sha256()
@@ -69,13 +103,63 @@ def report_path_for(stem: str) -> Path | None:
     return p if p.is_file() and p.stat().st_size > 0 else None
 
 
-def derived_for(book_id_: str) -> Path | None:
-    p = DERIVED / "normalized" / f"{book_id_}-*.derived.md"
-    matches = list((DERIVED / "normalized").glob(f"{book_id_}-*.derived.md")) if (DERIVED / "normalized").exists() else []
-    for m in matches:
-        if m.stat().st_size > 1000:
-            return m
-    return None
+def evaluate_model_quality(stem: str) -> bool:
+    path = MODELS / f"{stem}.md"
+    if not path.is_file():
+        return False
+    text = path.read_text(encoding="utf-8", errors="replace")
+    missing = [s for s in REQUIRED_SECTIONS if s not in text]
+    counts = {k: len(set(p.findall(text))) for k, p in ID_PATTERNS.items()}
+    evidence_hits = len(EVIDENCE_HINT.findall(text))
+    summaryish = len(re.findall(r"作者首先|作者随后|本章主要|这一章讲述", text))
+    ok = (
+        not missing
+        and counts["C"] >= 3
+        and counts["CL"] >= 3
+        and counts["CM"] >= 2
+        and counts["H"] >= 2
+        and counts["P"] >= 3
+        and evidence_hits >= 5
+        and summaryish < 8
+    )
+    return ok
+
+
+def evaluate_provenance_status(stem: str) -> tuple[str, bool]:
+    path = MODELS / f"{stem}.md"
+    if not path.is_file():
+        return "untested", False
+    
+    text = path.read_text(encoding="utf-8", errors="replace")
+    src_m = re.search(r"Source:\s*(corpus/raw/[^\s]+)", text)
+    default_src = src_m.group(1) if src_m else f"corpus/raw/{stem}.md"
+    
+    checked = 0
+    failed = 0
+    cache: dict[str, list[str]] = {}
+
+    for m in LINE_RANGE.finditer(text):
+        src = m.group(1) or default_src
+        if not src:
+            continue
+        a = int(m.group(2))
+        b = int(m.group(3) or m.group(2))
+        checked += 1
+        p = ROOT / src
+        if not p.exists():
+            failed += 1
+            continue
+        if src not in cache:
+            cache[src] = p.read_text(encoding="utf-8", errors="replace").splitlines()
+        lines = cache[src]
+        if a < 1 or b > len(lines) or a > b:
+            failed += 1
+    
+    if checked == 0:
+        return "untested", False
+    if failed > 0:
+        return "failed", True
+    return "passed", False
 
 
 def main() -> None:
@@ -114,10 +198,12 @@ def main() -> None:
         }
 
         if chars == 0:
-            entry["status"] = "blocked_source_missing"
+            entry["status"] = "blocked_ocr_unavailable"
             entry["canonical"] = False
             entry["processing_mode"] = "blocked"
             entry["source_quality"] = "empty"
+            entry["source_pdf_exists"] = True
+            entry["text_layer"] = False
             # Check derived recovery
             der = list((DERIVED / "normalized").glob(f"{bid}-*.derived.md")) if (DERIVED / "normalized").exists() else []
             usable = [d for d in der if d.stat().st_size > 1000]
@@ -147,7 +233,7 @@ def main() -> None:
         ids_sorted = sorted(ids)
         canon = ids_sorted[0]
         for other in ids_sorted[1:]:
-            if by_id[other]["status"] == "blocked_source_missing":
+            if by_id[other]["status"] == "blocked_ocr_unavailable":
                 continue
             if by_id[other]["duplicate_of"]:
                 continue
@@ -157,7 +243,7 @@ def main() -> None:
             by_id[other]["processing_mode"] = "skip_duplicate"
             by_id[other]["notes"].append(f"hash-identical to {canon}")
 
-    # Attach existing model/report paths
+    # Attach existing model/report paths & apply quality gates
     for b in books:
         stem = Path(b["source_file"]).stem
         mp = model_path_for(stem)
@@ -170,6 +256,28 @@ def main() -> None:
             b["report"] = str(rp.relative_to(ROOT))
             if b["status"] == "modeled":
                 b["status"] = "complete"
+
+        # Apply book quality gates
+        b["provenance_status"] = "untested"
+        b["accepted_partial"] = False
+        b["synthesis_eligible"] = False
+
+        if b["status"] == "complete":
+            model_ok = evaluate_model_quality(stem)
+            prov_status, prov_failed = evaluate_provenance_status(stem)
+            b["provenance_status"] = prov_status
+            
+            if prov_failed:
+                b["status"] = "failed_validation"
+                b["accepted_partial"] = False
+                b["synthesis_eligible"] = False
+            else:
+                if model_ok:
+                    b["accepted_partial"] = False
+                    b["synthesis_eligible"] = True
+                else:
+                    b["accepted_partial"] = True
+                    b["synthesis_eligible"] = True
 
         # Quality hints
         if b["characters"] == 0:
@@ -186,9 +294,9 @@ def main() -> None:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "raw_dir": "corpus/raw",
         "book_count": len(books),
-        "canonical_count": sum(1 for b in books if b["canonical"] and b["status"] != "blocked_source_missing"),
+        "canonical_count": sum(1 for b in books if b["canonical"] and b["status"] != "blocked_ocr_unavailable"),
         "duplicate_count": sum(1 for b in books if b["status"] == "duplicate"),
-        "blocked_count": sum(1 for b in books if b["status"] == "blocked_source_missing"),
+        "blocked_count": sum(1 for b in books if b["status"] == "blocked_ocr_unavailable"),
         "complete_count": sum(1 for b in books if b["status"] == "complete"),
         "books": books,
         "dedup_policy": {
@@ -197,7 +305,7 @@ def main() -> None:
             "weight_rule": "identical bytes share one knowledge weight",
         },
         "blocked_policy": {
-            "004": "raw empty; scanned PDF has no text layer; OCR not completed this run → BLOCKED_SOURCE_MISSING",
+            "004": "raw empty; scanned PDF has no text layer; OCR not completed this run → BLOCKED_OCR_UNAVAILABLE",
         },
     }
 

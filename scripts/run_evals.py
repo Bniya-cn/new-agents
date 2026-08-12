@@ -55,7 +55,19 @@ def run_deterministic_validators():
             else:
                 errors.append(f"{doc} 未找到规范行号引用 [ID:Line]")
                 
-    # 验证去重一致性
+    # 验证质量结果文件的存在性与完整性
+    validation_files = [
+        "evals/results/book-model-validation.json",
+        "evals/results/provenance-validation.json",
+        "evals/results/semantic-eval-results.json"
+    ]
+    for vf in validation_files:
+        if os.path.exists(vf):
+            print(f"[PASS] 校验结果文件存在: {vf}")
+        else:
+            errors.append(f"缺失校验结果文件: {vf}")
+
+    # 验证去重一致性与 Manifest 中的 Book-level 质量关卡
     if os.path.exists("corpus/manifest.json"):
         with open("corpus/manifest.json", 'r', encoding='utf-8') as fh:
             manifest = json.load(fh)
@@ -67,6 +79,19 @@ def run_deterministic_validators():
             print(f"[PASS] 实际生成 Book Models 数量: {actual_models}")
             if complete_count != actual_models:
                 errors.append(f"数据不一致: manifest.complete_count={complete_count}, 实际生成={actual_models}")
+            
+            # 校验 Manifest 里的每一本书的 quality gates 属性
+            for b in manifest.get("books", []):
+                bid = b.get("id")
+                status = b.get("status")
+                prov_status = b.get("provenance_status")
+                synthesis_eligible = b.get("synthesis_eligible")
+                
+                if status == "complete":
+                    if prov_status != "passed":
+                        errors.append(f"书 {bid} 状态为 complete, 但 provenance_status={prov_status} (非 passed)")
+                    if not synthesis_eligible:
+                        errors.append(f"书 {bid} 状态为 complete, 但 synthesis_eligible={synthesis_eligible} (非 true)")
                 
     if errors:
         print("\n确定性验证失败项:")

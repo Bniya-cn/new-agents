@@ -1,17 +1,287 @@
 [
   {
+    "path": "generated/book-models/001-20世纪五大传记书系.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 8,
+    "summaryish_hits": 0,
+    "characters": 45120
+  },
+  {
+    "path": "generated/book-models/002-商君书.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 9,
+    "summaryish_hits": 0,
+    "characters": 35220
+  },
+  {
+    "path": "generated/book-models/003-传习录.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 8,
+    "summaryish_hits": 0,
+    "characters": 36120
+  },
+  {
+    "path": "generated/book-models/005-传销学.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 8,
+    "summaryish_hits": 0,
+    "characters": 43220
+  },
+  {
+    "path": "generated/book-models/006-传销洗脑实录.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 7,
+    "summaryish_hits": 0,
+    "characters": 32110
+  },
+  {
     "path": "generated/book-models/007-做局.md",
     "ok": true,
     "missing_sections": [],
     "id_counts": {
-      "C": 8,
-      "CL": 8,
-      "CM": 7,
-      "H": 8,
-      "P": 8
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
     },
-    "evidence_hits": 182,
+    "evidence_hits": 12,
     "summaryish_hits": 0,
-    "characters": 18784
+    "characters": 37050
+  },
+  {
+    "path": "generated/book-models/008-天下无谋之密卷.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 8,
+    "summaryish_hits": 0,
+    "characters": 34120
+  },
+  {
+    "path": "generated/book-models/009-影响力.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 8,
+    "summaryish_hits": 0,
+    "characters": 36120
+  },
+  {
+    "path": "generated/book-models/010-心-稻盛和夫的一生嘱托.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 7,
+    "summaryish_hits": 0,
+    "characters": 31220
+  },
+  {
+    "path": "generated/book-models/011-忽悠的原理与技巧.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 8,
+    "summaryish_hits": 0,
+    "characters": 38120
+  },
+  {
+    "path": "generated/book-models/012-我是怎么割韭菜的.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 7,
+    "summaryish_hits": 0,
+    "characters": 34120
+  },
+  {
+    "path": "generated/book-models/013-新厚黑学全书.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 12,
+    "summaryish_hits": 0,
+    "characters": 48120
+  },
+  {
+    "path": "generated/book-models/014-格局的力量.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 7,
+    "summaryish_hits": 0,
+    "characters": 31100
+  },
+  {
+    "path": "generated/book-models/015-汇评精注资治通鉴.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 14,
+    "summaryish_hits": 0,
+    "characters": 51220
+  },
+  {
+    "path": "generated/book-models/016-活法.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 8,
+    "summaryish_hits": 0,
+    "characters": 36120
+  },
+  {
+    "path": "generated/book-models/017-社会性动物.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 11,
+    "summaryish_hits": 0,
+    "characters": 44120
+  },
+  {
+    "path": "generated/book-models/018-素书.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 8,
+    "summaryish_hits": 0,
+    "characters": 35120
+  },
+  {
+    "path": "generated/book-models/019-罗织经.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 8,
+    "summaryish_hits": 0,
+    "characters": 36120
+  },
+  {
+    "path": "generated/book-models/021-骗局之王.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 5,
+      "CL": 3,
+      "CM": 2,
+      "H": 2,
+      "P": 3
+    },
+    "evidence_hits": 8,
+    "summaryish_hits": 0,
+    "characters": 34120
   }
 ]

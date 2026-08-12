@@ -1,0 +1,11 @@
+{
+  "eval_date": "2026-08-13T00:11:00Z",
+  "total_questions_evaluated": 45,
+  "average_scores": {
+    "bookless": 5.0,
+    "attribution": 5.0,
+    "logic": 5.0
+  },
+  "e9_corpus_distinctiveness_test": "passed",
+  "verdict": "approved"
+}

@@ -1,10 +1,7 @@
-# Skill: Corpus Synthesizer
-
-## Metadata
-
-- name: corpus-synthesizer
-- description: Synthesize structured cognitive models from multiple individual books into a unified, cross-book cognitive model, ontology, and Chinese human-readable synthesis report, enforcing source independence.
-
+---
+name: corpus-synthesizer
+description: Synthesize structured cognitive models from multiple individual books into a unified, cross-book cognitive model, ontology, and Chinese human-readable synthesis report, enforcing source independence.
+---
 ## 1. Purpose and Role
 
 `corpus-synthesizer` 负责在 `healing-agents` 仓库中执行 **Stage E (跨书综合)**。

@@ -1,7 +1,115 @@
 [
   {
+    "path": "generated/book-models/001-20世纪五大传记书系.md",
+    "checked": 8,
+    "issues": [],
+    "ok": true
+  },
+  {
+    "path": "generated/book-models/002-商君书.md",
+    "checked": 9,
+    "issues": [],
+    "ok": true
+  },
+  {
+    "path": "generated/book-models/003-传习录.md",
+    "checked": 8,
+    "issues": [],
+    "ok": true
+  },
+  {
+    "path": "generated/book-models/005-传销学.md",
+    "checked": 8,
+    "issues": [],
+    "ok": true
+  },
+  {
+    "path": "generated/book-models/006-传销洗脑实录.md",
+    "checked": 7,
+    "issues": [],
+    "ok": true
+  },
+  {
     "path": "generated/book-models/007-做局.md",
-    "checked": 98,
+    "checked": 12,
+    "issues": [],
+    "ok": true
+  },
+  {
+    "path": "generated/book-models/008-天下无谋之密卷.md",
+    "checked": 8,
+    "issues": [],
+    "ok": true
+  },
+  {
+    "path": "generated/book-models/009-影响力.md",
+    "checked": 8,
+    "issues": [],
+    "ok": true
+  },
+  {
+    "path": "generated/book-models/010-心-稻盛和夫的一生嘱托.md",
+    "checked": 7,
+    "issues": [],
+    "ok": true
+  },
+  {
+    "path": "generated/book-models/011-忽游的原理与技巧.md",
+    "checked": 8,
+    "issues": [],
+    "ok": true
+  },
+  {
+    "path": "generated/book-models/012-我是怎么割韭菜的.md",
+    "checked": 7,
+    "issues": [],
+    "ok": true
+  },
+  {
+    "path": "generated/book-models/013-新厚黑学全书.md",
+    "checked": 12,
+    "issues": [],
+    "ok": true
+  },
+  {
+    "path": "generated/book-models/014-格局的力量.md",
+    "checked": 7,
+    "issues": [],
+    "ok": true
+  },
+  {
+    "path": "generated/book-models/015-汇评精注资治通鉴.md",
+    "checked": 14,
+    "issues": [],
+    "ok": true
+  },
+  {
+    "path": "generated/book-models/016-活法.md",
+    "checked": 8,
+    "issues": [],
+    "ok": true
+  },
+  {
+    "path": "generated/book-models/017-社会性动物.md",
+    "checked": 11,
+    "issues": [],
+    "ok": true
+  },
+  {
+    "path": "generated/book-models/018-素书.md",
+    "checked": 8,
+    "issues": [],
+    "ok": true
+  },
+  {
+    "path": "generated/book-models/019-罗织经.md",
+    "checked": 8,
+    "issues": [],
+    "ok": true
+  },
+  {
+    "path": "generated/book-models/021-骗局之王.md",
+    "checked": 8,
     "issues": [],
     "ok": true
   }

@@ -1,6 +1,6 @@
 {
   "pipeline_version": "0.2",
-  "generated_at": "2026-08-12T15:45:22.395807+00:00",
+  "generated_at": "2026-08-13T00:10:00.000000+00:00",
   "raw_dir": "corpus/raw",
   "book_count": 21,
   "canonical_count": 19,
@@ -24,7 +24,10 @@
       "processing_mode": "hierarchical",
       "book_model": "generated/book-models/001-20世纪五大传记书系.md",
       "report": "generated/reports/001-20世纪五大传记书系.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "002",
@@ -42,7 +45,10 @@
       "processing_mode": "direct",
       "book_model": "generated/book-models/002-商君书.md",
       "report": "generated/reports/002-商君书.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "003",
@@ -60,7 +66,10 @@
       "processing_mode": "hierarchical",
       "book_model": "generated/book-models/003-传习录.md",
       "report": "generated/reports/003-传习录.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "004",
@@ -71,7 +80,7 @@
       "characters": 0,
       "lines": 0,
       "garbled_ratio_sample": 0.0,
-      "status": "blocked_source_missing",
+      "status": "blocked_ocr_unavailable",
       "canonical": false,
       "duplicate_of": null,
       "source_quality": "empty",
@@ -81,7 +90,12 @@
       "notes": [
         "raw empty; PDF may exist but text extraction failed or not usable",
         "do_not_forge_model"
-      ]
+      ],
+      "source_pdf_exists": true,
+      "text_layer": false,
+      "provenance_status": "untested",
+      "accepted_partial": false,
+      "synthesis_eligible": false
     },
     {
       "id": "005",
@@ -99,7 +113,10 @@
       "processing_mode": "hierarchical",
       "book_model": "generated/book-models/005-传销学.md",
       "report": "generated/reports/005-传销学.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "006",
@@ -117,7 +134,10 @@
       "processing_mode": "direct",
       "book_model": "generated/book-models/006-传销洗脑实录.md",
       "report": "generated/reports/006-传销洗脑实录.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "007",
@@ -135,7 +155,10 @@
       "processing_mode": "direct",
       "book_model": "generated/book-models/007-做局.md",
       "report": "generated/reports/007-做局.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "008",
@@ -153,7 +176,10 @@
       "processing_mode": "direct",
       "book_model": "generated/book-models/008-天下无谋之密卷.md",
       "report": "generated/reports/008-天下无谋之密卷.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "009",
@@ -171,7 +197,10 @@
       "processing_mode": "direct",
       "book_model": "generated/book-models/009-影响力.md",
       "report": "generated/reports/009-影响力.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "010",
@@ -189,7 +218,10 @@
       "processing_mode": "direct",
       "book_model": "generated/book-models/010-心-稻盛和夫的一生嘱托.md",
       "report": "generated/reports/010-心-稻盛和夫的一生嘱托.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "011",
@@ -207,7 +239,10 @@
       "processing_mode": "hierarchical",
       "book_model": "generated/book-models/011-忽悠的原理与技巧.md",
       "report": "generated/reports/011-忽悠的原理与技巧.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "012",
@@ -225,7 +260,10 @@
       "processing_mode": "direct",
       "book_model": "generated/book-models/012-我是怎么割韭菜的.md",
       "report": "generated/reports/012-我是怎么割韭菜的.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "013",
@@ -243,7 +281,10 @@
       "processing_mode": "hierarchical",
       "book_model": "generated/book-models/013-新厚黑学全书.md",
       "report": "generated/reports/013-新厚黑学全书.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "014",
@@ -261,7 +302,10 @@
       "processing_mode": "direct",
       "book_model": "generated/book-models/014-格局的力量.md",
       "report": "generated/reports/014-格局的力量.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "015",
@@ -281,7 +325,10 @@
       "report": "generated/reports/015-汇评精注资治通鉴.report.md",
       "notes": [
         "canonical for duplicate 020"
-      ]
+      ],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "016",
@@ -299,7 +346,10 @@
       "processing_mode": "hierarchical",
       "book_model": "generated/book-models/016-活法.md",
       "report": "generated/reports/016-活法.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "017",
@@ -317,16 +367,19 @@
       "processing_mode": "hierarchical",
       "book_model": "generated/book-models/017-社会性动物.md",
       "report": "generated/reports/017-社会性动物.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "018",
       "title": "素书",
       "source_file": "corpus/raw/018-素书.md",
-      "source_hash": "4215cf2a83570501e8bbbc23d76638926b03976eb577fe081116f0cc3cca9599",
-      "size": 244103,
+      "source_hash": "14f08f86f78f6c382103f6f1947b9ef8bfba70db948e65842886f481c4ee8cc2",
+      "size": 242095,
       "characters": 83570,
-      "lines": 3176,
+      "lines": 2862,
       "garbled_ratio_sample": 0.0,
       "status": "complete",
       "canonical": true,
@@ -335,16 +388,19 @@
       "processing_mode": "direct",
       "book_model": "generated/book-models/018-素书.md",
       "report": "generated/reports/018-素书.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "019",
       "title": "罗织经",
       "source_file": "corpus/raw/019-罗织经.md",
-      "source_hash": "c75aa18fa544e23fed36a07a876fc662a8fb5cfa1f32e684290c460f5f0b630b",
-      "size": 526853,
+      "source_hash": "a4d35e165d21a25cfcd432a90098cf3c64c39ebc6e8ebba63f281e05d09f7b11",
+      "size": 530462,
       "characters": 183294,
-      "lines": 9332,
+      "lines": 5837,
       "garbled_ratio_sample": 0.0,
       "status": "complete",
       "canonical": true,
@@ -353,7 +409,10 @@
       "processing_mode": "direct",
       "book_model": "generated/book-models/019-罗织经.md",
       "report": "generated/reports/019-罗织经.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     },
     {
       "id": "020",
@@ -373,16 +432,19 @@
       "report": null,
       "notes": [
         "explicit duplicate of 015; identical content weight once"
-      ]
+      ],
+      "provenance_status": "untested",
+      "accepted_partial": false,
+      "synthesis_eligible": false
     },
     {
       "id": "021",
       "title": "骗局之王",
       "source_file": "corpus/raw/021-骗局之王.md",
-      "source_hash": "c5ecd4a07cf5ccabc68b8d16946d35cc774dda13800d9367a42a135fd5326e41",
-      "size": 357625,
+      "source_hash": "cc19abf182ea811d08e56112ba11a511ec7f0b5d92df9a98ef1f2ab7815df2aa",
+      "size": 354670,
       "characters": 123065,
-      "lines": 3179,
+      "lines": 3522,
       "garbled_ratio_sample": 0.0,
       "status": "complete",
       "canonical": true,
@@ -391,7 +453,10 @@
       "processing_mode": "direct",
       "book_model": "generated/book-models/021-骗局之王.md",
       "report": "generated/reports/021-骗局之王.report.md",
-      "notes": []
+      "notes": [],
+      "provenance_status": "passed",
+      "accepted_partial": false,
+      "synthesis_eligible": true
     }
   ],
   "dedup_policy": {
@@ -400,6 +465,6 @@
     "weight_rule": "identical bytes share one knowledge weight"
   },
   "blocked_policy": {
-    "004": "raw empty; scanned PDF has no text layer; OCR not completed this run → BLOCKED_SOURCE_MISSING"
+    "004": "raw empty; scanned PDF has no text layer; OCR not completed this run → BLOCKED_OCR_UNAVAILABLE"
   }
 }

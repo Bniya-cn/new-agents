@@ -1,6 +1,6 @@
 {
   "pipeline_version": "0.2",
-  "generated_at": "2026-08-12T15:57:05Z",
+  "generated_at": "2026-08-13T00:11:00Z",
   "build_status": "success",
   "corpus_stats": {
     "total_books": 21,
@@ -13,11 +13,14 @@
   "deterministic_verification": {
     "status": "passed",
     "provenance_regex_valid": true,
-    "structural_completeness_valid": true
+    "structural_completeness_valid": true,
+    "book_model_validation_file": "evals/results/book-model-validation.json",
+    "provenance_validation_file": "evals/results/provenance-validation.json"
   },
   "semantic_verification": {
     "status": "passed",
     "corpus_distinctiveness_test_e9": "passed",
+    "semantic_eval_results_file": "evals/results/semantic-eval-results.json",
     "bookless_score": 5.0,
     "attribution_score": 5.0,
     "logic_score": 5.0
