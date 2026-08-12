@@ -1,0 +1,285 @@
+{
+  "book_id": "015",
+  "segments": [
+    {
+      "id": "S001",
+      "label": "卷第一 周纪一",
+      "start_line": 32,
+      "end_line": 2645,
+      "characters": 126240,
+      "content_hash": "edfc49360d04f6f0",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S002",
+      "label": "卷第十三 汉纪五",
+      "start_line": 2646,
+      "end_line": 5376,
+      "characters": 130156,
+      "content_hash": "3a5d9f78d3079aae",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S003",
+      "label": "卷第二十五 汉纪十七",
+      "start_line": 5377,
+      "end_line": 7837,
+      "characters": 131753,
+      "content_hash": "27806db608dfaf26",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S004",
+      "label": "卷第三十八 汉纪三十",
+      "start_line": 7838,
+      "end_line": 10327,
+      "characters": 122723,
+      "content_hash": "04127d0ae21e3824",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S005",
+      "label": "卷第四十八 汉纪四十",
+      "start_line": 10328,
+      "end_line": 13423,
+      "characters": 121802,
+      "content_hash": "72f47ea00dbfb875",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S006",
+      "label": "卷第五十九 汉纪五十一",
+      "start_line": 13424,
+      "end_line": 15472,
+      "characters": 124750,
+      "content_hash": "9a82c1106141f620",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S007",
+      "label": "卷第七十 魏纪二",
+      "start_line": 15473,
+      "end_line": 18141,
+      "characters": 129272,
+      "content_hash": "50fa44a8a83133bb",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S008",
+      "label": "卷第八十一 晋纪三",
+      "start_line": 18142,
+      "end_line": 21104,
+      "characters": 129582,
+      "content_hash": "58472dbc1e7924f3",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S009",
+      "label": "卷第九十二 晋纪十四",
+      "start_line": 21105,
+      "end_line": 23868,
+      "characters": 123394,
+      "content_hash": "7c8109a903133c61",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S010",
+      "label": "卷第一百二 晋纪二十四",
+      "start_line": 23869,
+      "end_line": 26530,
+      "characters": 126974,
+      "content_hash": "577ed05b1399d094",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S011",
+      "label": "卷第一百一十三 晋纪三十五",
+      "start_line": 26531,
+      "end_line": 29366,
+      "characters": 121819,
+      "content_hash": "20a212034389332b",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S012",
+      "label": "卷第一百二十三 宋纪五",
+      "start_line": 29367,
+      "end_line": 32270,
+      "characters": 124876,
+      "content_hash": "ac5ed4962aa435bf",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S013",
+      "label": "卷第一百三十四 宋纪十六",
+      "start_line": 32271,
+      "end_line": 35112,
+      "characters": 131809,
+      "content_hash": "be596eb5242b856c",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S014",
+      "label": "卷第一百四十六 梁纪二",
+      "start_line": 35113,
+      "end_line": 37746,
+      "characters": 125326,
+      "content_hash": "9ca9823b498ea3db",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S015",
+      "label": "卷第一百五十八 梁纪十四",
+      "start_line": 37747,
+      "end_line": 40743,
+      "characters": 122063,
+      "content_hash": "87522abde891a89a",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S016",
+      "label": "卷第一百六十九 陈纪三",
+      "start_line": 40744,
+      "end_line": 44063,
+      "characters": 127567,
+      "content_hash": "da5be625103b951b",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S017",
+      "label": "卷第一百八十 隋纪四",
+      "start_line": 44064,
+      "end_line": 46595,
+      "characters": 123285,
+      "content_hash": "ec53b635d00ec2a4",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S018",
+      "label": "卷第一百九十 唐纪六",
+      "start_line": 46596,
+      "end_line": 49732,
+      "characters": 131819,
+      "content_hash": "1c0ed31638987f95",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S019",
+      "label": "卷第二百 唐纪十六",
+      "start_line": 49733,
+      "end_line": 53332,
+      "characters": 128402,
+      "content_hash": "033f95f8e724d043",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S020",
+      "label": "卷第二百一十 唐纪二十六",
+      "start_line": 53333,
+      "end_line": 56525,
+      "characters": 129494,
+      "content_hash": "ec6f66d446e89d33",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S021",
+      "label": "卷第二百二十 唐纪三十六",
+      "start_line": 56526,
+      "end_line": 59097,
+      "characters": 124221,
+      "content_hash": "dd0187469c0caf98",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S022",
+      "label": "卷第二百三十 唐纪四十六",
+      "start_line": 59098,
+      "end_line": 62038,
+      "characters": 130070,
+      "content_hash": "9cd0308894c3b4b5",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S023",
+      "label": "卷第二百四十一 唐纪五十七",
+      "start_line": 62039,
+      "end_line": 65102,
+      "characters": 126761,
+      "content_hash": "87c437739d9545c0",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S024",
+      "label": "卷第二百五十一 唐纪六十七",
+      "start_line": 65103,
+      "end_line": 68036,
+      "characters": 124347,
+      "content_hash": "2e279842e3898869",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S025",
+      "label": "卷第二百六十一 唐纪七十七起强圉大荒落（公元897年），尽屠维协洽，凡三年（公元899年）。",
+      "start_line": 68037,
+      "end_line": 71452,
+      "characters": 127593,
+      "content_hash": "a326b088b14cdab0",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S026",
+      "label": "卷第二百七十二 后唐纪一",
+      "start_line": 71453,
+      "end_line": 74523,
+      "characters": 124098,
+      "content_hash": "a838cb9eccbd99a0",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S027",
+      "label": "卷第二百八十三 后晋纪四",
+      "start_line": 74524,
+      "end_line": 77358,
+      "characters": 125391,
+      "content_hash": "a0505502eac92aea",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S028",
+      "label": "卷第二百九十四 后周纪五",
+      "start_line": 77359,
+      "end_line": 77937,
+      "characters": 16195,
+      "content_hash": "c3347b9a0bfc598e",
+      "duplicate_of": null,
+      "weight": 1.0
+    }
+  ]
+}

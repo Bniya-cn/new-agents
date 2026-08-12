@@ -1,0 +1,10 @@
+{
+  "id": "S009",
+  "label": "length-chunk@6175-6910",
+  "start_line": 6175,
+  "end_line": 6910,
+  "characters": 25000,
+  "duplicate_of": null,
+  "weight": 1.0,
+  "source": "corpus/raw/003-传习录.md"
+}

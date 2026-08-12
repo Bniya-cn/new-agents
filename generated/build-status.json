@@ -1,0 +1,41 @@
+{
+  "pipeline_version": "0.2",
+  "generated_at": "2026-08-12T15:57:05Z",
+  "build_status": "success",
+  "corpus_stats": {
+    "total_books": 21,
+    "canonical_books": 19,
+    "duplicate_books": 1,
+    "blocked_books": 1,
+    "complete_books": 19,
+    "pending_books": 0
+  },
+  "deterministic_verification": {
+    "status": "passed",
+    "provenance_regex_valid": true,
+    "structural_completeness_valid": true
+  },
+  "semantic_verification": {
+    "status": "passed",
+    "corpus_distinctiveness_test_e9": "passed",
+    "bookless_score": 5.0,
+    "attribution_score": 5.0,
+    "logic_score": 5.0
+  },
+  "installed_skills": [
+    "book-distiller",
+    "corpus-synthesizer",
+    "domain-mind"
+  ],
+  "build_outputs": {
+    "manifest": "corpus/manifest.json",
+    "status_page": "generated/reports/corpus-status.md",
+    "router": "knowledge/index.md",
+    "principles": "knowledge/principles.md",
+    "cognitive_model": "knowledge/cognitive-model.md",
+    "synthesis_report": "knowledge/corpus-synthesis.report.md",
+    "eval_questions": "evals/questions.jsonl",
+    "eval_adversarial": "evals/adversarial.jsonl",
+    "eval_cases_report": "evals/semantic_eval_cases.md"
+  }
+}

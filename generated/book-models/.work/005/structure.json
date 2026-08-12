@@ -1,0 +1,10 @@
+{
+  "book_id": "005",
+  "source": "corpus/raw/005-传销学.md",
+  "characters": 816976,
+  "lines": 13092,
+  "break_count": 0,
+  "sample_breaks": [],
+  "segment_count": 11,
+  "mode_hint": "hierarchical"
+}

@@ -1,0 +1,105 @@
+{
+  "book_id": "016",
+  "segments": [
+    {
+      "id": "S001",
+      "label": "第一章 让梦想成真",
+      "start_line": 32,
+      "end_line": 1824,
+      "characters": 39180,
+      "content_hash": "fa71981fc15143b7",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S002",
+      "label": "第三章 磨砺并提高心智",
+      "start_line": 1825,
+      "end_line": 2977,
+      "characters": 26004,
+      "content_hash": "1a7e2790ef7ad721",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S003",
+      "label": "第五章 与宇宙相和谐",
+      "start_line": 2978,
+      "end_line": 4150,
+      "characters": 25864,
+      "content_hash": "7a553562cc0a3012",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S004",
+      "label": "第四章 论态度",
+      "start_line": 4151,
+      "end_line": 5340,
+      "characters": 26165,
+      "content_hash": "fea5bb5a0362c9fb",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S005",
+      "label": "第九章论力量",
+      "start_line": 5341,
+      "end_line": 6565,
+      "characters": 26137,
+      "content_hash": "c98197227c781050",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S006",
+      "label": "第二章 考验",
+      "start_line": 6566,
+      "end_line": 7753,
+      "characters": 25916,
+      "content_hash": "808bc2652634790c",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S007",
+      "label": "第六章觉悟",
+      "start_line": 7754,
+      "end_line": 9108,
+      "characters": 29560,
+      "content_hash": "2d9b2c3b40333c2f",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S008",
+      "label": "第十二章 希望",
+      "start_line": 9109,
+      "end_line": 10290,
+      "characters": 27107,
+      "content_hash": "3bdbbeab368a403a",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S009",
+      "label": "第二章 我的人生观与思想源头",
+      "start_line": 10291,
+      "end_line": 11622,
+      "characters": 31482,
+      "content_hash": "db6c44c34f710322",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S010",
+      "label": "第四章追求人间正道",
+      "start_line": 11623,
+      "end_line": 12561,
+      "characters": 21768,
+      "content_hash": "2ff457542a5cd3ae",
+      "duplicate_of": null,
+      "weight": 1.0
+    }
+  ]
+}

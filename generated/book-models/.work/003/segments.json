@@ -1,0 +1,115 @@
+{
+  "book_id": "003",
+  "segments": [
+    {
+      "id": "S001",
+      "label": "length-chunk@1-536",
+      "start_line": 1,
+      "end_line": 536,
+      "characters": 25009,
+      "content_hash": "c92da49a5d8e670f",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S002",
+      "label": "length-chunk@537-1702",
+      "start_line": 537,
+      "end_line": 1702,
+      "characters": 25390,
+      "content_hash": "b7214a14f15c8cdd",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S003",
+      "label": "length-chunk@1703-2750",
+      "start_line": 1703,
+      "end_line": 2750,
+      "characters": 25032,
+      "content_hash": "6016cf45e6e2cd5c",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S004",
+      "label": "length-chunk@2751-3056",
+      "start_line": 2751,
+      "end_line": 3056,
+      "characters": 25003,
+      "content_hash": "aa9b05b2a25e89f0",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S005",
+      "label": "length-chunk@3057-3470",
+      "start_line": 3057,
+      "end_line": 3470,
+      "characters": 25103,
+      "content_hash": "237b597910448a96",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S006",
+      "label": "length-chunk@3471-3846",
+      "start_line": 3471,
+      "end_line": 3846,
+      "characters": 24999,
+      "content_hash": "74c18da2850becb4",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S007",
+      "label": "length-chunk@3847-5162",
+      "start_line": 3847,
+      "end_line": 5162,
+      "characters": 25002,
+      "content_hash": "044a6894031532d2",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S008",
+      "label": "length-chunk@5163-6174",
+      "start_line": 5163,
+      "end_line": 6174,
+      "characters": 25004,
+      "content_hash": "cfdf95d6f8f99706",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S009",
+      "label": "length-chunk@6175-6910",
+      "start_line": 6175,
+      "end_line": 6910,
+      "characters": 25000,
+      "content_hash": "1e253f9aa5e0195e",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S010",
+      "label": "length-chunk@6911-7790",
+      "start_line": 6911,
+      "end_line": 7790,
+      "characters": 25014,
+      "content_hash": "83df4f1753728129",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S011",
+      "label": "length-chunk@7791-7880",
+      "start_line": 7791,
+      "end_line": 7880,
+      "characters": 2189,
+      "content_hash": "7dd13b05acb4ecf4",
+      "duplicate_of": null,
+      "weight": 1.0
+    }
+  ]
+}

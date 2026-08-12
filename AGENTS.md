@@ -34,20 +34,25 @@
 
 ### P2 — Skill 加载顺序
 
-1. `.agents/skills/book-distiller/SKILL.md`（待创建）
-2. 项目 `AGENTS.md`
-3. 本文件
+1. `.agents/skills/book-distiller/SKILL.md` (已就绪)
+2. `.agents/skills/corpus-synthesizer/SKILL.md` (已就绪)
+3. `.agents/skills/domain-mind/SKILL.md` (已就绪)
+4. 项目 `AGENTS.md`
+5. 本文件
 
 ## 当前可用 Skill
 
 | Skill | 状态 | 职责 |
 |-------|------|------|
-| `book-distiller` | 待创建 | 一本书 → 一个结构化认知模型 |
+| `book-distiller` | 已就绪 | 一本书 → 一个结构化认知模型与人读报告 |
+| `corpus-synthesizer` | 已就绪 | 19本书结构化模型 → 跨书本体与通用原则整合 |
+| `domain-mind` | 已就绪 | 跨书原则因果网络 → 运行时未知场景推理与决策 |
 
 ## 验证命令
 
 ```bash
-python3 scripts/audit_corpus.py   # 书库审计
+python3 scripts/audit_corpus.py   # 书库审计与状态校验
+python3 scripts/run_evals.py      # 执行确定性验证与生成语义打分模板
 ```
 
 ## 语言

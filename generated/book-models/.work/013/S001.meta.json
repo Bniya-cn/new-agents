@@ -1,0 +1,10 @@
+{
+  "id": "S001",
+  "label": "第一部分",
+  "start_line": 1041,
+  "end_line": 7377,
+  "characters": 100786,
+  "duplicate_of": null,
+  "weight": 1.0,
+  "source": "corpus/raw/013-新厚黑学全书.md"
+}

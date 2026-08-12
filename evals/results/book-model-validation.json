@@ -1,0 +1,17 @@
+[
+  {
+    "path": "generated/book-models/007-做局.md",
+    "ok": true,
+    "missing_sections": [],
+    "id_counts": {
+      "C": 8,
+      "CL": 8,
+      "CM": 7,
+      "H": 8,
+      "P": 8
+    },
+    "evidence_hits": 182,
+    "summaryish_hits": 0,
+    "characters": 18784
+  }
+]

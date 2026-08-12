@@ -1,0 +1,215 @@
+{
+  "book_id": "013",
+  "segments": [
+    {
+      "id": "S001",
+      "label": "第一部分",
+      "start_line": 1041,
+      "end_line": 7377,
+      "characters": 100786,
+      "content_hash": "0e028bfe0fc14b4d",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S002",
+      "label": "第二篇 厚黑从话",
+      "start_line": 7378,
+      "end_line": 13158,
+      "characters": 100329,
+      "content_hash": "7a7575f025eecb3f",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S003",
+      "label": "第四篇 厚黑学论坛",
+      "start_line": 13159,
+      "end_line": 18908,
+      "characters": 100558,
+      "content_hash": "bc025f45027caea9",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S004",
+      "label": "第五篇 厚黑教主自传及其他",
+      "start_line": 18909,
+      "end_line": 24667,
+      "characters": 100385,
+      "content_hash": "e7c257d9a5656dcf",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S005",
+      "label": "第五篇 厚黑教主自传及其他",
+      "start_line": 24668,
+      "end_line": 30778,
+      "characters": 101717,
+      "content_hash": "e72c0ddf03b506c7",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S006",
+      "label": "第七篇 历代厚黑学经典著述大全",
+      "start_line": 30779,
+      "end_line": 36900,
+      "characters": 100077,
+      "content_hash": "faec2359df092be1",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S007",
+      "label": "第七篇 历代厚黑学经典著述大全",
+      "start_line": 36901,
+      "end_line": 43516,
+      "characters": 100521,
+      "content_hash": "4f4eb63a98adf409",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S008",
+      "label": "第七篇 历代厚黑学经典著述大全",
+      "start_line": 43517,
+      "end_line": 50408,
+      "characters": 101624,
+      "content_hash": "c2e2ac3c82f3ac05",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S009",
+      "label": "第七篇 历代厚黑学经典著述大全",
+      "start_line": 50409,
+      "end_line": 56513,
+      "characters": 101360,
+      "content_hash": "e0109ed2471f61eb",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S010",
+      "label": "第七篇 历代厚黑学经典著述大全",
+      "start_line": 56514,
+      "end_line": 62348,
+      "characters": 101676,
+      "content_hash": "7ed55dea2a62202b",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S011",
+      "label": "第七篇 历代厚黑学经典著述大全",
+      "start_line": 62349,
+      "end_line": 67993,
+      "characters": 100013,
+      "content_hash": "d42de37c69296ac3",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S012",
+      "label": "第七篇 历代厚黑学经典著述大全",
+      "start_line": 67994,
+      "end_line": 73919,
+      "characters": 100650,
+      "content_hash": "4f07ad8ca902e73c",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S013",
+      "label": "第一篇",
+      "start_line": 73920,
+      "end_line": 79997,
+      "characters": 101811,
+      "content_hash": "6c6555e998c98b2b",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S014",
+      "label": "第二篇 商场厚黑学",
+      "start_line": 79998,
+      "end_line": 85979,
+      "characters": 100079,
+      "content_hash": "a5c902e7d2138f40",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S015",
+      "label": "第二篇 商场厚黑学",
+      "start_line": 85980,
+      "end_line": 92148,
+      "characters": 101700,
+      "content_hash": "a88eb2ab584b7e25",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S016",
+      "label": "第三篇 战场厚黑学",
+      "start_line": 92149,
+      "end_line": 98328,
+      "characters": 102595,
+      "content_hash": "ef816028f47117eb",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S017",
+      "label": "第四篇 情场厚黑学",
+      "start_line": 98329,
+      "end_line": 104376,
+      "characters": 100500,
+      "content_hash": "d5041767732f489c",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S018",
+      "label": "第六篇 人际厚黑学",
+      "start_line": 104377,
+      "end_line": 110479,
+      "characters": 101513,
+      "content_hash": "c0370a256abf649e",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S019",
+      "label": "第八篇 西方厚黑学",
+      "start_line": 110480,
+      "end_line": 116679,
+      "characters": 102345,
+      "content_hash": "5f386c459286c659",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S020",
+      "label": "第一篇 中国古代厚黑名人",
+      "start_line": 116680,
+      "end_line": 122586,
+      "characters": 102752,
+      "content_hash": "b1c1ef669ab59edc",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S021",
+      "label": "第一篇 中国古代厚黑名人",
+      "start_line": 122587,
+      "end_line": 124358,
+      "characters": 30343,
+      "content_hash": "a4adde605d020a18",
+      "duplicate_of": null,
+      "weight": 1.0
+    }
+  ]
+}

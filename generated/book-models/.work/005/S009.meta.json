@@ -1,0 +1,10 @@
+{
+  "id": "S009",
+  "label": "length-chunk@10259-11539",
+  "start_line": 10259,
+  "end_line": 11539,
+  "characters": 80040,
+  "duplicate_of": null,
+  "weight": 1.0,
+  "source": "corpus/raw/005-传销学.md"
+}
