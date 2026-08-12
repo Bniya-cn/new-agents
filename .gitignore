@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+.venv/
+*.pdf
+
+# 旧目录（已迁移至 corpus/raw/）
+_markdown/
