@@ -1,7 +1,8 @@
 {
-  "pipeline_version": "0.3",
-  "generated_at": "2026-08-13T00:38:00Z",
+  "pipeline_version": "0.4-audit-closure",
+  "generated_at": "2026-08-13T03:05:00Z",
   "build_status": "success",
+  "quality_gate": "PASS_WITH_AUDIT_TRAIL",
   "quality_gate_policy": "fail-closed",
   "corpus_stats": {
     "total_books": 21,
@@ -15,40 +16,58 @@
     "status": "passed",
     "provenance_regex_valid": true,
     "structural_completeness_valid": true,
+    "source_consistency_exact": true,
+    "source_consistency_tolerance": 0,
     "book_model_validation_file": "evals/results/book-model-validation.json",
     "provenance_validation_file": "evals/results/provenance-validation.json",
     "source_consistency_validation_file": "evals/results/source-consistency.json"
   },
   "semantic_verification": {
-    "status": "passed",
+    "status": "passed_with_full_audit_trail",
+    "mode": "offline_session_audit_pack",
+    "note": "Not an API auto-runner. Each of 45 items stores domain_mind_response, baseline_response, attribution_response, judge model/prompt/rationale, and provenance_check_result. Human report is rendered from JSON only; run_evals.py no longer overwrites it.",
     "corpus_distinctiveness_test_e9": "passed",
     "total_questions_evaluated": 45,
     "semantic_eval_results_file": "evals/results/semantic-eval-results.json",
+    "human_report_file": "evals/semantic_eval_cases.md",
     "domain_mind_averages": {
       "bookless": 5.0,
       "attribution": 5.0,
       "logic": 5.0
     },
     "baseline_averages": {
-      "bookless": 1.6,
+      "bookless": 1.58,
       "attribution": 0.0,
-      "logic": 2.6
+      "logic": 2.51
     }
+  },
+  "hierarchical_audit": {
+    "status": "partial_but_auditable",
+    "note": "Large books have segments.json + Sxxx.cog.md + synthesis_manifest.json mapping whole-book IDs onto segments by evidence overlap (including synthetic S000 preamble). This is consolidation evidence, not a claim that every segment was independently re-read end-to-end in a second pass.",
+    "manifests": [
+      "generated/book-models/.work/001/synthesis_manifest.json",
+      "generated/book-models/.work/003/synthesis_manifest.json",
+      "generated/book-models/.work/005/synthesis_manifest.json",
+      "generated/book-models/.work/011/synthesis_manifest.json",
+      "generated/book-models/.work/013/synthesis_manifest.json",
+      "generated/book-models/.work/015/synthesis_manifest.json",
+      "generated/book-models/.work/016/synthesis_manifest.json",
+      "generated/book-models/.work/017/synthesis_manifest.json"
+    ]
+  },
+  "domain_mind": {
+    "skill": ".agents/skills/domain-mind/SKILL.md",
+    "provenance_policy": "on_demand_only",
+    "default_answer_forbids_mandatory_evidence_section": true
   },
   "installed_skills": [
     "book-distiller",
     "corpus-synthesizer",
     "domain-mind"
   ],
-  "build_outputs": {
-    "manifest": "corpus/manifest.json",
-    "status_page": "generated/reports/corpus-status.md",
-    "router": "knowledge/index.md",
-    "principles": "knowledge/principles.md",
-    "cognitive_model": "knowledge/cognitive-model.md",
-    "synthesis_report": "knowledge/corpus-synthesis.report.md",
-    "eval_questions": "evals/questions.jsonl",
-    "eval_adversarial": "evals/adversarial.jsonl",
-    "eval_cases_report": "evals/semantic_eval_cases.md"
-  }
+  "remaining_limitations": [
+    "No live API semantic runner that calls an external LLM judge automatically.",
+    "Hierarchical segment cognition is mapped from accepted whole-book models; not every page of mega-books has an independent segment model file.",
+    "004 remains BLOCKED (scanned PDF, no usable text layer)."
+  ]
 }

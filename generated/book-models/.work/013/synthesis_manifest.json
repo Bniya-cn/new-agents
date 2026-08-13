@@ -1,0 +1,239 @@
+{
+  "book_id": "013",
+  "generated_at": "2026-08-13T02:58:38.969962+00:00",
+  "generator": "scripts/build_segment_cognition.py",
+  "source_model": "generated/book-models/013-新厚黑学全书.md",
+  "segment_count": 22,
+  "mapped_item_count": 32,
+  "unique_items_parsed": 33,
+  "unassigned_or_wholebook_only": [
+    {
+      "id": "B001",
+      "title": "现代化数据监控与全流程日志追溯的熔断",
+      "line_ranges": [],
+      "reason": "no_line_evidence_in_model_block"
+    }
+  ],
+  "pipeline": [
+    "structure.json / segments.json (deterministic segmentation)",
+    "whole-book cognitive model (accepted)",
+    "evidence-line → segment overlap mapping",
+    "Sxxx.cog.md segment cognitive notes",
+    "synthesis_manifest.json (this file)"
+  ],
+  "limitations": [
+    "Does not claim each segment was independently re-read end-to-end in this rebuild.",
+    "Provides auditable consolidation evidence linking whole-book IDs to segments."
+  ],
+  "segments": [
+    {
+      "id": "S000",
+      "label": "preamble-before-first-break",
+      "start_line": 1,
+      "end_line": 1040,
+      "mapped_ids": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "C005",
+        "CL001",
+        "CL002",
+        "CL003",
+        "CM001",
+        "CM002",
+        "RP001",
+        "RP002",
+        "RP003",
+        "H001",
+        "H002",
+        "H003",
+        "A001",
+        "A002",
+        "A003",
+        "B002",
+        "B003",
+        "T001",
+        "T002",
+        "AP001",
+        "AP002",
+        "AP003",
+        "P001",
+        "P002",
+        "P003",
+        "I001",
+        "I002",
+        "I003"
+      ],
+      "cog_artifact": "generated/book-models/.work/013/S000.cog.md"
+    },
+    {
+      "id": "S001",
+      "label": "第一部分",
+      "start_line": 1041,
+      "end_line": 7377,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S001.cog.md"
+    },
+    {
+      "id": "S002",
+      "label": "第二篇 厚黑从话",
+      "start_line": 7378,
+      "end_line": 13158,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S002.cog.md"
+    },
+    {
+      "id": "S003",
+      "label": "第四篇 厚黑学论坛",
+      "start_line": 13159,
+      "end_line": 18908,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S003.cog.md"
+    },
+    {
+      "id": "S004",
+      "label": "第五篇 厚黑教主自传及其他",
+      "start_line": 18909,
+      "end_line": 24667,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S004.cog.md"
+    },
+    {
+      "id": "S005",
+      "label": "第五篇 厚黑教主自传及其他",
+      "start_line": 24668,
+      "end_line": 30778,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S005.cog.md"
+    },
+    {
+      "id": "S006",
+      "label": "第七篇 历代厚黑学经典著述大全",
+      "start_line": 30779,
+      "end_line": 36900,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S006.cog.md"
+    },
+    {
+      "id": "S007",
+      "label": "第七篇 历代厚黑学经典著述大全",
+      "start_line": 36901,
+      "end_line": 43516,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S007.cog.md"
+    },
+    {
+      "id": "S008",
+      "label": "第七篇 历代厚黑学经典著述大全",
+      "start_line": 43517,
+      "end_line": 50408,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S008.cog.md"
+    },
+    {
+      "id": "S009",
+      "label": "第七篇 历代厚黑学经典著述大全",
+      "start_line": 50409,
+      "end_line": 56513,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S009.cog.md"
+    },
+    {
+      "id": "S010",
+      "label": "第七篇 历代厚黑学经典著述大全",
+      "start_line": 56514,
+      "end_line": 62348,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S010.cog.md"
+    },
+    {
+      "id": "S011",
+      "label": "第七篇 历代厚黑学经典著述大全",
+      "start_line": 62349,
+      "end_line": 67993,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S011.cog.md"
+    },
+    {
+      "id": "S012",
+      "label": "第七篇 历代厚黑学经典著述大全",
+      "start_line": 67994,
+      "end_line": 73919,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S012.cog.md"
+    },
+    {
+      "id": "S013",
+      "label": "第一篇",
+      "start_line": 73920,
+      "end_line": 79997,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S013.cog.md"
+    },
+    {
+      "id": "S014",
+      "label": "第二篇 商场厚黑学",
+      "start_line": 79998,
+      "end_line": 85979,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S014.cog.md"
+    },
+    {
+      "id": "S015",
+      "label": "第二篇 商场厚黑学",
+      "start_line": 85980,
+      "end_line": 92148,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S015.cog.md"
+    },
+    {
+      "id": "S016",
+      "label": "第三篇 战场厚黑学",
+      "start_line": 92149,
+      "end_line": 98328,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S016.cog.md"
+    },
+    {
+      "id": "S017",
+      "label": "第四篇 情场厚黑学",
+      "start_line": 98329,
+      "end_line": 104376,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S017.cog.md"
+    },
+    {
+      "id": "S018",
+      "label": "第六篇 人际厚黑学",
+      "start_line": 104377,
+      "end_line": 110479,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S018.cog.md"
+    },
+    {
+      "id": "S019",
+      "label": "第八篇 西方厚黑学",
+      "start_line": 110480,
+      "end_line": 116679,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S019.cog.md"
+    },
+    {
+      "id": "S020",
+      "label": "第一篇 中国古代厚黑名人",
+      "start_line": 116680,
+      "end_line": 122586,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S020.cog.md"
+    },
+    {
+      "id": "S021",
+      "label": "第一篇 中国古代厚黑名人",
+      "start_line": 122587,
+      "end_line": 124358,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/013/S021.cog.md"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "book_id": "011",
+  "generated_at": "2026-08-13T02:58:38.967793+00:00",
+  "generator": "scripts/build_segment_cognition.py",
+  "source_model": "generated/book-models/011-忽悠的原理与技巧.md",
+  "segment_count": 8,
+  "mapped_item_count": 60,
+  "unique_items_parsed": 34,
+  "unassigned_or_wholebook_only": [
+    {
+      "id": "B001",
+      "title": "司法终审与强力调查对罗生门战术的终结",
+      "line_ranges": [],
+      "reason": "no_line_evidence_in_model_block"
+    }
+  ],
+  "pipeline": [
+    "structure.json / segments.json (deterministic segmentation)",
+    "whole-book cognitive model (accepted)",
+    "evidence-line → segment overlap mapping",
+    "Sxxx.cog.md segment cognitive notes",
+    "synthesis_manifest.json (this file)"
+  ],
+  "limitations": [
+    "Does not claim each segment was independently re-read end-to-end in this rebuild.",
+    "Provides auditable consolidation evidence linking whole-book IDs to segments."
+  ],
+  "segments": [
+    {
+      "id": "S000",
+      "label": "preamble-before-first-break",
+      "start_line": 1,
+      "end_line": 265,
+      "mapped_ids": [
+        "C001",
+        "CL001",
+        "A001",
+        "T001",
+        "AP001",
+        "P001",
+        "P003",
+        "I001",
+        "I003"
+      ],
+      "cog_artifact": "generated/book-models/.work/011/S000.cog.md"
+    },
+    {
+      "id": "S001",
+      "label": "第一节模糊标准",
+      "start_line": 266,
+      "end_line": 1193,
+      "mapped_ids": [
+        "C002",
+        "C003",
+        "C004",
+        "CL002",
+        "CM001",
+        "RP002",
+        "RP003",
+        "H002",
+        "A003",
+        "B003",
+        "T001",
+        "AP002",
+        "AP003",
+        "P003",
+        "I002",
+        "I003"
+      ],
+      "cog_artifact": "generated/book-models/.work/011/S001.cog.md"
+    },
+    {
+      "id": "S002",
+      "label": "第二章无法自证的身高——赌赛罗生门",
+      "start_line": 1194,
+      "end_line": 1961,
+      "mapped_ids": [
+        "C005",
+        "C006",
+        "CL003",
+        "CM001",
+        "H001",
+        "A002",
+        "A003",
+        "T002",
+        "AP003",
+        "P002",
+        "P003",
+        "I003"
+      ],
+      "cog_artifact": "generated/book-models/.work/011/S002.cog.md"
+    },
+    {
+      "id": "S003",
+      "label": "第三节语言陷阱",
+      "start_line": 1962,
+      "end_line": 2766,
+      "mapped_ids": [
+        "C001",
+        "C004",
+        "C005",
+        "CL001",
+        "CL003",
+        "CM002",
+        "RP001",
+        "H001",
+        "H003",
+        "A001",
+        "A002",
+        "A003",
+        "B002",
+        "T001",
+        "T002",
+        "AP001",
+        "AP002",
+        "P001",
+        "P002",
+        "P003",
+        "I001",
+        "I002",
+        "I003"
+      ],
+      "cog_artifact": "generated/book-models/.work/011/S003.cog.md"
+    },
+    {
+      "id": "S004",
+      "label": "第二节诉诸公众",
+      "start_line": 2767,
+      "end_line": 3731,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/011/S004.cog.md"
+    },
+    {
+      "id": "S005",
+      "label": "第四章社会信任的溃败——肖传国之争",
+      "start_line": 3732,
+      "end_line": 4807,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/011/S005.cog.md"
+    },
+    {
+      "id": "S006",
+      "label": "第二节社会信任的溃败",
+      "start_line": 4808,
+      "end_line": 5673,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/011/S006.cog.md"
+    },
+    {
+      "id": "S007",
+      "label": "第三章我写得不好，谈下思路。",
+      "start_line": 5674,
+      "end_line": 6023,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/011/S007.cog.md"
+    }
+  ]
+}

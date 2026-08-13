@@ -1,0 +1,23 @@
+---
+description: After finishing work, auto-commit and push to GitHub + Gitee
+alwaysApply: true
+---
+
+# Auto sync remotes after task completion
+
+When a task in this repo produces file changes and reaches a natural completion point:
+
+1. **Commit** the relevant changes (unless the user explicitly said not to commit).
+2. **Push and sync** to both remotes without waiting to be asked:
+   - GitHub: `git push github master:main`
+   - Gitee: `git push origin master` and `git push origin master:main`
+3. Verify all of `HEAD`, `github/main`, `origin/main`, `origin/master` point to the same commit.
+4. Report the commit hash and sync status briefly.
+
+Do not skip the push step just because the user did not repeat “帮我推送”.
+
+Exceptions:
+
+- User explicitly forbids commit/push for that turn.
+- Nothing to commit (clean tree) — still fetch/check remotes are aligned.
+- Secrets / `.env` / credentials must never be committed.

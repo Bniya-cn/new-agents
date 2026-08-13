@@ -1,116 +1,332 @@
-[
-  {
-    "id": "001",
-    "stem": "001-20世纪五大传记书系",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "002",
-    "stem": "002-商君书",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "003",
-    "stem": "003-传习录",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "005",
-    "stem": "005-传销学",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "006",
-    "stem": "006-传销洗脑实录",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "007",
-    "stem": "007-做局",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "008",
-    "stem": "008-天下无谋之密卷",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "009",
-    "stem": "009-影响力",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "010",
-    "stem": "010-心-稻盛和夫的一生嘱托",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "011",
-    "stem": "011-忽悠的原理与技巧",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "012",
-    "stem": "012-我是怎么割韭菜的",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "013",
-    "stem": "013-新厚黑学全书",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "014",
-    "stem": "014-格局的力量",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "015",
-    "stem": "015-汇评精注资治通鉴",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "016",
-    "stem": "016-活法",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "017",
-    "stem": "017-社会性动物",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "018",
-    "stem": "018-素书",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "019",
-    "stem": "019-罗织经",
-    "ok": true,
-    "issues": []
-  },
-  {
-    "id": "021",
-    "stem": "021-骗局之王",
-    "ok": true,
-    "issues": []
-  }
-]
+{
+  "generated_by": "scripts/validate_source_consistency.py",
+  "match_policy": "exact_hash_chars_lines",
+  "tolerance": 0,
+  "complete_books_checked": 19,
+  "all_ok": true,
+  "items": [
+    {
+      "id": "001",
+      "stem": "001-20世纪五大传记书系",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "c9a99ae0f5c3717b5c180e5aeb9a9a96d96784652ebce38b2fe01a352b7280b6",
+        "characters": 1070256,
+        "lines": 17848
+      },
+      "manifest_ground_truth": {
+        "source_hash": "c9a99ae0f5c3717b5c180e5aeb9a9a96d96784652ebce38b2fe01a352b7280b6",
+        "characters": 1070256,
+        "lines": 17848
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "002",
+      "stem": "002-商君书",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "cfb60256e5843c3028699e77e38130dd9eda2cee4c66e8fb8540ea04bae3adb5",
+        "characters": 100458,
+        "lines": 3998
+      },
+      "manifest_ground_truth": {
+        "source_hash": "cfb60256e5843c3028699e77e38130dd9eda2cee4c66e8fb8540ea04bae3adb5",
+        "characters": 100458,
+        "lines": 3998
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "003",
+      "stem": "003-传习录",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "bc4ae69177b4a58cc7848bfee50468ac95d87c71ef9eb03f3715790a3b24ac9b",
+        "characters": 252756,
+        "lines": 7880
+      },
+      "manifest_ground_truth": {
+        "source_hash": "bc4ae69177b4a58cc7848bfee50468ac95d87c71ef9eb03f3715790a3b24ac9b",
+        "characters": 252756,
+        "lines": 7880
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "005",
+      "stem": "005-传销学",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "28a8261eddbeb63ccf11b47faa997f6266ea5d7bfca777cff32a7821d1272fb2",
+        "characters": 816976,
+        "lines": 13092
+      },
+      "manifest_ground_truth": {
+        "source_hash": "28a8261eddbeb63ccf11b47faa997f6266ea5d7bfca777cff32a7821d1272fb2",
+        "characters": 816976,
+        "lines": 13092
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "006",
+      "stem": "006-传销洗脑实录",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "c4e810cd4a1a78ea5a745ad23b6bced6db5eae1f47b87e3025eef0937a239066",
+        "characters": 119123,
+        "lines": 3337
+      },
+      "manifest_ground_truth": {
+        "source_hash": "c4e810cd4a1a78ea5a745ad23b6bced6db5eae1f47b87e3025eef0937a239066",
+        "characters": 119123,
+        "lines": 3337
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "007",
+      "stem": "007-做局",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "998027279aff27f32e0e304fb81b6b5ea07d290018313d6c21da19fd73144550",
+        "characters": 34435,
+        "lines": 862
+      },
+      "manifest_ground_truth": {
+        "source_hash": "998027279aff27f32e0e304fb81b6b5ea07d290018313d6c21da19fd73144550",
+        "characters": 34435,
+        "lines": 862
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "008",
+      "stem": "008-天下无谋之密卷",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "f42707f165d0e162e2fe195bcd8f4ec3dbea6be2c607e2a7ab8c20baf8dcbacb",
+        "characters": 82889,
+        "lines": 4383
+      },
+      "manifest_ground_truth": {
+        "source_hash": "f42707f165d0e162e2fe195bcd8f4ec3dbea6be2c607e2a7ab8c20baf8dcbacb",
+        "characters": 82889,
+        "lines": 4383
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "009",
+      "stem": "009-影响力",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "a465668631fb25281a07a3c4a458723368e424c93f450f1bd1b7d73f382f841f",
+        "characters": 166218,
+        "lines": 2488
+      },
+      "manifest_ground_truth": {
+        "source_hash": "a465668631fb25281a07a3c4a458723368e424c93f450f1bd1b7d73f382f841f",
+        "characters": 166218,
+        "lines": 2488
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "010",
+      "stem": "010-心-稻盛和夫的一生嘱托",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "ceb11a5524cb741732bbc6ec4704147ffc7dbcb3db3e46ed2ef0956c895e84bd",
+        "characters": 68181,
+        "lines": 2416
+      },
+      "manifest_ground_truth": {
+        "source_hash": "ceb11a5524cb741732bbc6ec4704147ffc7dbcb3db3e46ed2ef0956c895e84bd",
+        "characters": 68181,
+        "lines": 2416
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "011",
+      "stem": "011-忽悠的原理与技巧",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "fb39cac2658b8dd489f379162e780aee5fcd4f520d4df9b1e7130b36342fd47d",
+        "characters": 207334,
+        "lines": 6023
+      },
+      "manifest_ground_truth": {
+        "source_hash": "fb39cac2658b8dd489f379162e780aee5fcd4f520d4df9b1e7130b36342fd47d",
+        "characters": 207334,
+        "lines": 6023
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "012",
+      "stem": "012-我是怎么割韭菜的",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "26d945738608e3b7b4aca062cc3c20bf562962e3bddac8362325d6d75916c82d",
+        "characters": 161320,
+        "lines": 4256
+      },
+      "manifest_ground_truth": {
+        "source_hash": "26d945738608e3b7b4aca062cc3c20bf562962e3bddac8362325d6d75916c82d",
+        "characters": 161320,
+        "lines": 4256
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "013",
+      "stem": "013-新厚黑学全书",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "7a23c3189a2b82f21923b72377a86ea02264073513600e624c38292db16e1360",
+        "characters": 2070699,
+        "lines": 124358
+      },
+      "manifest_ground_truth": {
+        "source_hash": "7a23c3189a2b82f21923b72377a86ea02264073513600e624c38292db16e1360",
+        "characters": 2070699,
+        "lines": 124358
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "014",
+      "stem": "014-格局的力量",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "0e56fd7cf77c436c7520a54edb496f9a123bcfb9d0d783446fdbe0437edc1585",
+        "characters": 55348,
+        "lines": 1300
+      },
+      "manifest_ground_truth": {
+        "source_hash": "0e56fd7cf77c436c7520a54edb496f9a123bcfb9d0d783446fdbe0437edc1585",
+        "characters": 55348,
+        "lines": 1300
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "015",
+      "stem": "015-汇评精注资治通鉴",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "11ae155d2c1da67320e73a0f314a2f206a8089dc4b348aae56b6ec6f8b9eecf5",
+        "characters": 3432347,
+        "lines": 77937
+      },
+      "manifest_ground_truth": {
+        "source_hash": "11ae155d2c1da67320e73a0f314a2f206a8089dc4b348aae56b6ec6f8b9eecf5",
+        "characters": 3432347,
+        "lines": 77937
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "016",
+      "stem": "016-活法",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "c26544eb9ba889b67b7d05f56fb3e4809b9633d83853b222bcecd75500e6cfa6",
+        "characters": 279528,
+        "lines": 12561
+      },
+      "manifest_ground_truth": {
+        "source_hash": "c26544eb9ba889b67b7d05f56fb3e4809b9633d83853b222bcecd75500e6cfa6",
+        "characters": 279528,
+        "lines": 12561
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "017",
+      "stem": "017-社会性动物",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "1069357ea749fe5b301767e48fd3c2284c32ec4ac1b51e42e237be04bbaaa9f1",
+        "characters": 519578,
+        "lines": 10824
+      },
+      "manifest_ground_truth": {
+        "source_hash": "1069357ea749fe5b301767e48fd3c2284c32ec4ac1b51e42e237be04bbaaa9f1",
+        "characters": 519578,
+        "lines": 10824
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "018",
+      "stem": "018-素书",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "14f08f86f78f6c382103f6f1947b9ef8bfba70db948e65842886f481c4ee8cc2",
+        "characters": 83570,
+        "lines": 2862
+      },
+      "manifest_ground_truth": {
+        "source_hash": "14f08f86f78f6c382103f6f1947b9ef8bfba70db948e65842886f481c4ee8cc2",
+        "characters": 83570,
+        "lines": 2862
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "019",
+      "stem": "019-罗织经",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "a4d35e165d21a25cfcd432a90098cf3c64c39ebc6e8ebba63f281e05d09f7b11",
+        "characters": 183294,
+        "lines": 5837
+      },
+      "manifest_ground_truth": {
+        "source_hash": "a4d35e165d21a25cfcd432a90098cf3c64c39ebc6e8ebba63f281e05d09f7b11",
+        "characters": 183294,
+        "lines": 5837
+      },
+      "match_policy": "exact",
+      "issues": []
+    },
+    {
+      "id": "021",
+      "stem": "021-骗局之王",
+      "ok": true,
+      "model_meta": {
+        "source_hash": "cc19abf182ea811d08e56112ba11a511ec7f0b5d92df9a98ef1f2ab7815df2aa",
+        "characters": 123065,
+        "lines": 3522
+      },
+      "manifest_ground_truth": {
+        "source_hash": "cc19abf182ea811d08e56112ba11a511ec7f0b5d92df9a98ef1f2ab7815df2aa",
+        "characters": 123065,
+        "lines": 3522
+      },
+      "match_policy": "exact",
+      "issues": []
+    }
+  ]
+}

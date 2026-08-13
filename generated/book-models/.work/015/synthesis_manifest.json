@@ -1,0 +1,315 @@
+{
+  "book_id": "015",
+  "generated_at": "2026-08-13T02:58:38.972446+00:00",
+  "generator": "scripts/build_segment_cognition.py",
+  "source_model": "generated/book-models/015-汇评精注资治通鉴.md",
+  "segment_count": 29,
+  "mapped_item_count": 41,
+  "unique_items_parsed": 33,
+  "unassigned_or_wholebook_only": [
+    {
+      "id": "B001",
+      "title": "现代化公众持股与刚性离职退役法治保护",
+      "line_ranges": [],
+      "reason": "no_line_evidence_in_model_block"
+    },
+    {
+      "id": "B002",
+      "title": "完全数字穿透扁平化小团队的物理事实呈现",
+      "line_ranges": [],
+      "reason": "no_line_evidence_in_model_block"
+    }
+  ],
+  "pipeline": [
+    "structure.json / segments.json (deterministic segmentation)",
+    "whole-book cognitive model (accepted)",
+    "evidence-line → segment overlap mapping",
+    "Sxxx.cog.md segment cognitive notes",
+    "synthesis_manifest.json (this file)"
+  ],
+  "limitations": [
+    "Does not claim each segment was independently re-read end-to-end in this rebuild.",
+    "Provides auditable consolidation evidence linking whole-book IDs to segments."
+  ],
+  "segments": [
+    {
+      "id": "S000",
+      "label": "preamble-before-first-break",
+      "start_line": 1,
+      "end_line": 31,
+      "mapped_ids": [
+        "I003"
+      ],
+      "cog_artifact": "generated/book-models/.work/015/S000.cog.md"
+    },
+    {
+      "id": "S001",
+      "label": "卷第一 周纪一",
+      "start_line": 32,
+      "end_line": 2645,
+      "mapped_ids": [
+        "I003"
+      ],
+      "cog_artifact": "generated/book-models/.work/015/S001.cog.md"
+    },
+    {
+      "id": "S002",
+      "label": "卷第十三 汉纪五",
+      "start_line": 2646,
+      "end_line": 5376,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S002.cog.md"
+    },
+    {
+      "id": "S003",
+      "label": "卷第二十五 汉纪十七",
+      "start_line": 5377,
+      "end_line": 7837,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S003.cog.md"
+    },
+    {
+      "id": "S004",
+      "label": "卷第三十八 汉纪三十",
+      "start_line": 7838,
+      "end_line": 10327,
+      "mapped_ids": [
+        "C001",
+        "C005",
+        "CL001",
+        "CM001",
+        "RP001",
+        "H001",
+        "A001",
+        "A003",
+        "B003",
+        "T001",
+        "T002",
+        "AP001",
+        "P001",
+        "P003",
+        "I001"
+      ],
+      "cog_artifact": "generated/book-models/.work/015/S004.cog.md"
+    },
+    {
+      "id": "S005",
+      "label": "卷第四十八 汉纪四十",
+      "start_line": 10328,
+      "end_line": 13423,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S005.cog.md"
+    },
+    {
+      "id": "S006",
+      "label": "卷第五十九 汉纪五十一",
+      "start_line": 13424,
+      "end_line": 15472,
+      "mapped_ids": [
+        "C002",
+        "CL002",
+        "CM002",
+        "H002",
+        "A003",
+        "T002",
+        "AP003",
+        "P002",
+        "P003",
+        "I002"
+      ],
+      "cog_artifact": "generated/book-models/.work/015/S006.cog.md"
+    },
+    {
+      "id": "S007",
+      "label": "卷第七十 魏纪二",
+      "start_line": 15473,
+      "end_line": 18141,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S007.cog.md"
+    },
+    {
+      "id": "S008",
+      "label": "卷第八十一 晋纪三",
+      "start_line": 18142,
+      "end_line": 21104,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S008.cog.md"
+    },
+    {
+      "id": "S009",
+      "label": "卷第九十二 晋纪十四",
+      "start_line": 21105,
+      "end_line": 23868,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S009.cog.md"
+    },
+    {
+      "id": "S010",
+      "label": "卷第一百二 晋纪二十四",
+      "start_line": 23869,
+      "end_line": 26530,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S010.cog.md"
+    },
+    {
+      "id": "S011",
+      "label": "卷第一百一十三 晋纪三十五",
+      "start_line": 26531,
+      "end_line": 29366,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S011.cog.md"
+    },
+    {
+      "id": "S012",
+      "label": "卷第一百二十三 宋纪五",
+      "start_line": 29367,
+      "end_line": 32270,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S012.cog.md"
+    },
+    {
+      "id": "S013",
+      "label": "卷第一百三十四 宋纪十六",
+      "start_line": 32271,
+      "end_line": 35112,
+      "mapped_ids": [
+        "C003",
+        "RP002",
+        "A002",
+        "A003",
+        "P003"
+      ],
+      "cog_artifact": "generated/book-models/.work/015/S013.cog.md"
+    },
+    {
+      "id": "S014",
+      "label": "卷第一百四十六 梁纪二",
+      "start_line": 35113,
+      "end_line": 37746,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S014.cog.md"
+    },
+    {
+      "id": "S015",
+      "label": "卷第一百五十八 梁纪十四",
+      "start_line": 37747,
+      "end_line": 40743,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S015.cog.md"
+    },
+    {
+      "id": "S016",
+      "label": "卷第一百六十九 陈纪三",
+      "start_line": 40744,
+      "end_line": 44063,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S016.cog.md"
+    },
+    {
+      "id": "S017",
+      "label": "卷第一百八十 隋纪四",
+      "start_line": 44064,
+      "end_line": 46595,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S017.cog.md"
+    },
+    {
+      "id": "S018",
+      "label": "卷第一百九十 唐纪六",
+      "start_line": 46596,
+      "end_line": 49732,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S018.cog.md"
+    },
+    {
+      "id": "S019",
+      "label": "卷第二百 唐纪十六",
+      "start_line": 49733,
+      "end_line": 53332,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S019.cog.md"
+    },
+    {
+      "id": "S020",
+      "label": "卷第二百一十 唐纪二十六",
+      "start_line": 53333,
+      "end_line": 56525,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S020.cog.md"
+    },
+    {
+      "id": "S021",
+      "label": "卷第二百二十 唐纪三十六",
+      "start_line": 56526,
+      "end_line": 59097,
+      "mapped_ids": [
+        "C004",
+        "CL003",
+        "RP003",
+        "H003",
+        "A003",
+        "T002",
+        "AP002",
+        "P003",
+        "I003"
+      ],
+      "cog_artifact": "generated/book-models/.work/015/S021.cog.md"
+    },
+    {
+      "id": "S022",
+      "label": "卷第二百三十 唐纪四十六",
+      "start_line": 59098,
+      "end_line": 62038,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S022.cog.md"
+    },
+    {
+      "id": "S023",
+      "label": "卷第二百四十一 唐纪五十七",
+      "start_line": 62039,
+      "end_line": 65102,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S023.cog.md"
+    },
+    {
+      "id": "S024",
+      "label": "卷第二百五十一 唐纪六十七",
+      "start_line": 65103,
+      "end_line": 68036,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S024.cog.md"
+    },
+    {
+      "id": "S025",
+      "label": "卷第二百六十一 唐纪七十七起强圉大荒落（公元897年），尽屠维协洽，凡三年（公元899年）。",
+      "start_line": 68037,
+      "end_line": 71452,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S025.cog.md"
+    },
+    {
+      "id": "S026",
+      "label": "卷第二百七十二 后唐纪一",
+      "start_line": 71453,
+      "end_line": 74523,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S026.cog.md"
+    },
+    {
+      "id": "S027",
+      "label": "卷第二百八十三 后晋纪四",
+      "start_line": 74524,
+      "end_line": 77358,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S027.cog.md"
+    },
+    {
+      "id": "S028",
+      "label": "卷第二百九十四 后周纪五",
+      "start_line": 77359,
+      "end_line": 77937,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/015/S028.cog.md"
+    }
+  ]
+}

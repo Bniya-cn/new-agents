@@ -1,0 +1,158 @@
+{
+  "book_id": "016",
+  "generated_at": "2026-08-13T02:58:38.974007+00:00",
+  "generator": "scripts/build_segment_cognition.py",
+  "source_model": "generated/book-models/016-活法.md",
+  "segment_count": 11,
+  "mapped_item_count": 44,
+  "unique_items_parsed": 33,
+  "unassigned_or_wholebook_only": [],
+  "pipeline": [
+    "structure.json / segments.json (deterministic segmentation)",
+    "whole-book cognitive model (accepted)",
+    "evidence-line → segment overlap mapping",
+    "Sxxx.cog.md segment cognitive notes",
+    "synthesis_manifest.json (this file)"
+  ],
+  "limitations": [
+    "Does not claim each segment was independently re-read end-to-end in this rebuild.",
+    "Provides auditable consolidation evidence linking whole-book IDs to segments."
+  ],
+  "segments": [
+    {
+      "id": "S000",
+      "label": "preamble-before-first-break",
+      "start_line": 1,
+      "end_line": 31,
+      "mapped_ids": [
+        "I003"
+      ],
+      "cog_artifact": "generated/book-models/.work/016/S000.cog.md"
+    },
+    {
+      "id": "S001",
+      "label": "第一章 让梦想成真",
+      "start_line": 32,
+      "end_line": 1824,
+      "mapped_ids": [
+        "C001",
+        "C002",
+        "C003",
+        "C004",
+        "CL001",
+        "CL002",
+        "CL003",
+        "CM001",
+        "CM002",
+        "RP001",
+        "RP002",
+        "RP003",
+        "H001",
+        "H002",
+        "H003",
+        "A001",
+        "A002",
+        "A003",
+        "B002",
+        "B003",
+        "T001",
+        "T002",
+        "AP001",
+        "AP002",
+        "AP003",
+        "P001",
+        "P002",
+        "P003",
+        "I001",
+        "I002",
+        "I003"
+      ],
+      "cog_artifact": "generated/book-models/.work/016/S001.cog.md"
+    },
+    {
+      "id": "S002",
+      "label": "第三章 磨砺并提高心智",
+      "start_line": 1825,
+      "end_line": 2977,
+      "mapped_ids": [
+        "C005",
+        "CL001",
+        "CM001",
+        "H001",
+        "A001",
+        "A003",
+        "B001",
+        "T001",
+        "AP003",
+        "P001",
+        "P003",
+        "I003"
+      ],
+      "cog_artifact": "generated/book-models/.work/016/S002.cog.md"
+    },
+    {
+      "id": "S003",
+      "label": "第五章 与宇宙相和谐",
+      "start_line": 2978,
+      "end_line": 4150,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/016/S003.cog.md"
+    },
+    {
+      "id": "S004",
+      "label": "第四章 论态度",
+      "start_line": 4151,
+      "end_line": 5340,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/016/S004.cog.md"
+    },
+    {
+      "id": "S005",
+      "label": "第九章论力量",
+      "start_line": 5341,
+      "end_line": 6565,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/016/S005.cog.md"
+    },
+    {
+      "id": "S006",
+      "label": "第二章 考验",
+      "start_line": 6566,
+      "end_line": 7753,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/016/S006.cog.md"
+    },
+    {
+      "id": "S007",
+      "label": "第六章觉悟",
+      "start_line": 7754,
+      "end_line": 9108,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/016/S007.cog.md"
+    },
+    {
+      "id": "S008",
+      "label": "第十二章 希望",
+      "start_line": 9109,
+      "end_line": 10290,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/016/S008.cog.md"
+    },
+    {
+      "id": "S009",
+      "label": "第二章 我的人生观与思想源头",
+      "start_line": 10291,
+      "end_line": 11622,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/016/S009.cog.md"
+    },
+    {
+      "id": "S010",
+      "label": "第四章追求人间正道",
+      "start_line": 11623,
+      "end_line": 12561,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/016/S010.cog.md"
+    }
+  ]
+}

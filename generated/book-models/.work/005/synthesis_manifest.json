@@ -1,0 +1,187 @@
+{
+  "book_id": "005",
+  "generated_at": "2026-08-13T02:58:38.966493+00:00",
+  "generator": "scripts/build_segment_cognition.py",
+  "source_model": "generated/book-models/005-传销学.md",
+  "segment_count": 11,
+  "mapped_item_count": 70,
+  "unique_items_parsed": 33,
+  "unassigned_or_wholebook_only": [],
+  "pipeline": [
+    "structure.json / segments.json (deterministic segmentation)",
+    "whole-book cognitive model (accepted)",
+    "evidence-line → segment overlap mapping",
+    "Sxxx.cog.md segment cognitive notes",
+    "synthesis_manifest.json (this file)"
+  ],
+  "limitations": [
+    "Does not claim each segment was independently re-read end-to-end in this rebuild.",
+    "Provides auditable consolidation evidence linking whole-book IDs to segments."
+  ],
+  "segments": [
+    {
+      "id": "S001",
+      "label": "length-chunk@1-1275",
+      "start_line": 1,
+      "end_line": 1275,
+      "mapped_ids": [
+        "C001",
+        "C002",
+        "C003",
+        "CL001",
+        "CM001",
+        "RP003",
+        "H002",
+        "A002",
+        "A003",
+        "T002",
+        "AP002",
+        "P003",
+        "I002",
+        "I003"
+      ],
+      "cog_artifact": "generated/book-models/.work/005/S001.cog.md"
+    },
+    {
+      "id": "S002",
+      "label": "length-chunk@1276-2559",
+      "start_line": 1276,
+      "end_line": 2559,
+      "mapped_ids": [
+        "C001",
+        "RP002",
+        "H003",
+        "A003",
+        "AP003",
+        "P002",
+        "P003",
+        "I003"
+      ],
+      "cog_artifact": "generated/book-models/.work/005/S002.cog.md"
+    },
+    {
+      "id": "S003",
+      "label": "length-chunk@2560-3845",
+      "start_line": 2560,
+      "end_line": 3845,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/005/S003.cog.md"
+    },
+    {
+      "id": "S004",
+      "label": "length-chunk@3846-5126",
+      "start_line": 3846,
+      "end_line": 5126,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/005/S004.cog.md"
+    },
+    {
+      "id": "S005",
+      "label": "length-chunk@5127-6407",
+      "start_line": 5127,
+      "end_line": 6407,
+      "mapped_ids": [
+        "C005",
+        "CL002",
+        "CM002",
+        "RP001",
+        "H001",
+        "A001",
+        "A003",
+        "B001",
+        "B002",
+        "T001",
+        "AP001",
+        "P001",
+        "P003",
+        "I001"
+      ],
+      "cog_artifact": "generated/book-models/.work/005/S005.cog.md"
+    },
+    {
+      "id": "S006",
+      "label": "length-chunk@6408-7690",
+      "start_line": 6408,
+      "end_line": 7690,
+      "mapped_ids": [
+        "C005",
+        "CL002",
+        "CM002",
+        "H001",
+        "A003",
+        "B001",
+        "B003",
+        "P001",
+        "I001"
+      ],
+      "cog_artifact": "generated/book-models/.work/005/S006.cog.md"
+    },
+    {
+      "id": "S007",
+      "label": "length-chunk@7691-8976",
+      "start_line": 7691,
+      "end_line": 8976,
+      "mapped_ids": [
+        "C002",
+        "CL001",
+        "A003"
+      ],
+      "cog_artifact": "generated/book-models/.work/005/S007.cog.md"
+    },
+    {
+      "id": "S008",
+      "label": "length-chunk@8977-10258",
+      "start_line": 8977,
+      "end_line": 10258,
+      "mapped_ids": [
+        "C003",
+        "C004",
+        "CL003",
+        "CM001",
+        "CM002",
+        "RP002",
+        "RP003",
+        "H002",
+        "H003",
+        "A001",
+        "A002",
+        "A003",
+        "B002",
+        "T001",
+        "T002",
+        "AP001",
+        "AP002",
+        "AP003",
+        "P002",
+        "P003",
+        "I002",
+        "I003"
+      ],
+      "cog_artifact": "generated/book-models/.work/005/S008.cog.md"
+    },
+    {
+      "id": "S009",
+      "label": "length-chunk@10259-11539",
+      "start_line": 10259,
+      "end_line": 11539,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/005/S009.cog.md"
+    },
+    {
+      "id": "S010",
+      "label": "length-chunk@11540-12822",
+      "start_line": 11540,
+      "end_line": 12822,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/005/S010.cog.md"
+    },
+    {
+      "id": "S011",
+      "label": "length-chunk@12823-13092",
+      "start_line": 12823,
+      "end_line": 13092,
+      "mapped_ids": [],
+      "cog_artifact": "generated/book-models/.work/005/S011.cog.md"
+    }
+  ]
+}
