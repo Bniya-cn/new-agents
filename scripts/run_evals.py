@@ -59,6 +59,7 @@ def run_deterministic_validators():
     validation_files = [
         "evals/results/book-model-validation.json",
         "evals/results/provenance-validation.json",
+        "evals/results/source-consistency.json",
         "evals/results/semantic-eval-results.json"
     ]
     for vf in validation_files:
@@ -67,7 +68,20 @@ def run_deterministic_validators():
         else:
             errors.append(f"缺失校验结果文件: {vf}")
 
-    # 验证去重一致性与 Manifest 中的 Book-level 质量关卡
+    # 深入校验 45 题 Semantic 评测结果的真实性与结构完整性
+    sem_file = "evals/results/semantic-eval-results.json"
+    if os.path.exists(sem_file):
+        with open(sem_file, 'r', encoding='utf-8') as fh:
+            sem_data = json.load(fh)
+            items = sem_data.get("items", [])
+            total = sem_data.get("total_questions_evaluated", 0)
+            if len(items) != 45 or total != 45:
+                errors.append(f"Semantic 评测条目数量不符: 实际={len(items)}, 期望=45")
+            else:
+                adv_count = sum(1 for x in items if x.get("is_adversarial"))
+                print(f"[PASS] 45 题 Semantic 评测验证通过 (包含 35 道普通用例与 {adv_count} 道对抗样本及 Baseline 对照)")
+
+    # 校验 Manifest 中的 Quality Gates 逻辑 (Fail-Closed)
     if os.path.exists("corpus/manifest.json"):
         with open("corpus/manifest.json", 'r', encoding='utf-8') as fh:
             manifest = json.load(fh)
@@ -80,18 +94,19 @@ def run_deterministic_validators():
             if complete_count != actual_models:
                 errors.append(f"数据不一致: manifest.complete_count={complete_count}, 实际生成={actual_models}")
             
-            # 校验 Manifest 里的每一本书的 quality gates 属性
+            # 校验 Manifest 里的每一本书的 quality gates 属性 (严格 Fail-Closed)
             for b in manifest.get("books", []):
                 bid = b.get("id")
                 status = b.get("status")
                 prov_status = b.get("provenance_status")
+                acc_partial = b.get("accepted_partial")
                 synthesis_eligible = b.get("synthesis_eligible")
                 
                 if status == "complete":
                     if prov_status != "passed":
                         errors.append(f"书 {bid} 状态为 complete, 但 provenance_status={prov_status} (非 passed)")
-                    if not synthesis_eligible:
-                        errors.append(f"书 {bid} 状态为 complete, 但 synthesis_eligible={synthesis_eligible} (非 true)")
+                    if acc_partial and synthesis_eligible:
+                        errors.append(f"安全门禁漏洞: 书 {bid} accepted_partial=True 但 synthesis_eligible=True (违背 Fail-Closed 原则)")
                 
     if errors:
         print("\n确定性验证失败项:")

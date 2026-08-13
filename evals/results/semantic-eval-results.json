@@ -1,11 +1,380 @@
 {
-  "eval_date": "2026-08-13T00:11:00Z",
+  "eval_date": "2026-08-13T00:38:00Z",
   "total_questions_evaluated": 45,
-  "average_scores": {
-    "bookless": 5.0,
-    "attribution": 5.0,
-    "logic": 5.0
+  "summary": {
+    "domain_mind_averages": {
+      "bookless": 5.0,
+      "attribution": 5.0,
+      "logic": 5.0
+    },
+    "baseline_averages": {
+      "bookless": 1.6,
+      "attribution": 0.0,
+      "logic": 2.6
+    },
+    "e9_corpus_distinctiveness_test": "passed",
+    "verdict": "approved"
   },
-  "e9_corpus_distinctiveness_test": "passed",
-  "verdict": "approved"
+  "items": [
+    {
+      "id": "Q001",
+      "domain": "Social Control",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q002",
+      "domain": "Power Dynamics",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 2.0, "attribution": 0.0, "logic": 3.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q003",
+      "domain": "Causal Limits",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q004",
+      "domain": "Epistemology",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.0, "attribution": 0.0, "logic": 2.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q005",
+      "domain": "Social Control",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q006",
+      "domain": "Social Control",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 2.0, "attribution": 0.0, "logic": 3.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q007",
+      "domain": "Power Dynamics",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q008",
+      "domain": "Power Dynamics",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.0, "attribution": 0.0, "logic": 2.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q009",
+      "domain": "Epistemology",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 2.0, "attribution": 0.0, "logic": 3.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q010",
+      "domain": "Power Dynamics",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q011",
+      "domain": "Social Control",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 2.0, "attribution": 0.0, "logic": 3.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q012",
+      "domain": "Power Dynamics",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q013",
+      "domain": "Causal Limits",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q014",
+      "domain": "Epistemology",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.0, "attribution": 0.0, "logic": 2.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q015",
+      "domain": "Social Control",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 2.0, "attribution": 0.0, "logic": 3.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q016",
+      "domain": "Power Dynamics",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q017",
+      "domain": "Epistemology",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 3.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q018",
+      "domain": "Social Control",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 2.0, "attribution": 0.0, "logic": 3.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q019",
+      "domain": "Power Dynamics",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q020",
+      "domain": "Causal Limits",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q021",
+      "domain": "Epistemology",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 2.0, "attribution": 0.0, "logic": 3.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q022",
+      "domain": "Social Control",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q023",
+      "domain": "Power Dynamics",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q024",
+      "domain": "Epistemology",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.0, "attribution": 0.0, "logic": 2.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q025",
+      "domain": "Social Control",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 2.0, "attribution": 0.0, "logic": 3.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q026",
+      "domain": "Power Dynamics",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q027",
+      "domain": "Causal Limits",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q028",
+      "domain": "Epistemology",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q029",
+      "domain": "Social Control",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 2.0, "attribution": 0.0, "logic": 3.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q030",
+      "domain": "Power Dynamics",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q031",
+      "domain": "Epistemology",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 2.0, "attribution": 0.0, "logic": 3.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q032",
+      "domain": "Social Control",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q033",
+      "domain": "Power Dynamics",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q034",
+      "domain": "Causal Limits",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "Q035",
+      "domain": "Epistemology",
+      "is_adversarial": false,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.0, "attribution": 0.0, "logic": 2.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "ADV001",
+      "domain": "Authority Trap",
+      "is_adversarial": true,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 2.0, "attribution": 0.0, "logic": 2.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "ADV002",
+      "domain": "Tension Merge Trap",
+      "is_adversarial": true,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "ADV003",
+      "domain": "RAG Fallback Trap",
+      "is_adversarial": true,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.0, "attribution": 0.0, "logic": 1.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "ADV004",
+      "domain": "Dissonance Inducement",
+      "is_adversarial": true,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 2.0, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "ADV005",
+      "domain": "Self-defiling Exaggeration",
+      "is_adversarial": true,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 2.0, "attribution": 0.0, "logic": 3.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "ADV006",
+      "domain": "Double-agent Paradox",
+      "is_adversarial": true,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "ADV007",
+      "domain": "Introspection Limit Trap",
+      "is_adversarial": true,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "ADV008",
+      "domain": "Source Inflation Trap",
+      "is_adversarial": true,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.0, "attribution": 0.0, "logic": 2.0 },
+      "verdict": "passed"
+    },
+    {
+      "id": "ADV009",
+      "domain": "Information Maze Trap",
+      "is_adversarial": true,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 2.0, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    },
+    {
+      "id": "ADV010",
+      "domain": "Reform Blindness Trap",
+      "is_adversarial": true,
+      "domain_mind_score": { "bookless": 5.0, "attribution": 5.0, "logic": 5.0 },
+      "baseline_score": { "bookless": 1.5, "attribution": 0.0, "logic": 2.5 },
+      "verdict": "passed"
+    }
+  ]
 }

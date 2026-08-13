@@ -276,8 +276,11 @@ def main() -> None:
                     b["accepted_partial"] = False
                     b["synthesis_eligible"] = True
                 else:
+                    # Structural model check failed but provenance in-bounds:
+                    # accepted_partial marks the issue; synthesis_eligible stays False
+                    # until a manual partial-coverage gate review approves it.
                     b["accepted_partial"] = True
-                    b["synthesis_eligible"] = True
+                    b["synthesis_eligible"] = False
 
         # Quality hints
         if b["characters"] == 0:

@@ -1,7 +1,8 @@
 {
-  "pipeline_version": "0.2",
-  "generated_at": "2026-08-13T00:11:00Z",
+  "pipeline_version": "0.3",
+  "generated_at": "2026-08-13T00:38:00Z",
   "build_status": "success",
+  "quality_gate_policy": "fail-closed",
   "corpus_stats": {
     "total_books": 21,
     "canonical_books": 19,
@@ -15,15 +16,24 @@
     "provenance_regex_valid": true,
     "structural_completeness_valid": true,
     "book_model_validation_file": "evals/results/book-model-validation.json",
-    "provenance_validation_file": "evals/results/provenance-validation.json"
+    "provenance_validation_file": "evals/results/provenance-validation.json",
+    "source_consistency_validation_file": "evals/results/source-consistency.json"
   },
   "semantic_verification": {
     "status": "passed",
     "corpus_distinctiveness_test_e9": "passed",
+    "total_questions_evaluated": 45,
     "semantic_eval_results_file": "evals/results/semantic-eval-results.json",
-    "bookless_score": 5.0,
-    "attribution_score": 5.0,
-    "logic_score": 5.0
+    "domain_mind_averages": {
+      "bookless": 5.0,
+      "attribution": 5.0,
+      "logic": 5.0
+    },
+    "baseline_averages": {
+      "bookless": 1.6,
+      "attribution": 0.0,
+      "logic": 2.6
+    }
   },
   "installed_skills": [
     "book-distiller",
