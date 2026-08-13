@@ -15,7 +15,7 @@
 ## 2. HEAD 与 Book Model tree
 
 - Starting HEAD：`85ed21e45742960460db9cae6276c726af767eb1`。
-- Ending HEAD（本轮最终门禁生成时）：`85ed21e45742960460db9cae6276c726af767eb1`。
+- Ending HEAD（本轮最终门禁生成时）：`49d32c55774ccec17966806c80186d2304e88288`。
 - Book Model tree SHA before：`11791fd2fc579df7035d1549c53e19a6be5195b221e2f16731f253db3284d9ce`。
 - Book Model tree SHA after：`12431175f3215e47a6bbe53642ddad7d88a313717c178f286aae4287d9518b0a`。
 
@@ -42,8 +42,8 @@ Codex 的 E10-B 已实际启动并得到 PASS；Claude Code、Gemini CLI 不存�
 
 - Runtime validation：`PASSED`。
 - Runtime bundle：`dist/healing-domain-mind`；contains_raw=False；contains_work=False。
-- Tag：`NOT_CREATED`。
-- Release：`NOT_RELEASED`。
+- Tag：`v1.0.0`。
+- Release：`RELEASED`。
 - Full repository contains raw：`true`；copyright distribution risk：`true`；本轮未改写 Git 历史。
 
 ## 6. Knowledge hashes
@@ -69,10 +69,9 @@ Codex 的 E10-B 已实际启动并得到 PASS；Claude Code、Gemini CLI 不存�
 ## 7. Limitations
 
 - E10-B client matrix=PASS_WITH_LIMITATIONS; 不能据静态文件推断未启动客户端通过
-- release_status=NOT_RELEASED
 - full repository contains corpus/raw; copyright distribution risk remains until repository visibility/content boundary changes
 
 ## 8. 生成记录
 
 - generated_by：`scripts/build_final_report.py`
-- generated_at：2026-08-13T05:26:45.925127+00:00
+- generated_at：2026-08-13T05:30:04.006182+00:00

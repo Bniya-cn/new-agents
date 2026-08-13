@@ -1,9 +1,9 @@
 {
   "agent_package_version": "1.0.0",
   "generated_by": "scripts/build_status.py",
-  "generated_at": "2026-08-13T05:26:39.117362+00:00",
+  "generated_at": "2026-08-13T05:30:03.958887+00:00",
   "starting_head": "85ed21e45742960460db9cae6276c726af767eb1",
-  "ending_head": "85ed21e45742960460db9cae6276c726af767eb1",
+  "ending_head": "49d32c55774ccec17966806c80186d2304e88288",
   "book_model_tree_sha256_before": "11791fd2fc579df7035d1549c53e19a6be5195b221e2f16731f253db3284d9ce",
   "book_model_tree_sha256_after": "12431175f3215e47a6bbe53642ddad7d88a313717c178f286aae4287d9518b0a",
   "repository_bootstrap": "PASSED",
@@ -18,7 +18,7 @@
   "client_matrix_status": "PASS_WITH_LIMITATIONS",
   "package_validation": "PASSED",
   "runtime_package_validation": "PASSED",
-  "release_status": "NOT_RELEASED",
+  "release_status": "RELEASED",
   "quality_gate_grade": "PASS_WITH_LIMITATIONS",
   "mandatory_gates": {
     "adaptive_distillation": true,
@@ -67,16 +67,15 @@
     "zip": "dist/healing-domain-mind-v1.0.0.zip"
   },
   "release": {
-    "status": "NOT_RELEASED",
-    "tag": null,
-    "local_tag_exists": false,
+    "status": "RELEASED",
+    "tag": "v1.0.0",
+    "local_tag_exists": true,
     "github_repo": "Bniya-cn/new-agents",
-    "release_exists": false,
-    "release_observation": "release not found"
+    "release_exists": true,
+    "release_observation": "{\"isDraft\":false,\"tagName\":\"v1.0.0\",\"url\":\"https://github.com/Bniya-cn/new-agents/releases/tag/v1.0.0\"}"
   },
   "limitations": [
     "E10-B client matrix=PASS_WITH_LIMITATIONS; 不能据静态文件推断未启动客户端通过",
-    "release_status=NOT_RELEASED",
     "full repository contains corpus/raw; copyright distribution risk remains until repository visibility/content boundary changes"
   ],
   "_note": "Generated from validators and evaluation artifacts; do not hand-edit."
