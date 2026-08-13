@@ -1,0 +1,64 @@
+{
+  "book_id": "017",
+  "generator": "scripts/build_segment_cognition.py",
+  "segment_first": true,
+  "source": "corpus/raw/017-社会性动物.md",
+  "input_artifacts": [
+    "generated/book-models/.work/017/S000.model.md",
+    "generated/book-models/.work/017/S001.model.md",
+    "generated/book-models/.work/017/S002.model.md"
+  ],
+  "excluded_duplicate_segments": [],
+  "segment_count": 3,
+  "required_segment_count": 3,
+  "passed_segment_count": 3,
+  "coverage_threshold": 0.98,
+  "coverage": 1.0,
+  "status": "passed",
+  "consolidation_rule": "只从 Sxxx.model.md 合并候选，不读取 whole-book model，不做反向映射。",
+  "segments": [
+    {
+      "id": "S000",
+      "label": "preamble-before-first-structural-break",
+      "start_line": 1,
+      "end_line": 4013,
+      "characters": 302682,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/017-社会性动物.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/017/S000.model.md",
+      "gate": "generated/book-models/.work/017/S000.gate.json"
+    },
+    {
+      "id": "S001",
+      "label": "Chapter 1 What Is Social Psychology?",
+      "start_line": 4014,
+      "end_line": 5527,
+      "characters": 106695,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/017-社会性动物.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/017/S001.model.md",
+      "gate": "generated/book-models/.work/017/S001.gate.json"
+    },
+    {
+      "id": "S002",
+      "label": "Chapter 7 Prejudice",
+      "start_line": 5528,
+      "end_line": 10824,
+      "characters": 110198,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/017-社会性动物.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/017/S002.model.md",
+      "gate": "generated/book-models/.work/017/S002.gate.json"
+    }
+  ],
+  "generated_at": "2026-08-13T03:57:43.081091+00:00"
+}

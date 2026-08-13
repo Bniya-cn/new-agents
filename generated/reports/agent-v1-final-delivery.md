@@ -1,5 +1,7 @@
 # Healing Domain Mind v1.0.0 最终交付报告
 
+> 历史报告：本文件保留为上一轮交付记录，不代表本轮最终门禁。当前权威结果见 `generated/reports/final-delivery.report.md` 与 `generated/build-status.json`。
+
 > 本报告详细说明 `healing-agents` 仓库升级为 Cognitive Agent Repository (`Healing Domain Mind v1.0.0`) 的完整工程落地成果、验证矩阵、双阶发行架构及质量门禁结论。
 
 ---

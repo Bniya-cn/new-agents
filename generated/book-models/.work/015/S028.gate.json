@@ -1,0 +1,29 @@
+{
+  "book_id": "015",
+  "segment_id": "S028",
+  "source": "corpus/raw/015-汇评精注资治通鉴.md",
+  "start_line": 50997,
+  "end_line": 53332,
+  "source_sha256": "aebdb0c3248ad213f0b5d33219c334594bb85c5361505cb50e82a4a859a7e092",
+  "segment_sha256": "5e117b2cb2f40b236a3222abe1610e2333faa627b10a3f711ff70649280ca083",
+  "model": "generated/book-models/.work/015/S028.model.md",
+  "required_sections": [
+    "Metadata",
+    "核心概念",
+    "主要判断",
+    "因果模型",
+    "判断规则",
+    "隐含前提",
+    "重要变量",
+    "边界条件",
+    "内部张力",
+    "可迁移原则候选",
+    "证据",
+    "Coverage"
+  ],
+  "independent_raw_read": true,
+  "whole_book_reverse_mapping": false,
+  "status": "passed",
+  "generated_at": "2026-08-13T03:57:42.737684+00:00",
+  "required_sections_present": true
+}

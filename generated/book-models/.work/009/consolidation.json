@@ -1,0 +1,49 @@
+{
+  "book_id": "009",
+  "generator": "scripts/build_segment_cognition.py",
+  "segment_first": true,
+  "source": "corpus/raw/009-影响力.md",
+  "input_artifacts": [
+    "generated/book-models/.work/009/S000.model.md",
+    "generated/book-models/.work/009/S001.model.md"
+  ],
+  "excluded_duplicate_segments": [],
+  "segment_count": 2,
+  "required_segment_count": 2,
+  "passed_segment_count": 2,
+  "coverage_threshold": 0.98,
+  "coverage": 1.0,
+  "status": "passed",
+  "consolidation_rule": "只从 Sxxx.model.md 合并候选，不读取 whole-book model，不做反向映射。",
+  "segments": [
+    {
+      "id": "S000",
+      "label": "preamble-before-first-structural-break",
+      "start_line": 1,
+      "end_line": 14,
+      "characters": 146,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/009-影响力.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/009/S000.model.md",
+      "gate": "generated/book-models/.work/009/S000.gate.json"
+    },
+    {
+      "id": "S001",
+      "label": "第1章影响力的武器",
+      "start_line": 15,
+      "end_line": 2488,
+      "characters": 166070,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/009-影响力.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/009/S001.model.md",
+      "gate": "generated/book-models/.work/009/S001.gate.json"
+    }
+  ],
+  "generated_at": "2026-08-13T03:57:41.449822+00:00"
+}

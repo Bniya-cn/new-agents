@@ -1,0 +1,10 @@
+{
+  "id": "S000",
+  "label": "preamble-before-first-structural-break",
+  "start_line": 1,
+  "end_line": 1040,
+  "characters": 17343,
+  "duplicate_of": null,
+  "weight": 1.0,
+  "source": "corpus/raw/013-新厚黑学全书.md"
+}

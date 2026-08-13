@@ -1,0 +1,29 @@
+{
+  "book_id": "005",
+  "segment_id": "S010",
+  "source": "corpus/raw/005-传销学.md",
+  "start_line": 11540,
+  "end_line": 12822,
+  "source_sha256": "87c730fe86a151323eb939d9c6d1dbe8bb3b6cd6a3e2e489715f192747819acf",
+  "segment_sha256": "d31a83f5727dde6e82f98c43074e4d67c51a169cd6d8e12370038e24c378783b",
+  "model": "generated/book-models/.work/005/S010.model.md",
+  "required_sections": [
+    "Metadata",
+    "核心概念",
+    "主要判断",
+    "因果模型",
+    "判断规则",
+    "隐含前提",
+    "重要变量",
+    "边界条件",
+    "内部张力",
+    "可迁移原则候选",
+    "证据",
+    "Coverage"
+  ],
+  "independent_raw_read": true,
+  "whole_book_reverse_mapping": false,
+  "status": "passed",
+  "generated_at": "2026-08-13T03:57:41.425593+00:00",
+  "required_sections_present": true
+}

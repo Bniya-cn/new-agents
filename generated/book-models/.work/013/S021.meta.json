@@ -1,9 +1,9 @@
 {
   "id": "S021",
-  "label": "第一篇 中国古代厚黑名人",
-  "start_line": 122587,
-  "end_line": 124358,
-  "characters": 30343,
+  "label": "第四篇 情场厚黑学",
+  "start_line": 98853,
+  "end_line": 103691,
+  "characters": 80190,
   "duplicate_of": null,
   "weight": 1.0,
   "source": "corpus/raw/013-新厚黑学全书.md"

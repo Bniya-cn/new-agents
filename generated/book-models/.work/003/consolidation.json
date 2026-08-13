@@ -1,0 +1,79 @@
+{
+  "book_id": "003",
+  "generator": "scripts/build_segment_cognition.py",
+  "segment_first": true,
+  "source": "corpus/raw/003-传习录.md",
+  "input_artifacts": [
+    "generated/book-models/.work/003/S001.model.md",
+    "generated/book-models/.work/003/S002.model.md",
+    "generated/book-models/.work/003/S003.model.md",
+    "generated/book-models/.work/003/S004.model.md"
+  ],
+  "excluded_duplicate_segments": [],
+  "segment_count": 4,
+  "required_segment_count": 4,
+  "passed_segment_count": 4,
+  "coverage_threshold": 0.98,
+  "coverage": 1.0,
+  "status": "passed",
+  "consolidation_rule": "只从 Sxxx.model.md 合并候选，不读取 whole-book model，不做反向映射。",
+  "segments": [
+    {
+      "id": "S001",
+      "label": "length-chunk@1-2800",
+      "start_line": 1,
+      "end_line": 2800,
+      "characters": 80066,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/003-传习录.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/003/S001.model.md",
+      "gate": "generated/book-models/.work/003/S001.gate.json"
+    },
+    {
+      "id": "S002",
+      "label": "length-chunk@2801-4390",
+      "start_line": 2801,
+      "end_line": 4390,
+      "characters": 80160,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/003-传习录.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/003/S002.model.md",
+      "gate": "generated/book-models/.work/003/S002.gate.json"
+    },
+    {
+      "id": "S003",
+      "label": "length-chunk@4391-7390",
+      "start_line": 4391,
+      "end_line": 7390,
+      "characters": 80005,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/003-传习录.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/003/S003.model.md",
+      "gate": "generated/book-models/.work/003/S003.gate.json"
+    },
+    {
+      "id": "S004",
+      "label": "length-chunk@7391-7880",
+      "start_line": 7391,
+      "end_line": 7880,
+      "characters": 12521,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/003-传习录.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/003/S004.model.md",
+      "gate": "generated/book-models/.work/003/S004.gate.json"
+    }
+  ],
+  "generated_at": "2026-08-13T03:57:41.364398+00:00"
+}

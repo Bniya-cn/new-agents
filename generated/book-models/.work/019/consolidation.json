@@ -1,0 +1,64 @@
+{
+  "book_id": "019",
+  "generator": "scripts/build_segment_cognition.py",
+  "segment_first": true,
+  "source": "corpus/raw/019-罗织经.md",
+  "input_artifacts": [
+    "generated/book-models/.work/019/S000.model.md",
+    "generated/book-models/.work/019/S001.model.md",
+    "generated/book-models/.work/019/S002.model.md"
+  ],
+  "excluded_duplicate_segments": [],
+  "segment_count": 3,
+  "required_segment_count": 3,
+  "passed_segment_count": 3,
+  "coverage_threshold": 0.98,
+  "coverage": 1.0,
+  "status": "passed",
+  "consolidation_rule": "只从 Sxxx.model.md 合并候选，不读取 whole-book model，不做反向映射。",
+  "segments": [
+    {
+      "id": "S000",
+      "label": "preamble-before-first-structural-break",
+      "start_line": 1,
+      "end_line": 269,
+      "characters": 4783,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/019-罗织经.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/019/S000.model.md",
+      "gate": "generated/book-models/.work/019/S000.gate.json"
+    },
+    {
+      "id": "S001",
+      "label": "阅人卷第一",
+      "start_line": 270,
+      "end_line": 5042,
+      "characters": 92043,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/019-罗织经.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/019/S001.model.md",
+      "gate": "generated/book-models/.work/019/S001.gate.json"
+    },
+    {
+      "id": "S002",
+      "label": "保身卷第七",
+      "start_line": 5043,
+      "end_line": 9332,
+      "characters": 86465,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/019-罗织经.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/019/S002.model.md",
+      "gate": "generated/book-models/.work/019/S002.gate.json"
+    }
+  ],
+  "generated_at": "2026-08-13T03:57:43.116063+00:00"
+}

@@ -1,0 +1,3 @@
+{"id":"E11-001","question":"面对一个组织改革方案，应该先检查哪些机制变量？","route_topics":["Power / Organization","Institution / Incentives","Change / Reform"],"forbidden_runtime_paths":["corpus/raw/"],"expected_behavior":"回答机制、反馈、资源和边界，不要求读取原始全本。"}
+{"id":"E11-002","question":"如何判断一个高增长项目是否接近物理容量边界？","route_topics":["Fraud / Pyramid Systems","Decision Making"],"forbidden_runtime_paths":["corpus/raw/"],"expected_behavior":"检查增长、容量、现金流、退出成本和二阶后果。"}
+{"id":"E11-003","question":"遇到群体压力和信息污染时，如何保持独立判断？","route_topics":["Manipulation / Persuasion","Social Psychology"],"forbidden_runtime_paths":["corpus/raw/"],"expected_behavior":"区分事实、解释和评价，要求可质证证据并保留竞争解释。"}

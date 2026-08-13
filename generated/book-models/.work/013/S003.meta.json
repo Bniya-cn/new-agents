@@ -1,9 +1,9 @@
 {
   "id": "S003",
-  "label": "第四篇 厚黑学论坛",
-  "start_line": 13159,
-  "end_line": 18908,
-  "characters": 100558,
+  "label": "第三篇 厚黑原理",
+  "start_line": 11089,
+  "end_line": 15692,
+  "characters": 80289,
   "duplicate_of": null,
   "weight": 1.0,
   "source": "corpus/raw/013-新厚黑学全书.md"

@@ -1,0 +1,2 @@
+{"id":"E10-A-001","kind":"static-bootstrap","question":"新会话打开仓库后，先加载哪些启动协议和知识路由？","expected_files":["AGENTS.md","knowledge/index.md",".agents/skills/domain-mind/SKILL.md"],"expected_behavior":"先执行 Runtime Bootstrap Protocol，再按渐进式披露读取相关 knowledge 节点。"}
+{"id":"E10-B-001","kind":"client-bootstrap","question":"请只回答：你刚刚从仓库启动协议中识别出的 Runtime Bootstrap Protocol 有哪三项关键约束？不要修改文件。","expected_behavior":"回答应体现 bootstrap、knowledge router、progressive disclosure，并说明未默认扫描 raw。"}

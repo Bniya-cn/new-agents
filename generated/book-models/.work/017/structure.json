@@ -4,44 +4,8 @@
   "characters": 519578,
   "lines": 10824,
   "break_count": 9,
-  "sample_breaks": [
-    [
-      4014,
-      "Chapter 1 What Is Social Psychology?"
-    ],
-    [
-      4024,
-      "Chapter 2 Social Cognition"
-    ],
-    [
-      4313,
-      "Chapter 3 Self-Justification"
-    ],
-    [
-      4495,
-      "Chapter 4 Conformity"
-    ],
-    [
-      4804,
-      "Chapter 5 Mass Communication, Propaganda, and Persuasion"
-    ],
-    [
-      5076,
-      "Chapter 6 Human Aggression"
-    ],
-    [
-      5528,
-      "Chapter 7 Prejudice"
-    ],
-    [
-      5920,
-      "Chapter 8 Liking, Loving, and Connecting"
-    ],
-    [
-      6220,
-      "Chapter 9 Social Psychology as a Science"
-    ]
-  ],
-  "segment_count": 5,
-  "mode_hint": "hierarchical"
+  "segment_count": 3,
+  "mode_hint": "hierarchical",
+  "generated_by": "scripts/build_segment_cognition.py",
+  "generated_at": "2026-08-13T03:57:43.019848+00:00"
 }

@@ -1,9 +1,9 @@
 {
   "id": "S017",
-  "label": "第四篇 情场厚黑学",
-  "start_line": 98329,
-  "end_line": 104376,
-  "characters": 100500,
+  "label": "第二篇",
+  "start_line": 79452,
+  "end_line": 84192,
+  "characters": 80054,
   "duplicate_of": null,
   "weight": 1.0,
   "source": "corpus/raw/013-新厚黑学全书.md"

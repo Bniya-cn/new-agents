@@ -1,17 +1,1059 @@
 {
-  "schema_version": "1.0.0",
-  "generated_at": "2026-08-13T03:30:00.000000+00:00",
-  "domain_mind_principles": {
-    "P101": ["011", "019", "008"],
-    "P102": ["005", "006", "017"],
-    "P201": ["001", "008"],
-    "P202": ["015", "018"],
-    "P203": ["013"],
-    "P301": ["003", "016"],
-    "P302": ["016", "010"],
-    "P303": ["001", "018"],
-    "P401": ["005"],
-    "P402": ["021", "012"],
-    "P403": ["014", "016"]
+  "schema_version": "2.0.0",
+  "generated_by": "scripts/build_knowledge.py",
+  "generated_at": "2026-08-13T05:26:38.106683+00:00",
+  "input_book_count": 19,
+  "books": {
+    "001": {
+      "title": "20世纪五大传记书系",
+      "model": "generated/book-models/001-20世纪五大传记书系.md",
+      "model_sha256": "88a5a00fbd9af8b8ed545a4d4fe9767969b8477fdb7037207f6f764e844a93e0",
+      "source_file": "corpus/raw/001-20世纪五大传记书系.md",
+      "source_hash": "c9a99ae0f5c3717b5c180e5aeb9a9a96d96784652ebce38b2fe01a352b7280b6"
+    },
+    "002": {
+      "title": "商君书",
+      "model": "generated/book-models/002-商君书.md",
+      "model_sha256": "a6642253541ad1db68119509a6b62781e078ab5c86daee2812343e87e1e54cc7",
+      "source_file": "corpus/raw/002-商君书.md",
+      "source_hash": "cfb60256e5843c3028699e77e38130dd9eda2cee4c66e8fb8540ea04bae3adb5"
+    },
+    "003": {
+      "title": "传习录",
+      "model": "generated/book-models/003-传习录.md",
+      "model_sha256": "60b04e195a1dcfc6927d08c685050d33a4d57412079cba9443311442a5e7b3a0",
+      "source_file": "corpus/raw/003-传习录.md",
+      "source_hash": "bc4ae69177b4a58cc7848bfee50468ac95d87c71ef9eb03f3715790a3b24ac9b"
+    },
+    "005": {
+      "title": "传销学",
+      "model": "generated/book-models/005-传销学.md",
+      "model_sha256": "e2a011743433905ea5dd1580ef79b14d7f93bf72c396b2f964c231c847574c2a",
+      "source_file": "corpus/raw/005-传销学.md",
+      "source_hash": "28a8261eddbeb63ccf11b47faa997f6266ea5d7bfca777cff32a7821d1272fb2"
+    },
+    "006": {
+      "title": "传销洗脑实录",
+      "model": "generated/book-models/006-传销洗脑实录.md",
+      "model_sha256": "49d7bc8624cebdc874713d311fa8884c0268c1e907a8bed4742b78494d6a49ac",
+      "source_file": "corpus/raw/006-传销洗脑实录.md",
+      "source_hash": "c4e810cd4a1a78ea5a745ad23b6bced6db5eae1f47b87e3025eef0937a239066"
+    },
+    "007": {
+      "title": "做局",
+      "model": "generated/book-models/007-做局.md",
+      "model_sha256": "1105b9157d5d2be0850272a60196081c0af5e5c279632309ad3abbed41444cd5",
+      "source_file": "corpus/raw/007-做局.md",
+      "source_hash": "998027279aff27f32e0e304fb81b6b5ea07d290018313d6c21da19fd73144550"
+    },
+    "008": {
+      "title": "天下无谋之密卷",
+      "model": "generated/book-models/008-天下无谋之密卷.md",
+      "model_sha256": "ec3d982999cba8a8db5af8fcb8474756e7014549a1d8ccb0e5710844c91a8106",
+      "source_file": "corpus/raw/008-天下无谋之密卷.md",
+      "source_hash": "f42707f165d0e162e2fe195bcd8f4ec3dbea6be2c607e2a7ab8c20baf8dcbacb"
+    },
+    "009": {
+      "title": "影响力",
+      "model": "generated/book-models/009-影响力.md",
+      "model_sha256": "c8f603fa8e160e61ce0d5dd0b26367e63de557c72d0c356ed0643d319146f63e",
+      "source_file": "corpus/raw/009-影响力.md",
+      "source_hash": "a465668631fb25281a07a3c4a458723368e424c93f450f1bd1b7d73f382f841f"
+    },
+    "010": {
+      "title": "心-稻盛和夫的一生嘱托",
+      "model": "generated/book-models/010-心-稻盛和夫的一生嘱托.md",
+      "model_sha256": "396062f63ebc6b95864fd4a7d1f82172c5c481f9454097fcf0303e5e3ab63a16",
+      "source_file": "corpus/raw/010-心-稻盛和夫的一生嘱托.md",
+      "source_hash": "ceb11a5524cb741732bbc6ec4704147ffc7dbcb3db3e46ed2ef0956c895e84bd"
+    },
+    "011": {
+      "title": "忽悠的原理与技巧",
+      "model": "generated/book-models/011-忽悠的原理与技巧.md",
+      "model_sha256": "d519c309a886494e194621228408a3532ac3662cab86ebd6046bc399b519d09d",
+      "source_file": "corpus/raw/011-忽悠的原理与技巧.md",
+      "source_hash": "fb39cac2658b8dd489f379162e780aee5fcd4f520d4df9b1e7130b36342fd47d"
+    },
+    "012": {
+      "title": "我是怎么割韭菜的",
+      "model": "generated/book-models/012-我是怎么割韭菜的.md",
+      "model_sha256": "612a5cd252d57ca7883c554b9fd36bbf965d1a7872d4aa6798e69804a10ae516",
+      "source_file": "corpus/raw/012-我是怎么割韭菜的.md",
+      "source_hash": "26d945738608e3b7b4aca062cc3c20bf562962e3bddac8362325d6d75916c82d"
+    },
+    "013": {
+      "title": "新厚黑学全书",
+      "model": "generated/book-models/013-新厚黑学全书.md",
+      "model_sha256": "2a8fad7b3d357797935c699b59c782c6cd97a64ff106148279385d84727b196e",
+      "source_file": "corpus/raw/013-新厚黑学全书.md",
+      "source_hash": "7a23c3189a2b82f21923b72377a86ea02264073513600e624c38292db16e1360"
+    },
+    "014": {
+      "title": "格局的力量",
+      "model": "generated/book-models/014-格局的力量.md",
+      "model_sha256": "606a608b5e789a6de27f3e767b14e082fde02997decdda42cbbc472f63ec5128",
+      "source_file": "corpus/raw/014-格局的力量.md",
+      "source_hash": "0e56fd7cf77c436c7520a54edb496f9a123bcfb9d0d783446fdbe0437edc1585"
+    },
+    "015": {
+      "title": "汇评精注资治通鉴",
+      "model": "generated/book-models/015-汇评精注资治通鉴.md",
+      "model_sha256": "144ee843a867b75ed40ad5606555ac407b41e7b443fffc7caf2b8815c86c1d80",
+      "source_file": "corpus/raw/015-汇评精注资治通鉴.md",
+      "source_hash": "11ae155d2c1da67320e73a0f314a2f206a8089dc4b348aae56b6ec6f8b9eecf5"
+    },
+    "016": {
+      "title": "活法",
+      "model": "generated/book-models/016-活法.md",
+      "model_sha256": "2d5dcab4c4854a251bcc5a84ea47376a9b28d10e07594a3e63c5d1ce195aa503",
+      "source_file": "corpus/raw/016-活法.md",
+      "source_hash": "c26544eb9ba889b67b7d05f56fb3e4809b9633d83853b222bcecd75500e6cfa6"
+    },
+    "017": {
+      "title": "社会性动物",
+      "model": "generated/book-models/017-社会性动物.md",
+      "model_sha256": "b96d8935fde9fe6e1e4cea82c3e2285ede178c45f58bf42ce215a27ba533dde2",
+      "source_file": "corpus/raw/017-社会性动物.md",
+      "source_hash": "1069357ea749fe5b301767e48fd3c2284c32ec4ac1b51e42e237be04bbaaa9f1"
+    },
+    "018": {
+      "title": "素书",
+      "model": "generated/book-models/018-素书.md",
+      "model_sha256": "1689095f3ac26ed49b9e311e28398da0e27f22e52321816b447db02e3e842f39",
+      "source_file": "corpus/raw/018-素书.md",
+      "source_hash": "4215cf2a83570501e8bbbc23d76638926b03976eb577fe081116f0cc3cca9599"
+    },
+    "019": {
+      "title": "罗织经",
+      "model": "generated/book-models/019-罗织经.md",
+      "model_sha256": "7039f7f6f123f4595a906ee73d7eaccb849252441257a0f631b08e3e11afb2e8",
+      "source_file": "corpus/raw/019-罗织经.md",
+      "source_hash": "c75aa18fa544e23fed36a07a876fc662a8fb5cfa1f32e684290c460f5f0b630b"
+    },
+    "021": {
+      "title": "骗局之王",
+      "model": "generated/book-models/021-骗局之王.md",
+      "model_sha256": "3b7ad23db7249827bccba15a176ed818ea4eca0c12a8d18eae13bcbda3b67e6d",
+      "source_file": "corpus/raw/021-骗局之王.md",
+      "source_hash": "c5ecd4a07cf5ccabc68b8d16946d35cc774dda13800d9367a42a135fd5326e41"
+    }
+  },
+  "principles": {
+    "P101": {
+      "title": "事实质证与信息污染隔离",
+      "source_books": [
+        "007",
+        "008",
+        "011",
+        "013",
+        "014",
+        "015",
+        "017",
+        "019",
+        "021"
+      ],
+      "source_clusters": [
+        {
+          "cluster": "庞氏/骗局材料同类主题",
+          "books": [
+            "021"
+          ],
+          "independence_weight": 0.5,
+          "basis": "同类主题或同一材料谱系，降低重复证据权重",
+          "evidence_refs": [
+            "[021:L2112]",
+            "[021:L46]",
+            "[021:L1860]"
+          ]
+        },
+        {
+          "cluster": "历史权力与政治案例相近主题",
+          "books": [
+            "015",
+            "019"
+          ],
+          "independence_weight": 0.6,
+          "basis": "同类主题或同一材料谱系，降低重复证据权重",
+          "evidence_refs": [
+            "[015:L15410]",
+            "[015:L48521]",
+            "[019:L169]",
+            "[019:L8076]"
+          ]
+        },
+        {
+          "cluster": "独立来源 007",
+          "books": [
+            "007"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[007:L137-L150]",
+            "[007:L678]",
+            "[007:L140-L150]",
+            "[007:L740]",
+            "[007:L676-L697]",
+            "[007:L737]"
+          ]
+        },
+        {
+          "cluster": "独立来源 008",
+          "books": [
+            "008"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[008:L25-L29]",
+            "[008:L2529]"
+          ]
+        },
+        {
+          "cluster": "独立来源 011",
+          "books": [
+            "011"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[011:L9]",
+            "[011:L2709]",
+            "[011:L1800]"
+          ]
+        },
+        {
+          "cluster": "独立来源 013",
+          "books": [
+            "013"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[013:L124]",
+            "[013:L97]",
+            "[013:L4102]"
+          ]
+        },
+        {
+          "cluster": "独立来源 014",
+          "books": [
+            "014"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[014:L94-L96]",
+            "[014:L6]",
+            "[014:L1112]"
+          ]
+        },
+        {
+          "cluster": "独立来源 017",
+          "books": [
+            "017"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[017:L1548]",
+            "[017:L1165]"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "[007:L137-L150]",
+        "[007:L140-L150]",
+        "[007:L676-L697]",
+        "[007:L678]",
+        "[007:L737]",
+        "[007:L740]",
+        "[008:L25-L29]",
+        "[008:L2529]",
+        "[011:L1800]",
+        "[011:L2709]",
+        "[011:L9]",
+        "[013:L124]",
+        "[013:L4102]",
+        "[013:L97]",
+        "[014:L1112]",
+        "[014:L6]",
+        "[014:L94-L96]",
+        "[015:L15410]",
+        "[015:L48521]",
+        "[017:L1165]",
+        "[017:L1548]",
+        "[019:L169]",
+        "[019:L8076]",
+        "[021:L1860]",
+        "[021:L2112]",
+        "[021:L46]"
+      ],
+      "confidence": {
+        "support_count": 9,
+        "support_count_capped": 5,
+        "source_independence": 0.8875,
+        "evidence_quality": 1.0,
+        "mechanism_completeness": 0.5833,
+        "refutation_weight": 0.1667,
+        "confidence": 2.1571,
+        "formula": "min(5, support_count) * source_independence * evidence_quality * mechanism_completeness * (1 - refutation_weight)"
+      }
+    },
+    "P102": {
+      "title": "信任关系与社会信誉隔离",
+      "source_books": [
+        "006",
+        "007",
+        "008",
+        "009",
+        "012",
+        "021"
+      ],
+      "source_clusters": [
+        {
+          "cluster": "传销/裂变材料同类主题",
+          "books": [
+            "006"
+          ],
+          "independence_weight": 0.5,
+          "basis": "同类主题或同一材料谱系，降低重复证据权重",
+          "evidence_refs": [
+            "[006:L2080]",
+            "[006:L2301]"
+          ]
+        },
+        {
+          "cluster": "庞氏/骗局材料同类主题",
+          "books": [
+            "012",
+            "021"
+          ],
+          "independence_weight": 0.5,
+          "basis": "同类主题或同一材料谱系，降低重复证据权重",
+          "evidence_refs": [
+            "[012:L273]",
+            "[012:L277]",
+            "[021:L46]",
+            "[021:L52]"
+          ]
+        },
+        {
+          "cluster": "独立来源 007",
+          "books": [
+            "007"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[007:L642-L685]",
+            "[007:L564]"
+          ]
+        },
+        {
+          "cluster": "独立来源 008",
+          "books": [
+            "008"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[008:L25-L33]",
+            "[008:L815]"
+          ]
+        },
+        {
+          "cluster": "独立来源 009",
+          "books": [
+            "009"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[009:L336]",
+            "[009:L558]"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "[006:L2080]",
+        "[006:L2301]",
+        "[007:L564]",
+        "[007:L642-L685]",
+        "[008:L25-L33]",
+        "[008:L815]",
+        "[009:L336]",
+        "[009:L558]",
+        "[012:L273]",
+        "[012:L277]",
+        "[021:L46]",
+        "[021:L52]"
+      ],
+      "confidence": {
+        "support_count": 6,
+        "support_count_capped": 5,
+        "source_independence": 0.8,
+        "evidence_quality": 1.0,
+        "mechanism_completeness": 1.0,
+        "refutation_weight": 0.3333,
+        "confidence": 2.6667,
+        "formula": "min(5, support_count) * source_independence * evidence_quality * mechanism_completeness * (1 - refutation_weight)"
+      }
+    },
+    "P201": {
+      "title": "实权资源与名义位置分离",
+      "source_books": [
+        "001",
+        "002",
+        "007",
+        "008",
+        "010",
+        "013",
+        "014",
+        "018",
+        "019",
+        "021"
+      ],
+      "source_clusters": [
+        {
+          "cluster": "庞氏/骗局材料同类主题",
+          "books": [
+            "021"
+          ],
+          "independence_weight": 0.5,
+          "basis": "同类主题或同一材料谱系，降低重复证据权重",
+          "evidence_refs": [
+            "[021:L2002-L2112]",
+            "[021:L2090]"
+          ]
+        },
+        {
+          "cluster": "历史权力与政治案例相近主题",
+          "books": [
+            "001",
+            "019"
+          ],
+          "independence_weight": 0.6,
+          "basis": "同类主题或同一材料谱系，降低重复证据权重",
+          "evidence_refs": [
+            "[001:L3954]",
+            "[001:L9109]",
+            "[001:L94]",
+            "[001:L66]",
+            "[001:L4767]",
+            "[019:L307]",
+            "[019:L7477]",
+            "[019:L1]",
+            "[019:L2098]"
+          ]
+        },
+        {
+          "cluster": "心性/修养材料的相近实践传统",
+          "books": [
+            "010"
+          ],
+          "independence_weight": 0.8,
+          "basis": "同类主题或同一材料谱系，降低重复证据权重",
+          "evidence_refs": [
+            "[010:L340-L342]",
+            "[010:L735]"
+          ]
+        },
+        {
+          "cluster": "独立来源 002",
+          "books": [
+            "002"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[002:L778]",
+            "[002:L1771]"
+          ]
+        },
+        {
+          "cluster": "独立来源 007",
+          "books": [
+            "007"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[007:L561-L568]",
+            "[007:L598]",
+            "[007:L107-L127]",
+            "[007:L581]"
+          ]
+        },
+        {
+          "cluster": "独立来源 008",
+          "books": [
+            "008"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[008:L108-L113]",
+            "[008:L25]",
+            "[008:L2546]"
+          ]
+        },
+        {
+          "cluster": "独立来源 013",
+          "books": [
+            "013"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[013:L124]",
+            "[013:L100786]"
+          ]
+        },
+        {
+          "cluster": "独立来源 014",
+          "books": [
+            "014"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[014:L110]",
+            "[014:L120]"
+          ]
+        },
+        {
+          "cluster": "独立来源 018",
+          "books": [
+            "018"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[018:L292]",
+            "[018:L2362]"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "[001:L3954]",
+        "[001:L4767]",
+        "[001:L66]",
+        "[001:L9109]",
+        "[001:L94]",
+        "[002:L1771]",
+        "[002:L778]",
+        "[007:L107-L127]",
+        "[007:L561-L568]",
+        "[007:L581]",
+        "[007:L598]",
+        "[008:L108-L113]",
+        "[008:L2546]",
+        "[008:L25]",
+        "[010:L340-L342]",
+        "[010:L735]",
+        "[013:L100786]",
+        "[013:L124]",
+        "[014:L110]",
+        "[014:L120]",
+        "[018:L2362]",
+        "[018:L292]",
+        "[019:L1]",
+        "[019:L2098]",
+        "[019:L307]",
+        "[019:L7477]",
+        "[021:L2002-L2112]",
+        "[021:L2090]"
+      ],
+      "confidence": {
+        "support_count": 10,
+        "support_count_capped": 5,
+        "source_independence": 0.8778,
+        "evidence_quality": 1.0,
+        "mechanism_completeness": 0.8462,
+        "refutation_weight": 0.1538,
+        "confidence": 3.1423,
+        "formula": "min(5, support_count) * source_independence * evidence_quality * mechanism_completeness * (1 - refutation_weight)"
+      }
+    },
+    "P202": {
+      "title": "权力风险中的退路与边界保护",
+      "source_books": [
+        "012",
+        "015",
+        "018"
+      ],
+      "source_clusters": [
+        {
+          "cluster": "庞氏/骗局材料同类主题",
+          "books": [
+            "012"
+          ],
+          "independence_weight": 0.5,
+          "basis": "同类主题或同一材料谱系，降低重复证据权重",
+          "evidence_refs": [
+            "[012:L2062]",
+            "[012:L3646]"
+          ]
+        },
+        {
+          "cluster": "历史权力与政治案例相近主题",
+          "books": [
+            "015"
+          ],
+          "independence_weight": 0.6,
+          "basis": "同类主题或同一材料谱系，降低重复证据权重",
+          "evidence_refs": [
+            "[015:L56700]",
+            "[015:L8528]",
+            "[015:L114]"
+          ]
+        },
+        {
+          "cluster": "独立来源 018",
+          "books": [
+            "018"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[018:L110]",
+            "[018:L846]"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "[012:L2062]",
+        "[012:L3646]",
+        "[015:L114]",
+        "[015:L56700]",
+        "[015:L8528]",
+        "[018:L110]",
+        "[018:L846]"
+      ],
+      "confidence": {
+        "support_count": 3,
+        "support_count_capped": 3,
+        "source_independence": 0.7,
+        "evidence_quality": 1.0,
+        "mechanism_completeness": 1.0,
+        "refutation_weight": 0.3333,
+        "confidence": 1.4,
+        "formula": "min(5, support_count) * source_independence * evidence_quality * mechanism_completeness * (1 - refutation_weight)"
+      }
+    },
+    "P203": {
+      "title": "反馈通道与执行纠偏",
+      "source_books": [
+        "001",
+        "002",
+        "007",
+        "010",
+        "013"
+      ],
+      "source_clusters": [
+        {
+          "cluster": "历史权力与政治案例相近主题",
+          "books": [
+            "001"
+          ],
+          "independence_weight": 0.6,
+          "basis": "同类主题或同一材料谱系，降低重复证据权重",
+          "evidence_refs": [
+            "[001:L4603]",
+            "[001:L9025]"
+          ]
+        },
+        {
+          "cluster": "心性/修养材料的相近实践传统",
+          "books": [
+            "010"
+          ],
+          "independence_weight": 0.8,
+          "basis": "同类主题或同一材料谱系，降低重复证据权重",
+          "evidence_refs": [
+            "[010:L180]",
+            "[010:L256]"
+          ]
+        },
+        {
+          "cluster": "独立来源 002",
+          "books": [
+            "002"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[002:L65]",
+            "[002:L1080]",
+            "[002:L61]",
+            "[002:L55]",
+            "[002:L1777]"
+          ]
+        },
+        {
+          "cluster": "独立来源 007",
+          "books": [
+            "007"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[007:L259-L375]",
+            "[007:L41-L50]",
+            "[007:L121]"
+          ]
+        },
+        {
+          "cluster": "独立来源 013",
+          "books": [
+            "013"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[013:L124]",
+            "[013:L95415]"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "[001:L4603]",
+        "[001:L9025]",
+        "[002:L1080]",
+        "[002:L1777]",
+        "[002:L55]",
+        "[002:L61]",
+        "[002:L65]",
+        "[007:L121]",
+        "[007:L259-L375]",
+        "[007:L41-L50]",
+        "[010:L180]",
+        "[010:L256]",
+        "[013:L124]",
+        "[013:L95415]"
+      ],
+      "confidence": {
+        "support_count": 5,
+        "support_count_capped": 5,
+        "source_independence": 0.88,
+        "evidence_quality": 1.0,
+        "mechanism_completeness": 0.6667,
+        "refutation_weight": 0.3333,
+        "confidence": 1.9556,
+        "formula": "min(5, support_count) * source_independence * evidence_quality * mechanism_completeness * (1 - refutation_weight)"
+      }
+    },
+    "P301": {
+      "title": "行动验证与知行闭环",
+      "source_books": [
+        "003",
+        "007",
+        "016"
+      ],
+      "source_clusters": [
+        {
+          "cluster": "心性/修养材料的相近实践传统",
+          "books": [
+            "003",
+            "016"
+          ],
+          "independence_weight": 0.8,
+          "basis": "同类主题或同一材料谱系，降低重复证据权重",
+          "evidence_refs": [
+            "[003:L92]",
+            "[003:L1884]",
+            "[003:L2926]",
+            "[003:L92]",
+            "[003:L2776]",
+            "[016:L1548]",
+            "[016:L7056]",
+            "[016:L76]",
+            "[016:L56]",
+            "[016:L8499]"
+          ]
+        },
+        {
+          "cluster": "独立来源 007",
+          "books": [
+            "007"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[007:L96-L127]",
+            "[007:L716]"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "[003:L1884]",
+        "[003:L2776]",
+        "[003:L2926]",
+        "[003:L92]",
+        "[007:L716]",
+        "[007:L96-L127]",
+        "[016:L1548]",
+        "[016:L56]",
+        "[016:L7056]",
+        "[016:L76]",
+        "[016:L8499]"
+      ],
+      "confidence": {
+        "support_count": 3,
+        "support_count_capped": 3,
+        "source_independence": 0.9,
+        "evidence_quality": 1.0,
+        "mechanism_completeness": 0.6,
+        "refutation_weight": 0.4,
+        "confidence": 0.972,
+        "formula": "min(5, support_count) * source_independence * evidence_quality * mechanism_completeness * (1 - refutation_weight)"
+      }
+    },
+    "P303": {
+      "title": "道德判断与长期责任约束",
+      "source_books": [
+        "003",
+        "010",
+        "015",
+        "016",
+        "018"
+      ],
+      "source_clusters": [
+        {
+          "cluster": "历史权力与政治案例相近主题",
+          "books": [
+            "015"
+          ],
+          "independence_weight": 0.6,
+          "basis": "同类主题或同一材料谱系，降低重复证据权重",
+          "evidence_refs": [
+            "[015:L8528]",
+            "[015:L180]"
+          ]
+        },
+        {
+          "cluster": "心性/修养材料的相近实践传统",
+          "books": [
+            "003",
+            "010",
+            "016"
+          ],
+          "independence_weight": 0.8,
+          "basis": "同类主题或同一材料谱系，降低重复证据权重",
+          "evidence_refs": [
+            "[003:L3106]",
+            "[003:L84]",
+            "[010:L10]",
+            "[010:L15]",
+            "[010:L96]",
+            "[016:L68]",
+            "[016:L4274]"
+          ]
+        },
+        {
+          "cluster": "独立来源 018",
+          "books": [
+            "018"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[018:L1097]",
+            "[018:L1153]"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "[003:L3106]",
+        "[003:L84]",
+        "[010:L10]",
+        "[010:L15]",
+        "[010:L96]",
+        "[015:L180]",
+        "[015:L8528]",
+        "[016:L4274]",
+        "[016:L68]",
+        "[018:L1097]",
+        "[018:L1153]"
+      ],
+      "confidence": {
+        "support_count": 5,
+        "support_count_capped": 5,
+        "source_independence": 0.8,
+        "evidence_quality": 1.0,
+        "mechanism_completeness": 0.5,
+        "refutation_weight": 0.4,
+        "confidence": 1.2,
+        "formula": "min(5, support_count) * source_independence * evidence_quality * mechanism_completeness * (1 - refutation_weight)"
+      }
+    },
+    "P401": {
+      "title": "规模增长的物理边界与崩盘风险",
+      "source_books": [
+        "005",
+        "006",
+        "012"
+      ],
+      "source_clusters": [
+        {
+          "cluster": "传销/裂变材料同类主题",
+          "books": [
+            "005",
+            "006"
+          ],
+          "independence_weight": 0.5,
+          "basis": "同类主题或同一材料谱系，降低重复证据权重",
+          "evidence_refs": [
+            "[005:L5443]",
+            "[005:L3040]",
+            "[005:L1824]",
+            "[005:L9422]",
+            "[005:L565]",
+            "[005:L7590]",
+            "[006:L593]",
+            "[006:L2080]"
+          ]
+        },
+        {
+          "cluster": "庞氏/骗局材料同类主题",
+          "books": [
+            "012"
+          ],
+          "independence_weight": 0.5,
+          "basis": "同类主题或同一材料谱系，降低重复证据权重",
+          "evidence_refs": [
+            "[012:L257]",
+            "[012:L191]",
+            "[012:L195]"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "[005:L1824]",
+        "[005:L3040]",
+        "[005:L5443]",
+        "[005:L565]",
+        "[005:L7590]",
+        "[005:L9422]",
+        "[006:L2080]",
+        "[006:L593]",
+        "[012:L191]",
+        "[012:L195]",
+        "[012:L257]"
+      ],
+      "confidence": {
+        "support_count": 3,
+        "support_count_capped": 3,
+        "source_independence": 0.5,
+        "evidence_quality": 1.0,
+        "mechanism_completeness": 0.6,
+        "refutation_weight": 0.4,
+        "confidence": 0.54,
+        "formula": "min(5, support_count) * source_independence * evidence_quality * mechanism_completeness * (1 - refutation_weight)"
+      }
+    },
+    "P403": {
+      "title": "群体压力下的独立判断",
+      "source_books": [
+        "006",
+        "009",
+        "011",
+        "017"
+      ],
+      "source_clusters": [
+        {
+          "cluster": "传销/裂变材料同类主题",
+          "books": [
+            "006"
+          ],
+          "independence_weight": 0.5,
+          "basis": "同类主题或同一材料谱系，降低重复证据权重",
+          "evidence_refs": [
+            "[006:L593]",
+            "[006:L1317]",
+            "[006:L2722]"
+          ]
+        },
+        {
+          "cluster": "独立来源 009",
+          "books": [
+            "009"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[009:L428]",
+            "[009:L458]",
+            "[009:L17]",
+            "[009:L418]"
+          ]
+        },
+        {
+          "cluster": "独立来源 011",
+          "books": [
+            "011"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[011:L906]",
+            "[011:L9]",
+            "[011:L1102]"
+          ]
+        },
+        {
+          "cluster": "独立来源 017",
+          "books": [
+            "017"
+          ],
+          "independence_weight": 1.0,
+          "basis": "当前书库中没有声明其与其他来源属于同一材料谱系",
+          "evidence_refs": [
+            "[017:L68]",
+            "[017:L1343]",
+            "[017:L906]",
+            "[017:L68]",
+            "[017:L447]"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "[006:L1317]",
+        "[006:L2722]",
+        "[006:L593]",
+        "[009:L17]",
+        "[009:L418]",
+        "[009:L428]",
+        "[009:L458]",
+        "[011:L1102]",
+        "[011:L906]",
+        "[011:L9]",
+        "[017:L1343]",
+        "[017:L447]",
+        "[017:L68]",
+        "[017:L906]"
+      ],
+      "confidence": {
+        "support_count": 4,
+        "support_count_capped": 4,
+        "source_independence": 0.875,
+        "evidence_quality": 1.0,
+        "mechanism_completeness": 0.8333,
+        "refutation_weight": 0.3333,
+        "confidence": 1.9444,
+        "formula": "min(5, support_count) * source_independence * evidence_quality * mechanism_completeness * (1 - refutation_weight)"
+      }
+    }
+  },
+  "item_counts": {
+    "C": 240,
+    "R": 62,
+    "H": 62,
+    "A": 127,
+    "B": 60,
+    "T": 40,
+    "P": 62,
+    "I": 62
   }
 }

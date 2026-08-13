@@ -1,0 +1,10 @@
+{
+  "id": "S000",
+  "label": "preamble-before-first-structural-break",
+  "start_line": 1,
+  "end_line": 31,
+  "characters": 536,
+  "duplicate_of": null,
+  "weight": 1.0,
+  "source": "corpus/raw/015-汇评精注资治通鉴.md"
+}

@@ -1,9 +1,9 @@
 {
   "id": "S003",
-  "label": "第三节语言陷阱",
-  "start_line": 1962,
-  "end_line": 2766,
-  "characters": 25475,
+  "label": "第三节正义感杀人",
+  "start_line": 5164,
+  "end_line": 6023,
+  "characters": 33138,
   "duplicate_of": null,
   "weight": 1.0,
   "source": "corpus/raw/011-忽悠的原理与技巧.md"

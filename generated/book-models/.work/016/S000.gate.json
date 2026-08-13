@@ -1,0 +1,29 @@
+{
+  "book_id": "016",
+  "segment_id": "S000",
+  "source": "corpus/raw/016-活法.md",
+  "start_line": 1,
+  "end_line": 31,
+  "source_sha256": "7ec0466c8f0c441b8ed3c60af3ce5c1ac6f4a7915171820dd04670cff189bcfc",
+  "segment_sha256": "f7dd8613e0ed80b22fb42cb9020dc05e3b2c861e45fe07dcbe171524b60f4cab",
+  "model": "generated/book-models/.work/016/S000.model.md",
+  "required_sections": [
+    "Metadata",
+    "核心概念",
+    "主要判断",
+    "因果模型",
+    "判断规则",
+    "隐含前提",
+    "重要变量",
+    "边界条件",
+    "内部张力",
+    "可迁移原则候选",
+    "证据",
+    "Coverage"
+  ],
+  "independent_raw_read": true,
+  "whole_book_reverse_mapping": false,
+  "status": "passed",
+  "generated_at": "2026-08-13T03:57:42.968939+00:00",
+  "required_sections_present": true
+}

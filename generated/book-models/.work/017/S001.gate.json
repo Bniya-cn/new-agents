@@ -1,0 +1,29 @@
+{
+  "book_id": "017",
+  "segment_id": "S001",
+  "source": "corpus/raw/017-社会性动物.md",
+  "start_line": 4014,
+  "end_line": 5527,
+  "source_sha256": "8eef29bf2e9900f5ece0c864e67871351f8f415575f49619042bec6773b62998",
+  "segment_sha256": "e5bfa98502a4afe4eb13a7a273dd9255d151d9ae1e8da62e45d683385528a5fa",
+  "model": "generated/book-models/.work/017/S001.model.md",
+  "required_sections": [
+    "Metadata",
+    "核心概念",
+    "主要判断",
+    "因果模型",
+    "判断规则",
+    "隐含前提",
+    "重要变量",
+    "边界条件",
+    "内部张力",
+    "可迁移原则候选",
+    "证据",
+    "Coverage"
+  ],
+  "independent_raw_read": true,
+  "whole_book_reverse_mapping": false,
+  "status": "passed",
+  "generated_at": "2026-08-13T03:57:43.063101+00:00",
+  "required_sections_present": true
+}

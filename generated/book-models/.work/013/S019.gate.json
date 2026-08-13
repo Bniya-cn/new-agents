@@ -1,0 +1,29 @@
+{
+  "book_id": "013",
+  "segment_id": "S019",
+  "source": "corpus/raw/013-新厚黑学全书.md",
+  "start_line": 89077,
+  "end_line": 93933,
+  "source_sha256": "6bd172281241e25454fe24734376934d806dc41cd98890c9972404ea5b02afdf",
+  "segment_sha256": "4d3452563f2c799221ca5b66c1c5d2d98af5e3a91e0c53462bd9603a5fa3cc3a",
+  "model": "generated/book-models/.work/013/S019.model.md",
+  "required_sections": [
+    "Metadata",
+    "核心概念",
+    "主要判断",
+    "因果模型",
+    "判断规则",
+    "隐含前提",
+    "重要变量",
+    "边界条件",
+    "内部张力",
+    "可迁移原则候选",
+    "证据",
+    "Coverage"
+  ],
+  "independent_raw_read": true,
+  "whole_book_reverse_mapping": false,
+  "status": "passed",
+  "generated_at": "2026-08-13T03:57:42.045744+00:00",
+  "required_sections_present": true
+}

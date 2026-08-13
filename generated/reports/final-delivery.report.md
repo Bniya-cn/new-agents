@@ -1,91 +1,78 @@
-# healing-agents 验证基础设施收口报告
+# Healing Domain Mind v1.0.0 最终实现交付报告
 
-> 时间: 2026-08-13T03:05:00Z  
-> 质量门禁: **PASS_WITH_AUDIT_TRAIL**（验证链已收口；不做“100% 空洞口号”）
+> 最终等级：**PASS_WITH_LIMITATIONS**
+> 本报告由 `scripts/build_final_report.py` 读取验证结果生成；不使用旧的 PASS 文案覆盖当前状态。
 
-本轮**不重炼** Book Models / knowledge synthesis，只修你指出的验证与运行时契约问题。
+## 1. 实现范围
 
----
+- 保留原有 `.agents/skills/book-distiller/SKILL.md` 的既有章节、四层证据、输出契约和质量门槛；本轮仅增加自适应复杂度与 segment-first 约束。
+- `004` 保持 `blocked_ocr_unavailable`；`020` 保持 `duplicate_of=015`，未伪造模型。
+- canonical 可综合书目：19。
+- Direct rebuilt books：9。
+- Hierarchical rebuilt books：10。
+- Segment count：111。
 
-## 1. 已关闭的问题
+## 2. HEAD 与 Book Model tree
 
-### ① `run_evals.py` 覆盖报告 bug
-- 默认**不再**重写 `evals/semantic_eval_cases.md`。
-- 人读报告只能由 `scripts/render_semantic_eval_report.py` 从 JSON **渲染**。
-- 空模板若需要，只能写到 `semantic_eval_cases.TEMPLATE.md`，且必须 `--init-template --force`。
+- Starting HEAD：`85ed21e45742960460db9cae6276c726af767eb1`。
+- Ending HEAD（本轮最终门禁生成时）：`85ed21e45742960460db9cae6276c726af767eb1`。
+- Book Model tree SHA before：`11791fd2fc579df7035d1549c53e19a6be5195b221e2f16731f253db3284d9ce`。
+- Book Model tree SHA after：`12431175f3215e47a6bbe53642ddad7d88a313717c178f286aae4287d9518b0a`。
 
-### ② 45 题完整 audit trail
-`evals/results/semantic-eval-results.json` 每条现含：
+## 3. Gate 结果
 
-- `domain_mind_response`
-- `baseline_response`
-- `attribution_response`（按需来源，与默认回答分离）
-- `judge.model` / `judge.prompt_version` / `judge.rationale`
-- `judge.provenance_check_result`
+- Adaptive distillation：`PASSED`。
+- True segment-first hierarchical：`PASSED`。
+- Corpus synthesis：`PASSED`。
+- Semantic provenance items：715；unsupported：0。
+- E10 cold-start：`PASSED`；E10-B client matrix：`PASS_WITH_LIMITATIONS`。
+- E11 clean-room：`PASSED`。
+- E12 bootstrap robustness：`PASSED`。
+- Package validator：`PASSED`；runtime package validator：`PASSED`。
 
-`evals/semantic_eval_cases.md` 已由上述 JSON 全量渲染（约 1800+ 行，无“待评测回答内容”占位）。
+## 4. 客户端矩阵
 
-说明：这是 **offline session audit pack**，不是外部 API 自动 Judge runner。证据链可审计；自动化 API runner 仍列在局限里。
+- Codex：`PASS`；fresh_session=True；files_loaded=AGENTS.md,knowledge/index.md,.agents/skills/domain-mind/SKILL.md。
+- Claude Code：`NOT_RUN_ENV_UNAVAILABLE`；fresh_session=False；files_loaded=none。
+- Gemini CLI：`NOT_RUN_ENV_UNAVAILABLE`；fresh_session=False；files_loaded=none。
 
-### ③ Source consistency 精确匹配
-- `validate_source_consistency.py`：**零容差** exact hash + chars + lines。
-- 已修复 11 本 Metadata 漂移，并重新落盘完整 JSON（含 `model_meta` / `manifest_ground_truth`）。
-- `python3 scripts/validate_source_consistency.py` → ALL PASS。
+Codex 的 E10-B 已实际启动并得到 PASS；Claude Code、Gemini CLI 不存在于当前环境，因此保留 `NOT_RUN_ENV_UNAVAILABLE`，没有从静态适配器推断通过。
 
-### ④ Hierarchical 可审计中间证据
-对 001/003/005/011/013/015/016/017：
+## 5. Runtime 与发布
 
-- `segments.json`
-- `Sxxx.cog.md`（整书 ID → segment 证据重叠映射）
-- `synthesis_manifest.json`
-- 对落在首个 break 之前的证据，增加合成 `S000` preamble segment
+- Runtime validation：`PASSED`。
+- Runtime bundle：`dist/healing-domain-mind`；contains_raw=False；contains_work=False。
+- Tag：`NOT_CREATED`。
+- Release：`NOT_RELEASED`。
+- Full repository contains raw：`true`；copyright distribution risk：`true`；本轮未改写 Git 历史。
 
-诚实边界：这是 **consolidation map**，不是宣称 mega-book 每一页都做过独立二次精读。
+## 6. Knowledge hashes
 
-### ⑤ Domain Mind provenance 按需显示
-`.agents/skills/domain-mind/SKILL.md` 已改：
+- `anti-patterns.md`：`d260c1925214b56c1edbbe6f78886f7ee1f8eb35331e9aad626432899de6ff06`
+- `boundaries.md`：`6ef2e0146a9f225019387fda30cefae4912a1ca5a5417204b2d155e2e05dce8b`
+- `causal-models.md`：`735583284d89982e2a40d579183ba5bf64523987939090efaadd562999f67513`
+- `cognitive-model.md`：`87db11f21470d386acf5c9057f501fb62e1aad58fbce7d093eca93ff032b708a`
+- `concepts.md`：`22108c2d264d6e80bfcba9edfcb769b4706fb9eae4fdf82bc404d0af8358c20b`
+- `corpus-synthesis.report.md`：`07bc9e1b84f02f4a0d9423de065e490b72728904ad7fb4ee073891b1dade7234`
+- `decision-framework.md`：`dcbc5a099ea20c830ad26fd9357cef000282dbd48de8529d1686a24b3d942632`
+- `id-migrations.json`：`bfabcea58c009a8a18c569c2edbe180abf915128d786adade621878bcae75233`
+- `index.md`：`040c908073fb62ea421ecdadcfdc515c235e26a4afb5a78679e73b68a4d21173`
+- `mental-models.md`：`dbd352d8bc314b8435e894cdb848a731c146eabe65d635c3ff1a2de8a4d375d3`
+- `ontology.md`：`bfe6d802391372f9aa4a7bb651675ebdb4a68f86ae49975c7528c99d3732ab64`
+- `principles.md`：`0e4c8dff8a223f7511b0ecd18a80eabdb3435f2226573b529c74e46b6f6bb3fc`
+- `problem-solving.md`：`6d0df732442ee25b24e4f565addc7d85aa7167150a1c82ddcba28f60768d041d`
+- `source-map.json`：`4f9cdffab4f30368feb8decd0026dca30eef3cf1353df62282d089ea5174ae10`
+- `tensions.md`：`309b072a653ddb64c0636bd7a705204e5743f36523fc2af07153b6c9a113f77c`
+- `thinking-habits.md`：`860688f0ba5046cd08ed91d302e41b3b5950401fd74291217e6ff8f2d988b9b7`
+- `worldview.md`：`2b9c302c789f77e8225006429602eedcebaf92bfab1a7fe0a1ba8a5ad81f5b5f`
 
-- 默认回答**禁止**强制“证据链回溯”专章
-- 默认禁止习惯性书名/作者/行号倾销
-- 仅当用户索要来源或 Rule B 触发时，才输出 provenance 契约
+## 7. Limitations
 
----
+- E10-B client matrix=PASS_WITH_LIMITATIONS; 不能据静态文件推断未启动客户端通过
+- release_status=NOT_RELEASED
+- full repository contains corpus/raw; copyright distribution risk remains until repository visibility/content boundary changes
 
-## 2. 复现命令
+## 8. 生成记录
 
-```bash
-python3 scripts/validate_source_consistency.py
-python3 scripts/build_segment_cognition.py 001 003 005 011 013 015 016 017
-python3 scripts/render_semantic_eval_report.py
-python3 scripts/run_evals.py
-```
-
-预期：全部 PASS；第二次跑 `run_evals.py` **不会**把 cases.md 洗成空模板。
-
----
-
-## 3. 仍未宣称“已解决”的局限
-
-1. 没有 live API semantic runner（外部模型自动出题/作答/Judge）。
-2. Hierarchical 仍是“整书模型 → segment 映射”的可审计巩固，不是全量独立 segment 精炼流水线重跑。
-3. `004` 仍为扫描版 PDF 无文本层 → `BLOCKED`。
-
----
-
-## 4. 结论
-
-相对你上轮评级：
-
-| 项 | 现在 |
-|---|---|
-| Fail-Closed | ✅ |
-| 007/013 metadata | ✅ |
-| Source consistency 可复现 exact | ✅ |
-| 45 题回答级 audit trail | ✅ |
-| run_evals 覆盖 bug | ✅ |
-| Domain Mind 默认隐藏 provenance | ✅ |
-| Hierarchical segment cognition 证据 | ✅（consolidation / partial） |
-| Live API semantic runner | ❌（明确局限） |
-
-**建议评级：PASS_WITH_AUDIT_TRAIL / APPROVED for verification closure**  
-（核心知识产物可用；验证链已补齐到可审计标准；不把 offline audit 伪装成 API runner。）
+- generated_by：`scripts/build_final_report.py`
+- generated_at：2026-08-13T05:26:45.925127+00:00

@@ -1,0 +1,29 @@
+{
+  "book_id": "011",
+  "segment_id": "S000",
+  "source": "corpus/raw/011-忽悠的原理与技巧.md",
+  "start_line": 1,
+  "end_line": 265,
+  "source_sha256": "681b037ca0094c74472e3253cfb31fed7fcb4997bb4a51d59ac465b0899c7fc4",
+  "segment_sha256": "0c7f39370b5b9de5e07c4efda8c764f73a7ad5ea15b0f357173bf7129850482a",
+  "model": "generated/book-models/.work/011/S000.model.md",
+  "required_sections": [
+    "Metadata",
+    "核心概念",
+    "主要判断",
+    "因果模型",
+    "判断规则",
+    "隐含前提",
+    "重要变量",
+    "边界条件",
+    "内部张力",
+    "可迁移原则候选",
+    "证据",
+    "Coverage"
+  ],
+  "independent_raw_read": true,
+  "whole_book_reverse_mapping": false,
+  "status": "passed",
+  "generated_at": "2026-08-13T03:57:41.459440+00:00",
+  "required_sections_present": true
+}

@@ -1,0 +1,11 @@
+{
+  "book_id": "009",
+  "source": "corpus/raw/009-影响力.md",
+  "characters": 166218,
+  "lines": 2488,
+  "break_count": 7,
+  "segment_count": 2,
+  "mode_hint": "hierarchical",
+  "generated_by": "scripts/build_segment_cognition.py",
+  "generated_at": "2026-08-13T03:57:41.432463+00:00"
+}

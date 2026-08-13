@@ -1,9 +1,9 @@
 {
   "id": "S006",
-  "label": "第七篇 历代厚黑学经典著述大全",
-  "start_line": 30779,
-  "end_line": 36900,
-  "characters": 100077,
+  "label": "第五篇 厚黑教主自传及其他",
+  "start_line": 25083,
+  "end_line": 29958,
+  "characters": 80173,
   "duplicate_of": null,
   "weight": 1.0,
   "source": "corpus/raw/013-新厚黑学全书.md"

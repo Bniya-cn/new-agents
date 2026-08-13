@@ -1,9 +1,9 @@
 {
   "id": "S020",
-  "label": "第一篇 中国古代厚黑名人",
-  "start_line": 116680,
-  "end_line": 122586,
-  "characters": 102752,
+  "label": "第三篇 战场厚黑学",
+  "start_line": 93934,
+  "end_line": 98852,
+  "characters": 80660,
   "duplicate_of": null,
   "weight": 1.0,
   "source": "corpus/raw/013-新厚黑学全书.md"

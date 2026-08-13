@@ -1,158 +1,109 @@
 {
   "book_id": "016",
-  "generated_at": "2026-08-13T02:58:38.974007+00:00",
   "generator": "scripts/build_segment_cognition.py",
-  "source_model": "generated/book-models/016-活法.md",
-  "segment_count": 11,
-  "mapped_item_count": 44,
-  "unique_items_parsed": 33,
-  "unassigned_or_wholebook_only": [],
+  "pipeline_version": "2.0.0",
+  "segment_first": true,
+  "source": "corpus/raw/016-活法.md",
   "pipeline": [
-    "structure.json / segments.json (deterministic segmentation)",
-    "whole-book cognitive model (accepted)",
-    "evidence-line → segment overlap mapping",
-    "Sxxx.cog.md segment cognitive notes",
-    "synthesis_manifest.json (this file)"
+    "raw hierarchical book",
+    "segments.json",
+    "independent raw segment reading",
+    "Sxxx.model.md",
+    "per-segment gate",
+    "consolidation.json",
+    "whole-book cognitive model",
+    "whole-book report"
   ],
-  "limitations": [
-    "Does not claim each segment was independently re-read end-to-end in this rebuild.",
-    "Provides auditable consolidation evidence linking whole-book IDs to segments."
-  ],
-  "segments": [
+  "required_segments": [
     {
       "id": "S000",
-      "label": "preamble-before-first-break",
+      "label": "preamble-before-first-structural-break",
       "start_line": 1,
       "end_line": 31,
-      "mapped_ids": [
-        "I003"
-      ],
-      "cog_artifact": "generated/book-models/.work/016/S000.cog.md"
+      "characters": 334,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/016-活法.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/016/S000.model.md",
+      "gate": "generated/book-models/.work/016/S000.gate.json"
     },
     {
       "id": "S001",
       "label": "第一章 让梦想成真",
       "start_line": 32,
-      "end_line": 1824,
-      "mapped_ids": [
-        "C001",
-        "C002",
-        "C003",
-        "C004",
-        "CL001",
-        "CL002",
-        "CL003",
-        "CM001",
-        "CM002",
-        "RP001",
-        "RP002",
-        "RP003",
-        "H001",
-        "H002",
-        "H003",
-        "A001",
-        "A002",
-        "A003",
-        "B002",
-        "B003",
-        "T001",
-        "T002",
-        "AP001",
-        "AP002",
-        "AP003",
-        "P001",
-        "P002",
-        "P003",
-        "I001",
-        "I002",
-        "I003"
-      ],
-      "cog_artifact": "generated/book-models/.work/016/S001.cog.md"
+      "end_line": 3774,
+      "characters": 83013,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/016-活法.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/016/S001.model.md",
+      "gate": "generated/book-models/.work/016/S001.gate.json"
     },
     {
       "id": "S002",
-      "label": "第三章 磨砺并提高心智",
-      "start_line": 1825,
-      "end_line": 2977,
-      "mapped_ids": [
-        "C005",
-        "CL001",
-        "CM001",
-        "H001",
-        "A001",
-        "A003",
-        "B001",
-        "T001",
-        "AP003",
-        "P001",
-        "P003",
-        "I003"
-      ],
-      "cog_artifact": "generated/book-models/.work/016/S002.cog.md"
+      "label": "第二章 论能力",
+      "start_line": 3775,
+      "end_line": 7495,
+      "characters": 80540,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/016-活法.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/016/S002.model.md",
+      "gate": "generated/book-models/.work/016/S002.gate.json"
     },
     {
       "id": "S003",
-      "label": "第五章 与宇宙相和谐",
-      "start_line": 2978,
-      "end_line": 4150,
-      "mapped_ids": [],
-      "cog_artifact": "generated/book-models/.work/016/S003.cog.md"
+      "label": "第五章大计",
+      "start_line": 7496,
+      "end_line": 11622,
+      "characters": 93868,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/016-活法.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/016/S003.model.md",
+      "gate": "generated/book-models/.work/016/S003.gate.json"
     },
     {
       "id": "S004",
-      "label": "第四章 论态度",
-      "start_line": 4151,
-      "end_line": 5340,
-      "mapped_ids": [],
-      "cog_artifact": "generated/book-models/.work/016/S004.cog.md"
-    },
-    {
-      "id": "S005",
-      "label": "第九章论力量",
-      "start_line": 5341,
-      "end_line": 6565,
-      "mapped_ids": [],
-      "cog_artifact": "generated/book-models/.work/016/S005.cog.md"
-    },
-    {
-      "id": "S006",
-      "label": "第二章 考验",
-      "start_line": 6566,
-      "end_line": 7753,
-      "mapped_ids": [],
-      "cog_artifact": "generated/book-models/.work/016/S006.cog.md"
-    },
-    {
-      "id": "S007",
-      "label": "第六章觉悟",
-      "start_line": 7754,
-      "end_line": 9108,
-      "mapped_ids": [],
-      "cog_artifact": "generated/book-models/.work/016/S007.cog.md"
-    },
-    {
-      "id": "S008",
-      "label": "第十二章 希望",
-      "start_line": 9109,
-      "end_line": 10290,
-      "mapped_ids": [],
-      "cog_artifact": "generated/book-models/.work/016/S008.cog.md"
-    },
-    {
-      "id": "S009",
-      "label": "第二章 我的人生观与思想源头",
-      "start_line": 10291,
-      "end_line": 11622,
-      "mapped_ids": [],
-      "cog_artifact": "generated/book-models/.work/016/S009.cog.md"
-    },
-    {
-      "id": "S010",
       "label": "第四章追求人间正道",
       "start_line": 11623,
       "end_line": 12561,
-      "mapped_ids": [],
-      "cog_artifact": "generated/book-models/.work/016/S010.cog.md"
+      "characters": 21768,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/016-活法.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/016/S004.model.md",
+      "gate": "generated/book-models/.work/016/S004.gate.json"
     }
-  ]
+  ],
+  "excluded_duplicate_segments": [],
+  "consolidation": "generated/book-models/.work/016/consolidation.json",
+  "segment_gate": "generated/book-models/.work/016/segment-gates.json",
+  "coverage": 1.0,
+  "status": "complete",
+  "synthesis_eligible": true,
+  "legacy_artifacts_preserved": [
+    "S000.cog.md",
+    "S001.cog.md",
+    "S002.cog.md",
+    "S003.cog.md",
+    "S004.cog.md",
+    "S005.cog.md",
+    "S006.cog.md",
+    "S007.cog.md",
+    "S008.cog.md",
+    "S009.cog.md",
+    "S010.cog.md"
+  ],
+  "generated_at": "2026-08-13T03:57:43.006976+00:00"
 }

@@ -1,6 +1,52 @@
-# Domain Mind Thinking Habits (思考习惯)
+# 思考习惯
 
-1. **底单思维**: 强制要求物理证据交叉质证。
-2. **二阶思考**: 不只看直接后果，看推演后的二阶、三阶反馈。
-3. **切换变量思维**: 拒绝绝对化结论，识别决定策略转向的关键切换变量。
-4. **知行闭环**: 将所有认知转化为可执行的行导向判断。
+- 遇到强叙事先问：哪些是可质证事实，哪些是解释、推断或评价？
+- 遇到组织变化先问：谁控制实物资源，谁掌握反馈，谁承担失败成本？
+- 遇到快速增长先问：容量、现金流、退出和二阶后果在哪里？
+- 遇到关系压力先问：我是在交换信任，还是在透支信誉？
+- 遇到挫折先分开处理：先做物理自救，再做心智重构；二者不能互相替代。
+
+## 来源样本
+
+- `001:RP003` RP003 达观与出世的精神隔离 Pattern: 面对无法扭转的体制迫害与贬谪，不在原有利益格局内进行绝望挣扎，而是彻底退入道家“万物一体、物我两忘”的心性境地，以文化创作者的身份实现精神自卫。 8. Judgment Heuristics 判断规则 Rebuild evidence: source=corpus/raw/001-20世纪五大传记书系.md；Evidence：[001:L3954], [001:L6223]
+- `002:RP001` RP001 从功利与动员效率评估一切政策与阶层 Pattern: 凡是不能直接增加粮仓（农）或斩首数量（战）的行为、阶层（如学术、礼乐、奇装异服、游商），均被视为有害的“虱子”或冗余，必须予以根除。 Rebuild evidence: source=corpus/raw/002-商君书.md; lines=2315-2315; support=source;；Evidence：[002:L776], [002:L2315]
+- `002:RP002` RP002 将民间与国家视为零和博弈 Pattern: 任何民间自发秩序的生长、财富的积累，都会被解释为君权削弱和法律松弛的潜在威胁。 Rebuild evidence: source=corpus/raw/002-商君书.md; lines=902-902; support=source; selection=raw semantic candidate;；Evidence：[002:L1080-L1082], [002:L902]
+- `002:RP003` RP003 破除历史迷信的功利主义适应论 Pattern: 不问某种做法是否合乎“古礼”或先王道德，只问其在当前兼并战争的惨烈竞争中能否增进资源和增强军队。 Rebuild evidence: source=corpus/raw/002-商君书.md; lines=2866-2866; support=source; selection=raw semant；Evidence：[002:L55], [002:L2866]
+- `002:RP004` RP004 重法度而废除个人主观裁量 Pattern: 反对靠君主个人的“知虑”或道德来治国，主张制定明细、严密的法规由专业法官宣传执行，使统治机器客观化运行。 8. 判断规则 Decision Heuristics Rebuild evidence: source=corpus/raw/002-商君书.md; lines=1964-1964; suppor；Evidence：[002:L65], [002:L1964]
+- `003:RP001` RP001 “反求诸己”的本体还原思维 Pattern: 遭遇外部挫折（如事父不成、交友治民不顺）时，决不向外部客体（父亲、朋友、民众）去推卸责任或寻找“孝、仁”的物理依据，强制将注意力缩回本心，排查自己是否有自私自利、毁誉算计的蒙蔽。 Rebuild evidence: source=corpus/raw/003-传习录.md; lines=3374-33；Evidence：[003:L200], [003:L3374]
+- `003:RP002` RP002 排除“第二义”的优先级过滤思维 Pattern: 面对大量复杂见闻和知识输入，首先追问：我的德性良知（核心主宰）是否一以贯之？这些见闻是在充实我的核心，还是在用碎屑污染我的注意力？将见闻严格降为第二义，实施信息脱水。 Rebuild evidence: source=corpus/raw/003-传习录.md; lines=2938-2938;；Evidence：[003:L2926], [003:L2938]
+- `005:RP001` RP001 区分“存量滚动”与“增量创造”的价值剥离法 Pattern: 评估任何新商业裂变（如炒币拉群、社交电商、私域裂变）时，彻底过滤其华丽的话术，直接发问：这个系统每天支付给我和大家的利息/佣金，到底是由外部非会员购买实体服务的“消费增量”提供的，还是由新会员交的“入门费/存量入金”支撑的？如果是后者，直接判定为传销庞氏。 Rebuild eviden；Evidence：[005:L5443], [005:L10617]
+- `005:RP002` RP002 人口极限的几何级数校验 Pattern: 面对任何裂变机制，自动套用 SN = a^n 通项公式进行计算。一旦发现项目运行 3 代后所需的人口规模将击穿其特定目标市场，判定其必定在短期内发生大面积坍塌，不予参与。 Rebuild evidence: source=corpus/raw/005-传销学.md; lines=1211-1211; su；Evidence：[005:L1824], [005:L1211]
+- `005:RP003` RP003 社交资产的折现损耗评估 Pattern: 计算项目的实际招募成本时，把“消耗个人的亲友社会信任”作为一项高额的物理重资本列入账目。如果拉新获得的佣金不足以抵消信任破产的社会学代价，判定项目为“负净现值”愚蠢博弈。 8. Judgment Heuristics 判断规则 Rebuild evidence: source=corpus/raw/005；Evidence：[005:L565], [005:L5850]
+- `006:RP003` RP003 递进剥笋法：按步骤控制心智节奏 Pattern: 绝不提前透露最终收费和欺骗的细节，严格控制步骤：第一天建立情感，第二天引入概念，第三天化解社会偏见，第四天诱导购买，第五天促成裂变。 8. 判断规则 Decision Heuristics Rebuild evidence: source=corpus/raw/006-传销洗脑实录.md; lin；Evidence：[006:L593], [006:L812]
+- `007:RP001` RP001 先看利益与成本，再听价值口号 Pattern：面对“为城市、为群众、为荣誉”的号召，继续追问谁出钱、谁承担风险、谁获得后续收益。 Rebuild evidence: source=corpus/raw/007-做局.md; lines=113-113; support=source; selection=raw semantic candidat；Evidence：[007:L115-L127], [007:L113]
+- `007:RP002` RP002 从结构性约束解释项目停滞 Pattern：不把反复失败归因于执行者不努力，而是检查文物、拆迁、资金、程序和既有利益。 Rebuild evidence: source=corpus/raw/007-做局.md; lines=121-121; support=source; selection=raw semantic candidate; hum；Evidence：[007:L96-L113], [007:L121]
+- `007:RP003` RP003 把公开行为和隐藏动机分开 Pattern：同时记录一个人说了什么、做了什么、可能从中得到什么，不让表面叙事直接替代动机分析。 Rebuild evidence: source=corpus/raw/007-做局.md; lines=855-855; support=source; selection=raw semantic candidate;；Evidence：[007:L137-L150], [007:L855]
+- `007:RP004` RP004 沿时间顺序观察选择权如何变化 Pattern：关注谁先表态、谁后报价、谁被迫回应，以及前一个动作如何改变后一个动作的选项。 Rebuild evidence: source=corpus/raw/007-做局.md; lines=56-56; support=source; selection=raw semantic candidate; hu；Evidence：[007:L107-L127], [007:L56]
+- `007:RP005` RP005 通过关系网络定位信息和影响的流向 Pattern：不只看正式职位，也追踪同学、亲属、师徒、秘书、竞争者和中间人。 Rebuild evidence: source=corpus/raw/007-做局.md; lines=177-177; support=source; selection=raw semantic candidate; human；Evidence：[007:L140-L171], [007:L177]
+- `007:RP006` RP006 把事件放入长期局势，而不是只看当前一轮输赢 Pattern：把多年工程竞争、旧关系和累积债务带入当前决定。 Rebuild evidence: source=corpus/raw/007-做局.md; lines=716-716; support=source; selection=raw semantic candidate; human_re；Evidence：[007:L37-L45], [007:L716]
+- `007:RP007` RP007 检查二阶后果和不可逆损失 Pattern：在行动前追问如果信息泄露、项目失败、关系反噬或有人受伤，后果是否还可逆。 8. 判断规则 Decision Heuristics Rebuild evidence: source=corpus/raw/007-做局.md; lines=672-672; support=source; selection=；Evidence：[007:L561-L568], [007:L672]
+- `008:RP001` RP001 极端警惕与不侥幸的怀疑主义 Pattern: 视人际关系为潜在的伤害来源（视人若寇）。不相信任何口头忠诚，通过审查历史事实、动机好恶和行动痕迹来对人做无情的判断。 Rebuild evidence: source=corpus/raw/008-天下无谋之密卷.md; lines=137-137; support=source; selection；Evidence：[008:L26], [008:L137]
+- `008:RP002` RP002 结构化威严与制衡管理 Pattern: 御下时不依靠情感收买，而是通过设计礼仪区隔（立威）、严厉的惩罚（恃刑）和人为制造下属之间的利益对立与权力交错（防专），以保持统治的平衡。 Rebuild evidence: source=corpus/raw/008-天下无谋之密卷.md; lines=2567-2567; support=source;；Evidence：[008:L71-L80], [008:L2567]
+- `008:RP003` RP003 唯实不唯名的保全主义 Pattern: 遇到外部重压时，毫不犹豫地牺牲名誉、地位等虚浮的变量，换取肉体存续、家族绵延和实际控制力的保留。 8. 判断规则 Decision Heuristics Rebuild evidence: source=corpus/raw/008-天下无谋之密卷.md; lines=548-548; support=so；Evidence：[008:L108], [008:L548]
+- `009:RP001` RP001 剖析表象：寻找触发特征与磁带反应 Pattern: 面对任何说服或顺从行为，不只看产品和提案本身，而是寻找对方是否在刻意触发哪一盘“心理磁带”，并剥离这一情绪干扰。 Rebuild evidence: source=corpus/raw/009-影响力.md; lines=77-77; support=source; selection=raw；Evidence：[009:L43], [009:L77]
+- `009:RP002` RP002 动机解构：将“善意”与“推销”区分 Pattern: 评估别人的恩惠或让步。如果是真正的善意，我们以善意回报；如果发现那是推销的柔道技巧，就将其看作“促销手段”，从而解除在心理上的亏欠感。 Rebuild evidence: source=corpus/raw/009-影响力.md; lines=558-558; support=source;；Evidence：[009:L336], [009:L558]
+- `010:RP001` RP001 以“作为人，何谓正确”作为第一性原则评估决策 Pattern: 剥离当前行业的所有潜规则、利益集团纠缠或法律擦边球，回到最基础的儿童道德直觉（如诚实、不贪心、不骗人、利他），作为商业和人生决策的最高准则（正道）。 Rebuild evidence: source=corpus/raw/010-心-稻盛和夫的一生嘱托.md; lines=1728-；Evidence：[010:L262], [010:L1728]
+- `001:H001` H001 在组织重组中，身处低位时，恪守“控制嫡系实权，推主官承担风险”的逆袭防线 Use when: 处于多方争夺、上司无能且规则动荡的危机部门或企业重组期。 Diagnostic question: 哪些是决定部门生存的实权物理资源（如核心客户、技术骨干）？我是否在为了一个容易当炮灰的“名义负责人”与人火并？ Reasoning: 名虚实重；让无能主官去；Evidence：[001:L614], [001:L13315]
+- `001:H002` H002 面对组织内部的改革方案，凡是“排斥反对者、只用顺从者”的，一票否决其长期投资 Use when: 决定是否投资某个正在进行大刀阔斧扁平化改革的传统企业，或研判高管改革的可行性。 Diagnostic question: 改革者是在真诚倾听直言偏误并调整方案，还是在通过政治污名化（立党人碑）来清除提出不同意见的骨干？ Reasoning: 拗相公强推；Evidence：[001:L4603], [001:L8372]
+- `001:H003` H003 知识分子与学者决不迎合黑箱权力的现实需要去“篡改事实结论”（严防遵命史学） Use when: 被邀请为特定政策背书、撰写具有强烈现实政治倾向倾向的评估报告。 Diagnostic question: 我的专业研究是在呈现客观物理事实，还是在为了迎合上位者当前的阶级或权力好恶而进行“影射”或“遵命”？ Reasoning: 迎合权力的结论在风向转变；Evidence：[001:L94], [001:L7996]
+- `002:H001` H001 凡治理遇到动员阻碍，先收窄利益入口，莫只加口号宣传 Use when: 国家需要动员某种核心行为（如战争、税收），但百姓缺乏积极性。 Diagnostic question: 社会上是否还存在其他比此核心行为更容易获得名利、财富的替代路径？ Reasoning: 利益多门则人心涣散。 Action tendency: 严密封锁其他替代流动的门路，使；Evidence：[002:L778], [002:L776]
+- `002:H002` H002 欲求民用，必先使之归附于土地与单一规则 Use when: 人口流动性过大，导致国家难以进行税收稽核或军事抽调。 Diagnostic question: 百姓的财务来源是否可以脱离土地而通过隐蔽的欺诈或外商存活？ Reasoning: 有后路者不顺从，重土者易战。 Action tendency: 限制游商、重课关税、实行户口严格什伍连坐，将生存；Evidence：[002:L1013], [002:L3617]
+- `003:H002` H002 决策面临剧烈纠结与内耗时，强制使用“反求诸己”过滤毁誉得失心，直击内心良知的直觉判定 Use when: 面临重大的职业去就选择、利益冲突、或可能招致世俗诽谤的艰难决策。 Diagnostic question: 我目前的痛苦和犹豫，有多少是因为害怕别人的毁誉、害怕失去既得名利（私欲得失）所导致的？抛开这些，我内心深处最明觉的良知判定是什么？ Re；Evidence：[003:L200], [003:L6586]
+- `005:H001` H001 评估任何裂变业务时，凡是需要“缴纳入门费”或“购买高价大礼包（强制买单囤货）”方能获得代理资格的，一律判定为非法传销，坚决拒绝 Use when: 遇到声称“零元创业”、“私域裂变”，但要求先自购 399 元礼包或交保障金的代理加盟机会。 Diagnostic question: 我获得赚钱资格的前提，是必须自己掏钱购买一堆我不需要的商品或交入门费；Evidence：[005:L5443], [005:L5081]
+- `005:H002` H002 进行项目合作与推广时，恪守“决不把亲情、友情关系网作为拉新抽佣工具”的社交死线 Use when: 遇到高佣金的“邀请好友得大奖”、“推荐熟人买理财/代金券”项目。 Diagnostic question: 如果这个项目最后黄了，我推荐的亲友亏了本，我拿到的这笔推荐佣金是否能赔偿我的亲情友情破产？ Reasoning: 熟人网络套现是将个人信誉进行；Evidence：[005:L565], [005:L5850]
+- `005:H003` H003 识别级差双轨奖金的裂变时，强制套用“通项几何公式”计算其 5 代后的人口边界，一旦超过目标受众 10%，绝不接最后一棒 Use when: 评估正在爆发性增长的社交裂变团队、代理网络或分销层级。 Diagnostic question: 该项目在我的城市/行业已经裂变到了第几代？维持下一代翻倍所需要的人口是否已经逼近了该行业的饱和上限？ Reaso；Evidence：[005:L1824], [005:L201]
+- `006:H002` H002 当组织逻辑遭到质疑时，检查其是否用“动机”和“态度”代替事实回答 Use when: 评估一个高收益承诺的真实性，并对其提出财务漏洞质疑。 Diagnostic question: 对方是在用可核验的账目和规则来解释，还是在用“要相信自己”、“要有吃苦心态”、“人正行业正”等态度问题来转移事实？ Reasoning: 缺乏事实支撑的组织只能依赖情感；Evidence：[006:L568], [006:L1097]
+- `006:H003` H003 道德脱敏的预警信号：当被要求用“善意谎言”去获取亲友资源时，立即判定为系统性欺诈 Use when: 上级或组织要求你以非真实的原因（如虚假合作、生病住院）诱骗你的至亲加入或出资。 Diagnostic question: 为什么一个代表“暴富和光明”的机会，不能以百分之百透明和自愿的形式告知亲友？ Reasoning: 真正的商业机会依赖信用，只；Evidence：[006:L593], [006:L1099]
+- `007:H001` H001 反复失败时，先查约束，不要只加大执行力度 Use when：一个项目被多次提出却长期无法落地。 Diagnostic question：是执行能力不足，还是成本、产权、历史利益和责任分配没有解决？ Reasoning：继续用口号动员无法改变结构性约束。 Action tendency：画出成本、收益、责任和否决点，再决定是否继续投入。 Bounda；Evidence：[007:L96-L127], [007:L121]
+- `007:H002` H002 接受高风险项目之前，先核对收益、成本、责任和退出条件 Use when：有人要求你接下“有声誉但未必有利润”的任务。 Diagnostic question：最坏结果由谁承担？承诺是否可执行？是否存在可接受的退出路径？ Reasoning：公共价值不能自动替代资源和风险补偿。 Action tendency：在承诺前建立风险清单和退出条件。 Bou；Evidence：[007:L115-L127], [007:L680]
+- `007:H003` H003 面对更强竞争者，先扩大选择空间，再决定是否正面竞争 Use when：对手资源和关系明显占优。 Diagnostic question：能否通过公开承诺、不同报价、合作或延后行动改变对方的选择？ Reasoning：直接硬碰硬可能把自身带入资源不对称的战场。 Action tendency：优先寻找合法的议程、合作和分阶段方案；不要使用串标、欺骗或；Evidence：[007:L225-L229], [007:L581]
+- `007:H004` H004 面对重要信息时，区分事实、推测和故意释放的信号 Use when：对方通过中间人、传闻或片段信息影响你的判断。 Diagnostic question：这条信息的来源、验证方式和传播收益分别是什么？ Reasoning：信息可能同时是事实、试探和诱导。 Action tendency：建立独立验证渠道，不用单一信号做不可逆决策。 Boundary；Evidence：[007:L137-L150], [007:L561]
+- `007:H005` H005 重要公共事项不能只看正式汇报 Use when：书面报告与现场感受或受影响者陈述不一致。 Diagnostic question：谁没有出现在报告里？实际承担影响的人如何描述问题？ Reasoning：正式材料可能省略利益冲突和生活成本。 Action tendency：采用可核验的实地观察、利益相关者访谈和多源证据。 Boundary condi；Evidence：[007:L456-L499], [007:L737]
+- `007:H006` H006 在扩大目标前，先守住不可失去的底线 Use when：事业、投资或竞争行动可能造成家庭和基本生活的不可逆损失。 Diagnostic question：最坏结果发生时，什么资源必须保留？ Reasoning：没有安全底线，行动者会被迫继续加码或接受更坏交易。 Action tendency：先保留基本生存、家庭和可退出资源。 Boundary co；Evidence：[007:L561-L568], [007:L561]
+- `007:H007` H007 危机中先保护事实和受害者，不把结案当成解决 Use when：组织或家庭面临声誉、法律和亲属压力，出现“找个人承担就结束”的冲动。 Diagnostic question：事实是否已经查清？当前处理是否只是把成本推给更弱的人？ Reasoning：短期秩序建立在错误责任上，会留下更大的长期风险。 Action tendency：保存证据、隔离利益冲；Evidence：[007:L676-L697], [007:L581]

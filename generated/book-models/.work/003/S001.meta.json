@@ -1,9 +1,9 @@
 {
   "id": "S001",
-  "label": "length-chunk@1-536",
+  "label": "length-chunk@1-2800",
   "start_line": 1,
-  "end_line": 536,
-  "characters": 25009,
+  "end_line": 2800,
+  "characters": 80066,
   "duplicate_of": null,
   "weight": 1.0,
   "source": "corpus/raw/003-传习录.md"

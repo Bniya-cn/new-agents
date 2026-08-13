@@ -1,0 +1,10 @@
+{
+  "id": "S000",
+  "label": "preamble-before-first-structural-break",
+  "start_line": 1,
+  "end_line": 25,
+  "characters": 214,
+  "duplicate_of": null,
+  "weight": 1.0,
+  "source": "corpus/raw/001-20世纪五大传记书系.md"
+}

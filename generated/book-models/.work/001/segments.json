@@ -2,6 +2,17 @@
   "book_id": "001",
   "segments": [
     {
+      "id": "S000",
+      "label": "preamble-before-first-structural-break",
+      "start_line": 1,
+      "end_line": 25,
+      "characters": 214,
+      "content_hash": "70bfea569c64bb8e",
+      "duplicate_of": null,
+      "weight": 1.0,
+      "synthetic": true
+    },
+    {
       "id": "S001",
       "label": "第一章小流氓",
       "start_line": 26,

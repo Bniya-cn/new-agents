@@ -1,0 +1,29 @@
+{
+  "book_id": "019",
+  "segment_id": "S001",
+  "source": "corpus/raw/019-罗织经.md",
+  "start_line": 270,
+  "end_line": 5042,
+  "source_sha256": "afcb5f96203cb2d0cbb0c1a9554eedddad9e6a728a2a371d682096ca2aa7cdfe",
+  "segment_sha256": "b2dd3817e4b8939a06adfb10c84344163cb14f9085ab9cad904539f877d0bfe4",
+  "model": "generated/book-models/.work/019/S001.model.md",
+  "required_sections": [
+    "Metadata",
+    "核心概念",
+    "主要判断",
+    "因果模型",
+    "判断规则",
+    "隐含前提",
+    "重要变量",
+    "边界条件",
+    "内部张力",
+    "可迁移原则候选",
+    "证据",
+    "Coverage"
+  ],
+  "independent_raw_read": true,
+  "whole_book_reverse_mapping": false,
+  "status": "passed",
+  "generated_at": "2026-08-13T03:57:43.105582+00:00",
+  "required_sections_present": true
+}

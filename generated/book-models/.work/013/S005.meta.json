@@ -1,9 +1,9 @@
 {
   "id": "S005",
   "label": "第五篇 厚黑教主自传及其他",
-  "start_line": 24668,
-  "end_line": 30778,
-  "characters": 101717,
+  "start_line": 20389,
+  "end_line": 25082,
+  "characters": 81594,
   "duplicate_of": null,
   "weight": 1.0,
   "source": "corpus/raw/013-新厚黑学全书.md"

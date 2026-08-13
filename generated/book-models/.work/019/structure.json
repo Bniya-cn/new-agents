@@ -1,0 +1,11 @@
+{
+  "book_id": "019",
+  "source": "corpus/raw/019-罗织经.md",
+  "characters": 183294,
+  "lines": 9332,
+  "break_count": 22,
+  "segment_count": 3,
+  "mode_hint": "hierarchical",
+  "generated_by": "scripts/build_segment_cognition.py",
+  "generated_at": "2026-08-13T03:57:43.093277+00:00"
+}

@@ -1,287 +1,5367 @@
-[
-  {
-    "path": "generated/book-models/001-20世纪五大传记书系.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
-    },
-    "evidence_hits": 8,
-    "summaryish_hits": 0,
-    "characters": 45120
+{
+  "schema_version": "2.0.0",
+  "generated_at": "2026-08-13T05:26:35.531399+00:00",
+  "minimum_floor_policy": {
+    "C": 3,
+    "CL": 3,
+    "CM": 2,
+    "H": 2,
+    "P": 3
   },
-  {
-    "path": "generated/book-models/002-商君书.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
-    },
-    "evidence_hits": 9,
-    "summaryish_hits": 0,
-    "characters": 35220
+  "adaptive_complexity_status": "passed",
+  "template_signature_risk": false,
+  "signature_counts": {
+    "C=5;CL=4;CM=3;H=3;P=3": 6,
+    "C=7;CL=5;CM=3;H=3;P=3": 3,
+    "C=6;CL=4;CM=2;H=3;P=3": 1,
+    "C=5;CL=3;CM=2;H=3;P=3": 5,
+    "C=8;CL=8;CM=7;H=8;P=8": 1,
+    "C=6;CL=5;CM=3;H=3;P=3": 1,
+    "C=6;CL=4;CM=3;H=3;P=3": 1,
+    "C=6;CL=3;CM=2;H=3;P=3": 1
   },
-  {
-    "path": "generated/book-models/003-传习录.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
-    },
-    "evidence_hits": 8,
-    "summaryish_hits": 0,
-    "characters": 36120
+  "repeated_signatures": {
+    "C=5;CL=3;CM=2;H=3;P=3": 5,
+    "C=5;CL=4;CM=3;H=3;P=3": 6,
+    "C=7;CL=5;CM=3;H=3;P=3": 3
   },
-  {
-    "path": "generated/book-models/005-传销学.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
+  "max_signature_share": 0.315789,
+  "all_ok": true,
+  "items": [
+    {
+      "book_id": "001",
+      "path": "generated/book-models/001-20世纪五大传记书系.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 5,
+        "CL": 4,
+        "CM": 3,
+        "RP": 3,
+        "H": 3,
+        "A": 3,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 170,
+      "summaryish_hits": 0,
+      "characters": 17724,
+      "items": [
+        {
+          "id": "C001",
+          "title": "雄猜之主与特务控制",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "低位架空与独占嫡系",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "拗相公与变法党争",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "达观去就（苏轼心性）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "遵命史学陷阱",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "雄猜之主统治术的终极支柱是特务、刑罚与文字狱",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "变法的失败在于排斥反对者，将政策执行委于投机小人",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "揣摩君心的“遵命书写”必然导致知识分子的自我毁灭",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL004",
+          "title": "低位行动者通过嫡系垄断与责任推卸，可完美架空主官",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "顺从集权命令—放弃客观自立—陷入遵命史学—风向转变被清算",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "强力推行变法—偏执排斥直言—起用投机帮凶—执行严重变形—政策彻底失败",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM003",
+          "title": "隐藏夺权图谋—死握核心军队—推主官承担风险—等待主官自毁—实权收拢",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "阶级利益决定个人选择的阶级还原法",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "黑箱政治的揣摩与去噪",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "达观与出世的精神隔离",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "在组织重组中，身处低位时，恪守“控制嫡系实权，推主官承担风险”的逆袭防线",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "面对组织内部的改革方案，凡是“排斥反对者、只用顺从者”的，一票否决其长期投资",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "知识分子与学者决不迎合黑箱权力的现实需要去“篡改事实结论”（严防遵命史学）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "权力黑箱的意志是完全无序、喜怒无常且不可预测的",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "变法的成功完全依赖于纠偏机制的通畅度",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "实权（军队/人才）与虚衔的物理分离是权力重组的常态",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "现代化理性法治社会对学术尊严的绝对刚性保护",
+          "evidence_hits": 3,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "纯物理性掠夺和降维打击对达观心性的破除",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "强力危机下的集权动员具有短期物理效能",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "王安石与苏东坡在“国家拯救路径”上的终极信仰冲突",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "依附体制实现抱负与保持学术独立性的逻辑悖论",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "误以为老板提供的“特权”是安全保障，得意忘形干预政治清洗",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "为了推行完美方案，偏执清除提意见的骨干，起用只会拍马屁的执行顺从者",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "在多头博弈中抢夺显赫的虚衔，却将精锐军队和实权拱手让给低调偏将",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "逆境中的精神重构与文化超越法则（苏轼隔离）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "政策执行的可行性纠偏门禁规则（拗相公防线）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "知识背书的事实中立与安全隔离原则（中立史学）",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "吴晗《朱元璋传》的四易其稿，是两千年来知识分子被集权黑箱异化的悲剧典型，必须深度警醒",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "王安石变法的教训在于，缺乏“程序正义和异议保护”的崇高变法，最终只会生产出蔡京式的官僚帮凶",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "达观心性绝非消极躺平，它是在外部抗争通道被完全物理熔断时的“唯一心智留存艺术”",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/001-20世纪五大传记书系.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 1070256,
+          "lines": 17848,
+          "sha256": "c9a99ae0f5c3717b5c180e5aeb9a9a96d96784652ebce38b2fe01a352b7280b6",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=5;CL=4;CM=3;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
     },
-    "evidence_hits": 8,
-    "summaryish_hits": 0,
-    "characters": 43220
-  },
-  {
-    "path": "generated/book-models/006-传销洗脑实录.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
+    {
+      "book_id": "002",
+      "path": "generated/book-models/002-商君书.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 7,
+        "CL": 5,
+        "CM": 3,
+        "RP": 4,
+        "H": 3,
+        "A": 4,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 186,
+      "summaryish_hits": 0,
+      "characters": 17479,
+      "items": [
+        {
+          "id": "C001",
+          "title": "壹务 / 壹言",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "农战",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "弱民",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "利出一孔",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "重刑去刑 / 以刑去刑",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C006",
+          "title": "强国",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C007",
+          "title": "治世不一道，便国不必法古",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "历史形势不同，治国方法必须随之改变",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "利出一孔才能让民专心于农战",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "民强则国弱，民弱则国强",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL004",
+          "title": "加重对轻罪的刑罚可以杜绝一切犯罪（以刑去刑）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL005",
+          "title": "排除知识阶层与商人的干扰是集聚国力的前提",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "利益多元—避难就易—农战废弛—国力削弱",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "弱民（无智、贫穷）—依附国家—乐为君用—战强",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM003",
+          "title": "重刑于轻罪—民不敢犯—法立刑措—国家大治",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "从功利与动员效率评估一切政策与阶层",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "将民间与国家视为零和博弈",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "破除历史迷信的功利主义适应论",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP004",
+          "title": "重法度而废除个人主观裁量",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "凡治理遇到动员阻碍，先收窄利益入口，莫只加口号宣传",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "欲求民用，必先使之归附于土地与单一规则",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "消除犯罪的首要策略在于严惩小错，而非仅追究大罪",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "人性纯粹趋利避害且本质自私",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "国家生存的首要价值是绝对的军事安全与扩张",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "思想的多元和百家争鸣是祸乱的根源",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A004",
+          "title": "贫富均衡可以通过行政命令强行控制",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "法家模型具有强烈的兼并战争时段性",
+          "evidence_hits": 3,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "重刑阻吓机制高度依赖司法的无私执行",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "抑制知虑限制了国家的创新和进化能力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "弱民与军事战斗力之间的矛盾",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "法治机器的运行与君主集权的边界",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "在兼并竞争中盲目复古，抗拒制度改良",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "允许利益多门，导致百姓投机逃避核心任务",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "执行法律时宽纵大罪，苛责小民",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "组织转型首先要封堵其他轻松替代路径（利出一孔）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "规则的威信立于对轻微越轨行为的绝对零容忍（以刑去刑）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "评估政策要剥离道德口号，聚焦于核心的物理汲取力与控制力",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "“利出一孔”的底层动员模式依赖于信息极度闭塞的农业社会",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "“以刑去刑”的法治逻辑被后世秦的速亡证明有极大的反噬风险",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "弱民强国的零和逻辑具有局限性",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/002-商君书.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 100458,
+          "lines": 3998,
+          "sha256": "cfb60256e5843c3028699e77e38130dd9eda2cee4c66e8fb8540ea04bae3adb5",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=7;CL=5;CM=3;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
     },
-    "evidence_hits": 7,
-    "summaryish_hits": 0,
-    "characters": 32110
-  },
-  {
-    "path": "generated/book-models/007-做局.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
+    {
+      "book_id": "003",
+      "path": "generated/book-models/003-传习录.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 6,
+        "CL": 4,
+        "CM": 2,
+        "RP": 3,
+        "H": 3,
+        "A": 3,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 172,
+      "summaryish_hits": 0,
+      "characters": 17393,
+      "items": [
+        {
+          "id": "C001",
+          "title": "心即理",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "知行合一",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "良知与致良知",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "格物致知",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "必有事焉（常惺惺）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C006",
+          "title": "德性首义与见闻次义",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "凡是“不行”的认知，在底层物理上皆不属于“真知”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "天理并不在心外的物理客体上，而在本心的得宜发用中",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "泛滥于多闻多见的信息碎片，是窒息德性良知的第二义迷宫",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL004",
+          "title": "阻碍良知发用的核心变量是“毁誉得失心”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "心理二分—即物穷理—务外遗内—流于口耳谈说—行动瘫痪/任意妄为",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "诚意为主—事上磨炼格物—克除得失私欲—良知畅通—知行无缝合一",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "“反求诸己”的本体还原思维",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "排除“第二义”的优先级过滤思维",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "“功夫即本体”的即时知行思维",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "评估自我或他人的专业水准时，凡是“没有物理行迹”的口头知晓，一律判定为“不知”，不予采信",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "决策面临剧烈纠结与内耗时，强制使用“反求诸己”过滤毁誉得失心，直击内心良知的直觉判定",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "面对海量信息与学习规划时，恪守“以我为主、见闻为次、一以贯之”的信息过滤防线",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "道德理性与实践理性具有客观的先验本能性",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "只有在物理实践中，认知才能真正闭环并被确证",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "外部事物的规则（物理）如果不被主体的道德心智所统摄，就是毫无意义的碎屑",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "自然科学客观实体规律的不可还原性",
+          "evidence_hits": 3,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "极度不对称暴力下的肉体强制剥夺",
+          "evidence_hits": 3,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "纯工具性的快速动作习得",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "“常提念头”的克私欲与“画蛇添足”的本体自然之矛盾",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "事功的外部成效与本心道德高洁的冲突",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "认为必须“学好了、看完全部教程”才去躬行，陷入知行二分的无限拖延",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "遇到挫折便向外推卸，指望外部客体（如客户、员工）先变好，自己不作本心省察",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "孤守虚静，深居静坐拒绝做事，将修行与日常具体工作割裂",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "事上磨炼的“最小可行行动闭环法则”（行动即学习）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "决策无私欲的“毁誉得失滤网机制”（不动心决策）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "信息摄取的“德性一以贯之屏障”（过滤第二义）",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "传习录的心即理，绝非主观唯心主义的胡乱狂妄，它是一套极刚性的“行动哲学”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "必须时刻警醒：一切以“时机未成熟、我还不够专业”为借口的拖延，本质上都是知行二分的慢性自毁",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "警惕过度追求“无善无恶”的心性玄空，防止退化为逃避世俗责任的佛系躺平",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/003-传习录.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 252756,
+          "lines": 7880,
+          "sha256": "bc4ae69177b4a58cc7848bfee50468ac95d87c71ef9eb03f3715790a3b24ac9b",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=6;CL=4;CM=2;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
     },
-    "evidence_hits": 12,
-    "summaryish_hits": 0,
-    "characters": 37050
-  },
-  {
-    "path": "generated/book-models/008-天下无谋之密卷.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
+    {
+      "book_id": "005",
+      "path": "generated/book-models/005-传销学.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 5,
+        "CL": 3,
+        "CM": 2,
+        "RP": 3,
+        "H": 3,
+        "A": 3,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 165,
+      "summaryish_hits": 0,
+      "characters": 17193,
+      "items": [
+        {
+          "id": "C001",
+          "title": "几何级数倍增学",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "代际级差与双轨奖金",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "熟人信任网络套现",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "兼职暴富与零风险神话",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "纯人头吸纳（庞氏直销）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "级差或双轨奖金能使销售团队实现无雇佣关系的“自我督导运转”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "非法传销的本质是以“拉人头的入门费”代替“商品的零售消费”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "数学倍增的物理极限决定了非法传销底部会员必受剥夺",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "级差提成激励—自发培训下线—社交网络变现—渠道代际分裂",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "强制囤货入门—代际倍增触顶—流出大于流入—拒绝退货/扣减结算—雪崩式破产",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "区分“存量滚动”与“增量创造”的价值剥离法",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "人口极限的几何级数校验",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "社交资产的折现损耗评估",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "评估任何裂变业务时，凡是需要“缴纳入门费”或“购买高价大礼包（强制买单囤货）”方能获得代理资格的，一律判定为非法传销，坚决拒绝",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "进行项目合作与推广时，恪守“决不把亲情、友情关系网作为拉新抽佣工具”的社交死线",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "识别级差双轨奖金的裂变时，强制套用“通项几何公式”计算其 5 代后的人口边界，一旦超过目标受众 10%，绝不接最后一棒",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "任何没有外部消费者买单的资金闭环滚动必是存量互剥的零和游戏",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "人的社交信任是一种可以被折算为货币的物理重资本",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "级差提成规则足以在无雇佣契约下驱动高强度的自发培训和招募动作",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "合规分销体系与非法传销的边界",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "拥有高复购、高消费粘性的功能性精品直销",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "纯免费的社交网络裂变软件推广",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "“无雇佣自发分裂”与“失控庞氏化”的天然冲突",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "社交圈信誉的变现欲望与社会学人格存续的死结",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "相信所谓的“零元兼职、稳赚不赔”，自掏腰包购买高价礼包以获取代理权",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "为了拿高额推荐奖，将自己所有的亲友熟人拉入灰色投机裂变网络",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "看到团队裂变曲线极其陡峭便盲目参与，忽略了人口极限导致第 5 代后必然崩盘的规律",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "商业模式合规检测的“资金来源增量原则”（合规筛网）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "裂变容量的“人口代际极限通项公式算力原则”（容量风控）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "商业招募的“社交信誉重资本评估原则”（信誉隔离）",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "必须时刻警醒：任何披着“社交电商”外衣的裂变，只要底层玩的是“强制买单囤货”，必是传销",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "社交信誉是不可再生的终极重资产，千万不可为了微小的返利佣金将其在庞氏网络中抵押套现",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "金字塔底部的 80% 绝对剥夺率是冰冷的数学铁律，绝非个人通过“极度努力”就能抗衡的自然界规则",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/005-传销学.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 816976,
+          "lines": 13092,
+          "sha256": "28a8261eddbeb63ccf11b47faa997f6266ea5d7bfca777cff32a7821d1272fb2",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=5;CL=3;CM=2;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
     },
-    "evidence_hits": 8,
-    "summaryish_hits": 0,
-    "characters": 34120
-  },
-  {
-    "path": "generated/book-models/009-影响力.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
+    {
+      "book_id": "006",
+      "path": "generated/book-models/006-传销洗脑实录.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 7,
+        "CL": 5,
+        "CM": 3,
+        "RP": 3,
+        "H": 3,
+        "A": 4,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 184,
+      "summaryish_hits": 0,
+      "characters": 17980,
+      "items": [
+        {
+          "id": "C001",
+          "title": "封闭式环境",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "众星捧月 / 亲和力包装",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "假性信任",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "认知失调合理化",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "递进洗脑程序",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C006",
+          "title": "上线款（2800元）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C007",
+          "title": "亲情裂变 / 骗亲拉新",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "真正留住新人的是寝室的假性温情，而非课堂的理论",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "洗脑效果取决于信息灌输的步骤完整性",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "欺骗亲友的负罪感可以通过宏大叙事被成功重构",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL004",
+          "title": "沉没成本与退路切断迫使成员转化为作恶者",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL005",
+          "title": "封闭环境是维持群体极化偏见的唯一屏障",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "空间隔离—通信管控—理性参照物丧失—盲从共识",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "亲情剥汲—话术重构—道德脱敏—欺诈裂变",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM003",
+          "title": "情感勒索（众星捧月）—制造欠债感—服从暗示",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "声东击西：利用情感手段掩盖真实的经济榨取",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "相对主义诡辩：混淆概念以合法化组织行为",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "递进剥笋法：按步骤控制心智节奏",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "面对突如其来的超常热情，首先检查其物理与社交的封闭度",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "当组织逻辑遭到质疑时，检查其是否用“动机”和“态度”代替事实回答",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "道德脱敏的预警信号：当被要求用“善意谎言”去获取亲友资源时，立即判定为系统性欺诈",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "人的独立理性极易被群体环境蚕食",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "亲情和熟人信用是社会中最易被透支的无担保资产",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "作恶的心理动力来自道德的重新洗牌",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A004",
+          "title": "贪婪和脱困焦虑是最好的心智引线",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "心智重构高度依赖纯粹的“信息真空”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "亲情裂变在宗族关系破裂时失效",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "假性温情对冷酷理性的个体效果减弱",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "暴富的狂热宣传与吃住极度简陋的物理现实的张力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "亲情救赎与家庭毁灭的伦理撕裂",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "以为只要不进课堂听课就不会被洗脑",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "相信传销网里有真正的温情与爱心，试图在里面寻找归宿",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "在谎言败露、资金亏损时，为了面子继续在网内硬撑以求回本",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "识别和防范组织层面的心智控制（心智盾牌）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "抵御道德勒索的核心在于切断“情感负债”的因果链（情感隔离）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "保护个人信用网的终极红线是：禁止以任何不透明的原因动用亲友资产（信用隔离）",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "传销组织将“欺骗”合理化为“救赎”是极高危的心智污染",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "寝室的“假性温情”比课堂具有更强的腐蚀力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "沉没成本（2800元）是维持这一高压系统运转的经济枷锁",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/006-传销洗脑实录.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 119123,
+          "lines": 3337,
+          "sha256": "c4e810cd4a1a78ea5a745ad23b6bced6db5eae1f47b87e3025eef0937a239066",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=7;CL=5;CM=3;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
     },
-    "evidence_hits": 8,
-    "summaryish_hits": 0,
-    "characters": 36120
-  },
-  {
-    "path": "generated/book-models/010-心-稻盛和夫的一生嘱托.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
+    {
+      "book_id": "007",
+      "path": "generated/book-models/007-做局.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 8,
+        "CL": 8,
+        "CM": 7,
+        "RP": 7,
+        "H": 8,
+        "A": 7,
+        "V": 8,
+        "B": 6,
+        "T": 4,
+        "AP": 6,
+        "P": 8,
+        "I": 8
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 347,
+      "summaryish_hits": 0,
+      "characters": 30124,
+      "items": [
+        {
+          "id": "C001",
+          "title": "局",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "利益结构",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "信息差与底牌",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "关系网络与关键节点",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "选择权与议程控制",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C006",
+          "title": "风险转移与成本外部化",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C007",
+          "title": "声誉与公共叙事",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C008",
+          "title": "安全底线与退路",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "经历和环境会改变行动者的选择空间",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "项目成败不能只看公开目标，还要看谁承担成本、谁获得收益",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "信息控制可以改变竞争者对项目价值和风险的判断",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL004",
+          "title": "公开承诺有时可以成为争夺议程的动作，而不只是最终承诺",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL005",
+          "title": "关系网络可以传递资源、信息和影响力，但也会制造关系债务",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL006",
+          "title": "高风险行动必须保留最低安全底线",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL007",
+          "title": "局部动作会通过关系网络产生延迟的二阶后果",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "CL008",
+          "title": "危机中的“快速结案”可能只是把真实责任转移给更容易牺牲的人",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "个人经历—资源位置—机会轨迹",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "表面公共目标—利益不匹配—项目停滞",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM003",
+          "title": "公开承诺—竞争者进入—成本转移—后续选择空间",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM004",
+          "title": "选择性信息—对手自行推断—对手行动",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM005",
+          "title": "关系投入—信任/义务—信息与协调能力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM006",
+          "title": "局部报复—隐蔽行动—网络牵连—公共危机",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM007",
+          "title": "证据不完整—情绪与关系介入—替罪/结案—残余风险",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "先看利益与成本，再听价值口号",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "从结构性约束解释项目停滞",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "把公开行为和隐藏动机分开",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP004",
+          "title": "沿时间顺序观察选择权如何变化",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP005",
+          "title": "通过关系网络定位信息和影响的流向",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP006",
+          "title": "把事件放入长期局势，而不是只看当前一轮输赢",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP007",
+          "title": "检查二阶后果和不可逆损失",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "反复失败时，先查约束，不要只加大执行力度",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "接受高风险项目之前，先核对收益、成本、责任和退出条件",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "面对更强竞争者，先扩大选择空间，再决定是否正面竞争",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H004",
+          "title": "面对重要信息时，区分事实、推测和故意释放的信号",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H005",
+          "title": "重要公共事项不能只看正式汇报",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "H006",
+          "title": "在扩大目标前，先守住不可失去的底线",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H007",
+          "title": "危机中先保护事实和受害者，不把结案当成解决",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "H008",
+          "title": "把关系帮助当作有代价的资源管理",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "人的行动受多重激励共同驱动",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "信息和选择权分布不均",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "关系网络会改变正式制度的实际运行",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A004",
+          "title": "稀缺资源会把合作变成竞争",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A005",
+          "title": "人会用道德语言包装自身利益",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A006",
+          "title": "小动作可能产生延迟和不可逆后果",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A007",
+          "title": "行动者具有能动性，但不能脱离路径和约束",
+          "evidence_hits": 13,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "小说叙事不是现实经验统计",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "关系与信息策略依赖低透明度环境",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "短期有效不代表长期可持续",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B004",
+          "title": "对隐藏动机的推断必须保持可证伪",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B005",
+          "title": "安全底线可能转化为保守和错失机会",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B006",
+          "title": "有效的反诈识别不等于复制做局手段",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "低调、照顾他人与关系操控之间的张力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "公共利益与私人收益纠缠",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T003",
+          "title": "个人选择与结构约束的张力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T004",
+          "title": "亲情保护与事实正义的张力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "只用公共口号动员，不核对利益与责任",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "把正式汇报当作完整现实",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "在没有退出条件时追求一次性胜负",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP004",
+          "title": "让对手或中间人代替自己承担不可逆风险",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP005",
+          "title": "把关系帮助当作免费的资源",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP006",
+          "title": "用替罪和舆论叙事替代事实调查",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "先诊断结构，再决定是否加大行动",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "把信息当作需要验证的变量，而不是现成事实",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "任何高风险目标都要配套最低安全底线",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P004",
+          "title": "先争取选择权，再争取结果",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P005",
+          "title": "观察一个人如何获得资源，通常比只听其自我描述更有解释力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P006",
+          "title": "判断行动时要把二阶后果纳入同一张图",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P007",
+          "title": "危机处理中不能用“尽快结案”替代事实与责任",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "P008",
+          "title": "识别做局机制的首要用途是防御，不是复制",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "“做局”作为统一机制是分析者重建，不是原书理论定义",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "将项目竞争与后半段刑事危机放进同一条风险转移链，是跨情节重建",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "关系网络既是协调资源又是风险放大器",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I004",
+          "title": "选择性信息可以改变对手选择，是强重建，不是普适定律",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I005",
+          "title": "“保留退路”可迁移为风险管理原则，但具体资源选择是分析者转换",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I006",
+          "title": "危机中保护事实、受害者和证据，是分析者评价，不是原书角色共同遵守的原则",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "I007",
+          "title": "本书中的“成功”不能被简单理解为值得效仿",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I008",
+          "title": "这本书最适合用作机制识别和风险教育材料",
+          "evidence_hits": 12,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/007-做局.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 34435,
+          "lines": 862,
+          "sha256": "998027279aff27f32e0e304fb81b6b5ea07d290018313d6c21da19fd73144550",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=8;CL=8;CM=7;H=8;P=8",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
     },
-    "evidence_hits": 7,
-    "summaryish_hits": 0,
-    "characters": 31220
-  },
-  {
-    "path": "generated/book-models/011-忽悠的原理与技巧.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
+    {
+      "book_id": "008",
+      "path": "generated/book-models/008-天下无谋之密卷.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 6,
+        "CL": 5,
+        "CM": 3,
+        "RP": 3,
+        "H": 3,
+        "A": 4,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 182,
+      "summaryish_hits": 0,
+      "characters": 16835,
+      "items": [
+        {
+          "id": "C001",
+          "title": "不察与不忍",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "祸起上下背德",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "恃刑立威",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "谋必辟 / 专必为祸",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "名可易，实必争",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C006",
+          "title": "生存保全 / 荣之存续",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "遭受灾祸的核心原因在于“不察人”与“手软不忍”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "上下的疑与惧是组织内讧的催化剂",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "威严建立于礼法和刑罚，丧失于纵容",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL004",
+          "title": "秘密参与者多则生祸（谋必辟）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL005",
+          "title": "乱世用能，平世去患；盛世用忠，庸世用顺",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "不察奸邪—优柔寡断—对手翻盘—彻底亡身",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "泄露机密/分享权力—产生软肋—受制于人—大权旁落",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM003",
+          "title": "放弃虚名—规避嫉恨—暗夺实权—长期保全",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "极端警惕与不侥幸的怀疑主义",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "结构化威严与制衡管理",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "唯实不唯名的保全主义",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "疑人勿信，防人莫存侥幸；察验不周者不可付托大事",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "排除隐患必须断然决绝，忌中途手软（去不忍）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "争夺实权以自保，故意示弱以避祸",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "权力关系是零和且极其缺乏安全感的",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "秘密一旦被第二人知晓就不再是秘密",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "人的才能和其破坏力是相伴共生的",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A004",
+          "title": "荣华富贵非天命，全靠精密的智谋与保全手段来存续",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "权谋防范高度依赖人治与低透明度的非正式组织",
+          "evidence_hits": 3,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "视人若寇的偏执会导致系统协作效率的彻底归零",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "顺从自苦在规则不可预期时依然有保全上限",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "用能防篡与组织效能的张力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "绝对保密与信息高效流通的矛盾",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "对奸人异动心存幻想，因不忍而招致灭身之祸",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "追求大权独揽，却将自身软肋和机密向多人公开分享",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "沽名钓誉，在没有绝对实力保护下占据高危的虚名虚位",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "决策风险防范的核验第一红线（防微杜渐）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "确立规范的绝对决断硬度（去不忍）",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "策略性退避虚名以争实利（名实分离）",
+          "evidence_hits": 7,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "本书的世界观极度偏执和阴冷，是对人性的极限防范",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "“谋必辟”的清除逻辑极易诱发严重的信任螺旋",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "盛世用忠去能，在创新社会具有极大的阻碍性",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/008-天下无谋之密卷.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 82889,
+          "lines": 4383,
+          "sha256": "f42707f165d0e162e2fe195bcd8f4ec3dbea6be2c607e2a7ab8c20baf8dcbacb",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=6;CL=5;CM=3;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
     },
-    "evidence_hits": 8,
-    "summaryish_hits": 0,
-    "characters": 38120
-  },
-  {
-    "path": "generated/book-models/012-我是怎么割韭菜的.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
+    {
+      "book_id": "009",
+      "path": "generated/book-models/009-影响力.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 6,
+        "CL": 4,
+        "CM": 3,
+        "RP": 3,
+        "H": 3,
+        "A": 3,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 172,
+      "summaryish_hits": 0,
+      "characters": 16423,
+      "items": [
+        {
+          "id": "C001",
+          "title": "捷径反应（按纽播放）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "触发特征与顺从柔道",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "互惠原理与亏欠感",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "拒绝—后撤术（留面子法）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "登门槛技术（Foot-in-the-door）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C006",
+          "title": "社会认同与多元无知",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "互惠原理的亏欠感可以压倒对募捐者的厌恶感",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "硬塞的恩惠同样能触发不对等的巨额回报",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "先大后小的请求顺序会产生惊人的说服力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL004",
+          "title": "小承诺是改变个体自我认知的特洛伊木马",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "强加恩惠—制造亏欠不适感—拒绝丢脸风险—不对等高额回报",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "制造大要求（遭拒绝）—降级后撤（伪装让步）—知觉对比（小要求显得极小）—被迫妥协让步",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM003",
+          "title": "索取小表态—改变自我定义—一致性绑架—大额利益让步",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "剖析表象：寻找触发特征与磁带反应",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "动机解构：将“善意”与“推销”区分",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "逆向重构：以柔道对抗柔道",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "接受恩惠前，先判明那是出于好意还是推销的诱饵",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "面对突然降低的要求，警惕其对比差，不要过早妥协",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "警惕微小的表态要求，拒绝在一项你并不认同的事情上留下口头或书面承诺",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "人类的决策系统高度依赖低耗能的心理捷径",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "顺从原理的效力是可以通过改变呈现顺序来操纵的",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "人人都有维持“知行一致”正面人格的心理强迫症",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "反思意识的觉醒会瞬间熔断自动反应",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "互惠对于不存在长期交往预期的防御者效果降低",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "承诺的一致性受到利益规模的刚性限制",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "捷径的高效性与被操纵的高风险的张力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "互惠原理的社会繁荣功能与其引发的不对等剥削的矛盾",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "盲目相信高昂价格代表优质，拒绝多方核实",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "接受不请自来的“礼物”后，感到愧疚并答应对方的高额要求",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "在签字支持某个微小倡议后，硬着头皮买下其捆绑的昂贵产品以维护“面子”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "识别说服柔道并解除情绪亏欠（柔道反制）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "独立评估后撤请求的性价比（对比隔离）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "承诺的防火墙：绝不在非核心利益上做出书面或公开表态（承诺自律）",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "“顺从柔道”的精妙之处在于借力打力，防御必须靠理性惊醒",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "互惠原理的不对等性是庞氏和欺诈链条的最爱",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "承诺和一致具有极强的自我合理化倾向，小妥协必然导致大失控",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/009-影响力.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 166218,
+          "lines": 2488,
+          "sha256": "a465668631fb25281a07a3c4a458723368e424c93f450f1bd1b7d73f382f841f",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=6;CL=4;CM=3;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
     },
-    "evidence_hits": 7,
-    "summaryish_hits": 0,
-    "characters": 34120
-  },
-  {
-    "path": "generated/book-models/013-新厚黑学全书.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
+    {
+      "book_id": "010",
+      "path": "generated/book-models/010-心-稻盛和夫的一生嘱托.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 7,
+        "CL": 5,
+        "CM": 3,
+        "RP": 3,
+        "H": 3,
+        "A": 4,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 184,
+      "summaryish_hits": 0,
+      "characters": 17829,
+      "items": [
+        {
+          "id": "C001",
+          "title": "宇宙意志",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "真我 / 本心",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "利己之心 / 本能感性",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "动机良善 / 无私叩问",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "感谢修行",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C006",
+          "title": "燃烧的斗魂",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C007",
+          "title": "大善似无情，小善是大恶",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "人生的终极目的在于提高心性，磨炼灵魂",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "一切成功归结于利他之心",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "困难和挫折是磨炼心志的恶业消解机",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL004",
+          "title": "大善似无情，小善是大恶",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL005",
+          "title": "只有在动机毫无私心时，燃烧的斗魂才能持久",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "动机纯粹校验—无私决断—消除内部阻力—凝聚外部资源—商业奇迹",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "遭遇厄运—由衷感谢—放弃抱怨—专心工作—恶业消除—境界拔高",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM003",
+          "title": "小善纵容—惰性滋生—技能与纪律退化—系统崩溃—大恶结果",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "以“作为人，何谓正确”作为第一性原则评估决策",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "动机叩问与“私心”滤镜排除",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "将逆境和日常工作完全重构为心性修行的“炼丹炉”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "重大商业决断前，先进行“动机良善，私心克己”的半年检验",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "面对挫折和灾难，脱口而出说谢谢，禁止任何抱怨",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "执行管理纪律时，以“大善无情”为准则，杜绝“小善大恶”的温情主义",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "宇宙是一个有利他意志的、有灵性的统一整体",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "动机的纯粹度直接决定了系统整合资源的效率",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "日常勤奋工作是提升灵魂心性的最佳捷径",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A004",
+          "title": "利己是人性的外层本能，利他是心灵的核心真我",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "“利他第一”要求决策者本身有极强的风险承载力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "大善无情在缺少社会基础保障时易激化矛盾",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "宇宙意志的共鸣依赖唯心主义世界观的内化",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "极度无私与商业竞争中的掠夺属性的张力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "工作即修行与个人生活/家庭健康的冲突",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "遇到挫折和困难立刻怨天尤人，抱怨环境和对手",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "为了讨好员工或追求表面和谐，行使纵容的“小善”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "在动机充满个人贪欲和虚荣时，假冒“利他”进行虚伪的社会动员",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "开启重大挑战前的动机去噪法（无私自省）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "管理考核的“大善无情”红线规则（大善管理）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "逆境心理重构的感谢修行法则（逆境重构）",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "稻盛利他哲学不是单纯的道德说教，它是建立在本体论宇宙观上的“物理信仰”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "必须警惕将“大善无情”歪曲为暴虐霸凌的合理化借口",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "极度认真的工作是消解恶业的唯一世俗道场",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/010-心-稻盛和夫的一生嘱托.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 68181,
+          "lines": 2416,
+          "sha256": "ceb11a5524cb741732bbc6ec4704147ffc7dbcb3db3e46ed2ef0956c895e84bd",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=7;CL=5;CM=3;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
     },
-    "evidence_hits": 12,
-    "summaryish_hits": 0,
-    "characters": 48120
-  },
-  {
-    "path": "generated/book-models/014-格局的力量.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
+    {
+      "book_id": "011",
+      "path": "generated/book-models/011-忽悠的原理与技巧.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 6,
+        "CL": 3,
+        "CM": 2,
+        "RP": 3,
+        "H": 3,
+        "A": 3,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 180,
+      "summaryish_hits": 0,
+      "characters": 17518,
+      "items": [
+        {
+          "id": "C001",
+          "title": "信息主动权过滤",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "证实偏见与封闭操纵",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "专业四标准",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "瑕疵串联假证据链",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "信任链条物理绞杀",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C006",
+          "title": "罗生门窗口期战术",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "兼听则明的前提是先过滤基于忽悠的信息污染源",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "将微小瑕疵串联为“强证据链”，其本质是利用了人类关注反常的数学偏差",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "回避现场质证并绞杀证人，是基于传播学忽悠的天然防御反应",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "包装专业术语—切片瑕疵串联—证实偏见诱导—拒绝质证拖延—罗生门闭环",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "大量捏造污染源—针对经验盲点定点爆破—割裂受众阵营—信息获取成本暴增—心智瘫痪",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "“戒毒式”的污染源物理戒断思维",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "专业资质的“四重筛网”校验",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "逆否命题的逻辑反证",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "面对公共争议或商业纠纷，凡是有一方“坚决回避有独立第三方主持的现场物理质证”，一律判定该回避方在撒谎构陷，坚决不站在其阵营",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "接收专业判断时，凡是发言者“无视自身专业局限，将常识跨界包装为绝密专业壁垒”，一律判定为诉诸权威的忽悠，予以否决",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "个人学习与心智治理中，执行“戒毒式屏蔽污染源”红线，一旦发现某自媒体有一次恶意剪裁材料行为，终身拉黑",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "独立思考的前提是必须先过滤虚假和污染的物理输入流",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "原始物理底单/凭证具有在平等现场无法被言语扭曲的至高确证性",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "人类心智存在先天的认知盲点与偏见，无法依靠单纯的逻辑战胜定制信息污染",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "司法终审与强力调查对罗生门战术的终结",
+          "evidence_hits": 3,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "纯物理量化工具对偏见的熔断",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "极端封锁下对原始信息的物理剥夺",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "独立思考的过滤防御与“信息茧房”的天然张力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "辟谣成本与造谣低廉的物理不对称死结",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "抱着兼听则明的天真想法，每天阅读已被实锤造谣的自媒体，试图从中“筛选真理”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "面对所谓的“铁证瑕疵”，忽略了总体的数理统计平均值，陷入阴谋论的偏执聚焦",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "指望通过言语争论说服一个已经划分阵营、抱有证实偏见的极端“倒韩/倒方”派系分子",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "心智治理的“认知黑名单物理戒断原则”（屏蔽污染源）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "穿透专业壁垒的“原始物理底单核验原则”（底单对决）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "校验发言资格的“中立权威四重筛选门禁”（专家校验）",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "必须时刻牢记：兼听则明不是“垃圾分类”，不要试图从恶意造谣源里捞取真理",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "阴谋论的本质，是利用了人类天生对“小概率瑕疵”的过度敏感，来颠覆99%的硬事实",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "现场物理底单的对决，是戳穿一切剪裁忽悠的唯一阿喀琉斯之踵",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/011-忽悠的原理与技巧.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 207334,
+          "lines": 6023,
+          "sha256": "fb39cac2658b8dd489f379162e780aee5fcd4f520d4df9b1e7130b36342fd47d",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=6;CL=3;CM=2;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
     },
-    "evidence_hits": 7,
-    "summaryish_hits": 0,
-    "characters": 31100
-  },
-  {
-    "path": "generated/book-models/015-汇评精注资治通鉴.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
+    {
+      "book_id": "012",
+      "path": "generated/book-models/012-我是怎么割韭菜的.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 5,
+        "CL": 4,
+        "CM": 3,
+        "RP": 3,
+        "H": 3,
+        "A": 4,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 175,
+      "summaryish_hits": 0,
+      "characters": 17398,
+      "items": [
+        {
+          "id": "C001",
+          "title": "庞氏博弈（拆东墙补西墙）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "复杂化套利神话",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "贪欲失控与侥幸狂热",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "及时性兑付示范",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "资金腾挪临界点（崩溃线）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "承诺超常回报且投资诀窍绝对保密，必为庞氏陷阱",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "用高调诡辩回应理性审计，能反向收割信徒",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "金融骗局的死因不是外部戳穿，而是内部资金流入的物理枯竭",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL004",
+          "title": "及时兑付是制造群体裂变的最高级话术",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "包装代金券噱头—小额即时现兑—激发熟人裂变—金字塔式资金滚雪球",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "指数级债务扩张—资金流入增速放缓—临界点断裂—彻底挤兑坍塌",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM003",
+          "title": "财富暴增—追求声名与虚荣—自负执念—丧失断仓离场时机—自我覆灭",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "还原事物底层价值的因果剥离法",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "极致的“心理逆向反推”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "自我膨胀防线的警觉",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "任何承诺超常规回报且底层诀窍“秘而不宣”的项目，一律判定为庞氏骗局，坚决不碰",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "面对突然的暴富或高光时刻，强制启动“虚荣克制”与“资产变现断仓”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "研判对手盘的辩护话术，凡是把简单算术复杂化的，判定其心虚",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "零和博弈中绝对不可能凭空创造出真实价值",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "人性的贪婪可以通过视觉化的利益兑付被百分百唤醒",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "商业与金融活动必须遵循“周期与均值回归”的铁律",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A004",
+          "title": "骗子的终极死穴在于其自身的欲望失控",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "主权信用担保下的资金滚动在周期上极其漫长",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "早期风险投资具有高回报与高淘汰的非庞氏特征",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "极端狂热中理性人的抗退潮能力受限于社会网络",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "赌徒心理中“明知是假，但赌自己能先跑”的理性荒谬",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "依靠谎言敛财与试图通过做慈善、买银行实现“金蝉脱壳”的洗白矛盾",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "贪图高额固定收益，相信所谓的“零风险绝密套利诀窍”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "看到熟人通过该项目买车买房，便解除防备，解除对资产流向的审计",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "在灰色套利成功后，欲望失控，为了社会名誉而死扛不退，最终身败名裂",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "资产配置的“物理硬约束核验原则”（底层防线）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "战略撤退的“虚荣熔断原则”（虚荣警报）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "研判话术的“逻辑复杂性筛查原则”（复杂性排查）",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "庞氏骗局的精髓在于“利用了人性想做聪明人、走捷径的致命傲慢”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "必须认识到，前期及时兑付的现金是欺诈体系里最硬的“心理毒品”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "任何试图用正规实业经营去拯救庞氏空洞的幻想都是徒劳的",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/012-我是怎么割韭菜的.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 161320,
+          "lines": 4256,
+          "sha256": "26d945738608e3b7b4aca062cc3c20bf562962e3bddac8362325d6d75916c82d",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=5;CL=4;CM=3;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
     },
-    "evidence_hits": 14,
-    "summaryish_hits": 0,
-    "characters": 51220
-  },
-  {
-    "path": "generated/book-models/016-活法.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
+    {
+      "book_id": "013",
+      "path": "generated/book-models/013-新厚黑学全书.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 5,
+        "CL": 3,
+        "CM": 2,
+        "RP": 3,
+        "H": 3,
+        "A": 3,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 162,
+      "summaryish_hits": 0,
+      "characters": 16798,
+      "items": [
+        {
+          "id": "C001",
+          "title": "厚黑三步曲",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "锯箭与补锅",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "求官做官十二字真言",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "心理力学（引力与斥力）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "厚黑照妖镜",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "锯箭与补锅是官僚机构中规避惩罚与套取资源最有效的办事手段",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "厚黑三阶段升级的终极状态是“假仁假义且无迹可寻”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "当系统对“十二字真言”实施正向回馈时，实干者必然被完全清除",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "故意漏防（打烂锅）—渲染重大危机—临危受命救火（补锅）—博取英雄荣誉/套取巨额资源",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "顺从上司谄媚（捧）—横向甩锅同僚（锯）—冷酷折磨下属（凶）—利益上下输送（送）—逆袭占领核心高位",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "剥离仁义修辞的“厚黑对照审计”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "危机演进的“人为痕迹”排查",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "利益引力场分析",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "评估业务合作时，凡是对方把简单的执行问题推给旁系部门，宣称“我这截没问题，其他不归我管”的，一律判定为锯箭甩锅，坚决终止与其深化合作",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "组织内部审计中，凡是出现“突然爆发危机，且某人以救世主姿态要求特批预算/提拔”的，强制启动“补锅法”逆向审计",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "职场自卫中，恪守“求官做官十二字真言”的识别防线，一旦发现上司有“绷、聋、送”齐备的征兆，立即寻找退路",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "人治组织的深层运行主要由利益分配的潜规则来支配，显规则往往是装点门面的修辞",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "人性的虚荣与多疑极易被“求官做官真言”所反向操纵",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "对厚黑把戏的公开揭示（照妖镜）是瓦解其骗取资源红利的物理熔断手段",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "现代化数据监控与全流程日志追溯的熔断",
+          "evidence_hits": 3,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "生死危机下的物理交付硬约束",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "纯物理规律对人际引力的独立性",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "厚黑自卫与“恶龙反噬”的终极心智冲突",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "实干立足与厚黑晋升的组织悖论",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "以为老板看不出“补锅”把戏，频繁在部门内人为制造故障以图表现",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "对下属无底线采用“凶”与“聋”的压榨控制，不做任何礼仪和利益关怀",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "相信厚黑学的世俗成功，将“厚而无形、黑而无色”作为终身心智指向，彻底绞杀内心的良知与人性",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "跨部门合作防甩锅的“物理日志与端到端锁死原则”（反锯箭）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "救火英雄考核的“补锅法逆向工程审计门禁”（反补锅）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "团队晋升通道的“厚黑防范十二字真言对照法则”（人才筛网）",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "必须时刻保持冷酷的清醒：厚黑学是一张“防小人构陷的逆向图纸”，决不能将其作为个人行为的圣经",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "任何试图用“补锅法”套取资源的小聪明，在现代数字追踪日志面前都无异于物理自杀",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "必须时刻警惕身边表现得“最无私、最完美、最儒雅”的道德偶像，防范其已处于厚黑第三阶段",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/013-新厚黑学全书.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 2070699,
+          "lines": 124358,
+          "sha256": "7a23c3189a2b82f21923b72377a86ea02264073513600e624c38292db16e1360",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=5;CL=3;CM=2;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
     },
-    "evidence_hits": 8,
-    "summaryish_hits": 0,
-    "characters": 36120
-  },
-  {
-    "path": "generated/book-models/017-社会性动物.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
+    {
+      "book_id": "014",
+      "path": "generated/book-models/014-格局的力量.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 5,
+        "CL": 4,
+        "CM": 3,
+        "RP": 3,
+        "H": 3,
+        "A": 3,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 172,
+      "summaryish_hits": 0,
+      "characters": 16574,
+      "items": [
+        {
+          "id": "C001",
+          "title": "心灵花园与思想种子",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "吸引力法则 / 境遇投影",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "思想自律与自我调整",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "偶然性的破除",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "格局平静",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "偶然的机会不存在，凡事遵循因果",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "环境创造不了人，它只是展示人的平台",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "人急于改善环境，却不愿提高自己，因而发展受限",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL004",
+          "title": "犯罪行为不是突发外压的因，而是长期思想酝酿的果",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "播种正确种子—坚持思想除草—自我剖析调整—引致良性环境（吸引力法则）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "惰性停滞—逃避自我克制—追求环境改善—知行背道而驰—永久陷入深渊",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM003",
+          "title": "抱怨外部环境—丧失改进能动性—处境持续恶化—宿命论合理化",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "内控型的第一性因果反思",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "知行一致的自律审查",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "偶然性过滤",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "遭遇环境糟糕和挫折时，禁止抱怨外部，启动“心灵除草与自我剖析”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "检验任何愿望与目标时，必须强行审查“行为与目标的协调度”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "研判他人的道德异动时，不为突发外压开脱，将其归于长期思想的暴露",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "境遇是心灵在现实物理空间中的三维投影",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "任何财富、健康和成功的获得，必须以自我心智的“牺牲与克制”为代价",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "人是自己命运的绝对君主，具有无限的自我重塑能动性",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "生理退行性疾病对思想控制力的物理剥夺",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "极端物理灾难与暴力战争的无差别覆盖",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "纯制度性壁垒对个人努力的瓶颈限制",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "诚实受穷与狡诈得财在世俗眼光中的表面失灵",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "顺从环境与抗争环境的边界模糊",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "遇到失败全部归罪于外部环境，通过抱怨逃避自我心智审查",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "抱有高远愿望，但行为思想背道而驰（如穷人偷懒、富人暴食）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "将犯罪或道德失守归结为“形势所迫、身不由己”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "战略目标达成的“因果对称性审查原则”（知行对称）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "逆境管理的“内控第一性归因法则”（内控归因）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "核心岗位考核的“思想预谋判定红线”（诚信预谋）",
+          "evidence_hits": 8,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "吸引力法则不是简单的“想什么就来什么”，而是“你是怎样的人，就吸引怎样的境遇”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "必须防范将“境遇投影说”极端扩大化为对社会物理压迫的视而不见",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "思想是行动的花朵，必须依靠坚毅的“除草”实践来维持",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/014-格局的力量.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 55348,
+          "lines": 1300,
+          "sha256": "0e56fd7cf77c436c7520a54edb496f9a123bcfb9d0d783446fdbe0437edc1585",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=5;CL=4;CM=3;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
     },
-    "evidence_hits": 11,
-    "summaryish_hits": 0,
-    "characters": 44120
-  },
-  {
-    "path": "generated/book-models/018-素书.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
+    {
+      "book_id": "015",
+      "path": "generated/book-models/015-汇评精注资治通鉴.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 5,
+        "CL": 3,
+        "CM": 2,
+        "RP": 3,
+        "H": 3,
+        "A": 3,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 161,
+      "summaryish_hits": 0,
+      "characters": 16930,
+      "items": [
+        {
+          "id": "C001",
+          "title": "德才先后的用人门禁",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "家奴内廷专权（信息封锁）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "物理实权垄断（藩镇割据）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "远害全身与自污避忌",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "史学治乱鉴戒",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "用人“才胜德者”，必会导致组织内部法度的彻底坍塌与大乱",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "依靠贴身家奴（宦官）替代科规官僚，必定导致信息通道的死锁与内廷失控",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "功臣“功高震主”时，自污是唯一能在黑箱政治中存活的算法",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "贪图才干起用小人—小人排除异己夺权—法度信用坏死—组织大崩盘",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "官僚做大皇帝猜疑—收回外廷决策权—信任贴身内侍—内侍物理锁死信息流—皇帝成盲人—帝国解体",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "“德才二元分立”的才干过滤思维",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "物理资源的硬指标追踪",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "“以退为进、以自污自卫”的逆向避险思维",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "进行骨干任命或合作伙伴选择时，凡是“才干极高但道德底线模糊、屡次违反红线”的人，一律判定为“才胜德之小人”，坚决不起用",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "治理高层团队时，坚决切断老板使用法外“贴身秘书/内廷助手”直接越权向业务一线发号施令的信息流",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "遭遇重大世俗荣誉或功绩“盖过部门主管”时，恪守“萧何自污与主动分功退居偏裨”的避险法则",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "德行是约束才干流向的唯一底层物理安全阀，失德才干必然自毁",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "权力关系的根本依靠是兵权、财税等物理资源的硬垄断，而不是名义上的效忠誓言",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "专制体制下君主对臣属强烈的猜嫌是不可熔断的机制病灶",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "现代化公众持股与刚性离职退役法治保护",
+          "evidence_hits": 3,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "完全数字穿透扁平化小团队的物理事实呈现",
+          "evidence_hits": 3,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "纯物理性核危机对抗下的才干刚性倾斜",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "“德者才之帅”与“物理危机迫切需要高才干”的组织张力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "君臣信任的绝迹与集权制度自毁的矛盾",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "为了追求短期业绩指标，重用才华横溢但无底线的“才胜德”小人，并让其掌握人事和财权",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "当老板对自己表现出猜疑时，固执自辩，疯狂向外界展示自己的完美无瑕和下属爱戴",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "君主为了防范前线经理结党，完全依靠法外的贴身秘书团直接向前线发布指挥指令",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "人事任免的“德行一票否决门禁”（德先于才）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "组织架构的“显规则层级指挥防空红线”（信息阻断防范）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "逆势期的“萧何自污与主动降调避忌法则”（功成自污）",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "必须时刻牢记：才胜德的小人，是组织中破坏性最强的隐形病毒，决不可姑息起用",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "任何绕过合法官僚机制的家奴集权，最终都会演变为内廷太监对君主信息的物理死锁",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "功臣的高调和完美，在黑箱权力看来就是准备黄袍加身的前奏，自污和隐退是无奈的理性防线",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/015-汇评精注资治通鉴.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 3432347,
+          "lines": 77937,
+          "sha256": "11ae155d2c1da67320e73a0f314a2f206a8089dc4b348aae56b6ec6f8b9eecf5",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=5;CL=3;CM=2;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
     },
-    "evidence_hits": 8,
-    "summaryish_hits": 0,
-    "characters": 35120
-  },
-  {
-    "path": "generated/book-models/019-罗织经.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
+    {
+      "book_id": "016",
+      "path": "generated/book-models/016-活法.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 5,
+        "CL": 3,
+        "CM": 2,
+        "RP": 3,
+        "H": 3,
+        "A": 3,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 163,
+      "summaryish_hits": 0,
+      "characters": 16350,
+      "items": [
+        {
+          "id": "C001",
+          "title": "灵魂磨炼与净化",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "作为人何谓正确",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "极度认真与六项精进",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "感谢消恶业",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "思利他（敬天爱人）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "用“作为人何谓正确”来做经营决策，能规避绝大多数商业反噬灾难",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "将日常岗位工作视为修行，能直接完成对浮躁心智的自发驯化",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "遭遇灾难时心怀感激，是防范心理产生次生毒素的唯一科学算法",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "何谓正确决策—极度认真精进—克除得失私欲—利他行善分配—宇宙意志共振—事业圆满",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "突发灾难重创—不怨天尤人—重构为“消恶业结算”—大声说谢谢—瞋恨心物理熔断—心智涅槃",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "“作为人何谓正确”的常识化归演",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "灾难发生时的“债务抵扣”重构",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "极度认真的“事上精进”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "评估任何商业决策或商业机会时，凡是需要通过“说谎、隐瞒事实、欺骗客户、或剥削员工”来实现盈利的，一律以“作为人何谓正确”法则实行一票否决",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "遭遇突发不幸、重病或严重的商业背叛损失时，强制在 5 分钟内执行“感谢消恶业”重构，对苦难真诚说谢谢以熔断瞋恨",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "每天工作或开发时，恪守“付出不亚于任何人的努力，极度认真对待手头这行代码/这张图纸”的事上精进防线",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "宇宙是由因果铁律和向善的引力场（利他）所构建的有序共同体",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "痛苦和灾难在底物理上具有消减个体负面业债的客观抵扣功能",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "人类最基础的常识道德（诚实、不贪、利他）具有超越时代的绝对物理真理性",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "现代化商法下利他与股东受托责任的合规边界",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "物理侵害正在发生的阻断正当防卫",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "严重脑器质性病变的物理脑死亡",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "纯利他的出世心性与世俗商业竞争中“物尽天择”的残酷张力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "感谢消恶业的心理重构与现实抗争的逻辑纠缠",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "遇到大病或商业失败，陷入疯狂的抱怨与对仇人的怨毒诅咒中，折损心智本金",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "认为工作是无意义的被剥削，每天摸鱼混日子，指望在周末静坐来寻找“人生的活法”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "为了所谓的“大爱利他”，越过企业财务安全底线进行无原则的送礼让利，导致公司破产",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "决策去伪的“作为人何谓正确常识门禁”（常识风控）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "逆境心理熔断的“感谢消恶业债务抵扣机制”（逆境消消乐）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "工作修行的“付出不亚于任何人努力的极度认真法则”（事上精进）",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "极度认真工作绝非被动的“奴隶劳役”，它是主体变被动为主动、以红尘为道场的心智超克",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "感谢消恶业重构，是为了在物理伤害发生后“保全仅存的理智”，决不可在伤害发生前主动找虐",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "必须时刻清醒：敬天爱人与思利他是最高级的“自组织生态肥料”，不是无原则的圣母放任",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/016-活法.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 279528,
+          "lines": 12561,
+          "sha256": "c26544eb9ba889b67b7d05f56fb3e4809b9633d83853b222bcecd75500e6cfa6",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=5;CL=3;CM=2;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
     },
-    "evidence_hits": 8,
-    "summaryish_hits": 0,
-    "characters": 36120
-  },
-  {
-    "path": "generated/book-models/021-骗局之王.md",
-    "ok": true,
-    "missing_sections": [],
-    "id_counts": {
-      "C": 5,
-      "CL": 3,
-      "CM": 2,
-      "H": 2,
-      "P": 3
+    {
+      "book_id": "017",
+      "path": "generated/book-models/017-社会性动物.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 5,
+        "CL": 3,
+        "CM": 2,
+        "RP": 3,
+        "H": 3,
+        "A": 3,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 166,
+      "summaryish_hits": 0,
+      "characters": 17207,
+      "items": [
+        {
+          "id": "C001",
+          "title": "从众与群体压力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "认知失调",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "自定义自我辩护",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "污名化与偏见",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "去人性化标签",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "人在做出不可挽回的决策后，其态度会自发倒错以迎合该行为",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "只要在一致的群体压力中引入一个“持异议的同盟者”，盲从效应将瞬间崩溃",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "污名化受害者的程度，与施暴者感到的道德失调深度成正比",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "行为绑定—认知失调发生—启动自我辩护—扭曲物理事实—态度极化狂热—下一次更大自毁",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "舆论信息控制—群体 100% 一致极化—引爆从众压力—异议者被社交隔离—盲从闭环",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "认知失调的“生理警报还原思维”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "寻找“持不同意见的同盟者”以破解从众",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "去人性化标签的还原与穿透",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "商业评估或高管反省时，凡是做出严重决策亏损后“拒绝承认错误、不断列举外部客观借口进行合理化”的，一律判定为失调性自我辩护，坚决熔断其后续项目的预算授权",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "面对任何说服与推广方案，凡是“使用煽情口号、权威形象背书、拒绝披露底层财务资产流向”的，一律判定为诉诸边缘路径的忽悠，予以否决",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "团队管理中，恪守“支持并保护持异议的第一个孤勇者”的防从众红线，坚决严防对说真话者的污名化社交隔离",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "人的态度和认知在行为绑定后会发生自发的、无意识的扭曲以求自洽",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "100% 一致性的破坏是瓦解群体盲从和从众压力的关键物理杠杆",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "污名化和去人性化是施暴者为了减轻道德失调感而无意识使用的防守武器",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "强力司法排除非法口供的客观实证硬约束",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "物理灾难逼近时的从众求生合理性",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "严重自尊丧失的心智麻木状态",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "保护自尊的自我辩护与直面事实的求真本能之间的心智拉锯",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "说服中的“边缘效率”与“中心长效”的商业对立",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "决策失误亏损后，为了维持面子和VP形象，疯狂追加投资以图证明自己“英明”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "看到部门会议全场一致通过方案，自己虽有重大疑虑，但在群体压力下放弃发声",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "听到有人攻击异议者是“利益集团的走狗、方黑”，便解除防备，加入群殴",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "逆境复盘的“自尊剥离与自我承认错误原则”（直面失调）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "方案评审的“寻找孤勇同盟者打破一致性门禁”（蓝军突围）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "说服方案的“中心路径双重实证检验法则”（中心说服）",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "必须时刻保持冷酷的自省：承认我之前做错了、我犯了蠢，是阻断认知失调走向态度极化自毁的唯一解",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "任何 100% 一致性的欢呼，都是组织理智退化和走向集体盲从坠毁的红色警报",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "污名化标签（如方黑、业界毒瘤）是构陷者为了遮蔽其物理事实亏空而制造的“去人性化防御”",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/017-社会性动物.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 519578,
+          "lines": 10824,
+          "sha256": "1069357ea749fe5b301767e48fd3c2284c32ec4ac1b51e42e237be04bbaaa9f1",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=5;CL=3;CM=2;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
     },
-    "evidence_hits": 8,
-    "summaryish_hits": 0,
-    "characters": 34120
-  }
-]
+    {
+      "book_id": "018",
+      "path": "generated/book-models/018-素书.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 5,
+        "CL": 4,
+        "CM": 3,
+        "RP": 3,
+        "H": 3,
+        "A": 3,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 169,
+      "summaryish_hits": 0,
+      "characters": 16114,
+      "items": [
+        {
+          "id": "C001",
+          "title": "道德仁义礼",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "遵义守礼与患难共担",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "克己自约（所守其约）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "审治乱去就",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "设变致权",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "贤人以“君主是否纳谏”作为出隐去就的第一指标",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "危国无贤人，乱政无善人",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "灾祸源于放纵常态（无常），安身长久赖于“克己不取”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL004",
+          "title": "轻欺贤人、傲慢忠良，是组织败亡的加速器",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "贪恋名禄—君无道而不退—言不听而强谏—反噬亡身",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "昏暗疑贤—不信直言—小人罗织—贤人出走—组织彻底死线",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM003",
+          "title": "设变致权—避开锋芒—变通迂回—解开死结—引向正道",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "盛衰去就的时空推演",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "克己自约的欲望审计",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "随机应变的灵性权变",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "观察组织决策者是否“纳谏信用忠良”，作为个人决定去留（去就）的第一卡门",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "坚决不碰“非义之财”，把利益获取严格约束在合规红线内（克己自约）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "遇到原则冲突的根本死结，启动“设变致权”的迂回权变，禁止一根筋硬撞",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "道德（道德仁义礼）是人类社会长期稳定运转的最优算法",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "组织的气候和风气具有强大的逆向选择性",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "规矩的遵守必须配合权变的手法才能在复杂物理世界落地",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "现代法治社会的“去就”受契约和竞业禁止的物理限制",
+          "evidence_hits": 3,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "权变的滥用易导致底线的瓦解",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "贤人对“乱世”的拯救责任在特定伦理下有冲突",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "严守正道（立身根本）与设变致权（随机应变）的边界张力",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "贤人自保退隐与组织彻底死亡的恶性循环",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "贪图显赫职位和高额年薪，在决策层已经彻底昏暗时强留不走",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "面对诱惑心存侥幸，获取灰色不义之财，自我安慰“这是行业惯例”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "在危机面前固守死条文、教条硬碰硬，导致事情彻底卡死并激化矛盾",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "战略退出的“纳谏红线规则”（去就防线）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "财务风控的“所守其约绝对干净原则”（合规红线）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "僵局解决的“权变破局法”（设变解结）",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "《素书》的权变逻辑必须建立在极度坚固的“道德底线”之上，否则会退化为彻底的投机主义",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "贤人去就的选择，前提是个人必须拥有“不依附于特定组织的退路和独立生存能力”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "贤人过失的“造形而悟”，是对认知偏误极其硬核的自我修正要求",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/018-素书.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 83570,
+          "lines": 3176,
+          "sha256": "4215cf2a83570501e8bbbc23d76638926b03976eb577fe081116f0cc3cca9599",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=5;CL=4;CM=3;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
+    },
+    {
+      "book_id": "019",
+      "path": "generated/book-models/019-罗织经.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 5,
+        "CL": 4,
+        "CM": 3,
+        "RP": 3,
+        "H": 3,
+        "A": 3,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 179,
+      "summaryish_hits": 0,
+      "characters": 16887,
+      "items": [
+        {
+          "id": "C001",
+          "title": "罗织反状",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "谋反大罪（不忠之名）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "恐惧摧毁与去不忍",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "御下之戒（不知底细）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "酷吏替罪羊（烹狗机制）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "构陷政敌的第一秘诀在于“将其正常举动强行绑定至谋反”",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "审讯的关键在于“彻底剥离同情，依靠肉体极限制造认罪”",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "威严立于礼仪区隔，恃于严刑，丧于宽容纵任",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL004",
+          "title": "御下必须保持信息彻底不对称（不示底细）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "织造告密—皇权多疑触发—严刑拷打攀诬—雪球式清洗",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "示好下属—暴露底细/情感偏好—下属针对性谄媚—信息被反向操纵—决策失控",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM003",
+          "title": "帮君主干脏活—聚敛怨恨—清洗结束/威胁皇权—君主借刀平民愤—酷吏覆灭",
+          "evidence_hits": 5,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "直击软肋的“死穴打击思维”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "隐藏意图的“深渊防御思维”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "抛弃幻想的“去不忍决策”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "遭受构陷指控时，绝不进行无意义的常规“喊冤自辩”，主动“认罪”并直接向最高决策者提交密信破局",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "御下与下属交往时，恪守“不知底细、严立礼仪、保持距离”的御下三红线",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "绝不帮违法的“最高决策者”去干伤天害理的脏活，严守“工具人”的防反噬边界",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "专制制度下不存在真实的契约，只有权力的单向支配",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "人的心智在极限的濒死死亡恐惧和肉体折磨面前是会彻底崩溃的",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "下属的忠诚是基于利益与恐惧的算计，而非道德自觉",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "现代具有律师在场与无罪推定的法治体系",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "透明数据流与敏捷协作的现代扁平化组织",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "掌握了绝对物理底牌的酷吏反噬",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "帮凶得势与替罪羊死局的矛盾",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "绝对集权与信息死锁的死结",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "面对罗织指控，天真地指望程序正义，在审讯室里疯狂喊冤自辩",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "对部属过度亲密，分享私人软肋和情感喜恶，不做礼仪区隔",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "贪图短暂暴利，帮强权/老板干伤天害理的脏活，并以为自己是红人、永远安全",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "遭遇定向清洗时的“狄仁杰保命破局原则”（认罪求生）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "核心管理的“情感隔离御下原则”（御下隔离）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "帮凶出局的“替罪羊防线原则”（拒绝脏活）",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "《罗织经》是一部逆向的“防小人构陷与防权力被架空的自我盾牌”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "恃刑立威的威严，其底线是不可逾越客观的礼仪与组织共识，否则会退化为纯粹的恐怖统治",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "必须时刻警醒：任何老板承诺的“你是我的亲信，出了事我保你”皆是空头支票",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/019-罗织经.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 183294,
+          "lines": 9332,
+          "sha256": "c75aa18fa544e23fed36a07a876fc662a8fb5cfa1f32e684290c460f5f0b630b",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=5;CL=4;CM=3;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
+    },
+    {
+      "book_id": "021",
+      "path": "generated/book-models/021-骗局之王.md",
+      "ok": true,
+      "missing_sections": [],
+      "id_counts": {
+        "C": 5,
+        "CL": 4,
+        "CM": 3,
+        "RP": 3,
+        "H": 3,
+        "A": 4,
+        "V": 5,
+        "B": 3,
+        "T": 2,
+        "AP": 3,
+        "P": 3,
+        "I": 3
+      },
+      "minimums": {
+        "C": 3,
+        "CL": 3,
+        "CM": 2,
+        "H": 2,
+        "P": 3
+      },
+      "evidence_hits": 174,
+      "summaryish_hits": 0,
+      "characters": 16890,
+      "items": [
+        {
+          "id": "C001",
+          "title": "庞氏博弈（以新还旧）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C002",
+          "title": "复杂化套利神话",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C003",
+          "title": "贪欲失控与侥幸狂热",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C004",
+          "title": "及时性兑付示范",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "C005",
+          "title": "资金腾挪临界点（崩溃线）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL001",
+          "title": "承诺超常回报且投资诀窍绝对保密，必为庞氏陷阱",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL002",
+          "title": "购买高额保险做虚假信用担保，能反向强化盲从信任",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL003",
+          "title": "金融骗局的死因不是外部戳穿，而是内部资金流入的物理枯竭",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CL004",
+          "title": "关键结算国家的退出，从物理底层上判处了套利模式的死刑",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM001",
+          "title": "包装代金券噱头—小额即时现兑—激发熟人裂变—金字塔式资金滚雪球",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM002",
+          "title": "指数级债务扩张—资金流入增速放缓—临界点断裂—彻底挤兑坍塌",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "CM003",
+          "title": "财富暴增—追求声名与虚荣—自负执念—丧失断仓离场时机—自我覆灭",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP001",
+          "title": "还原事物底层价值的因果剥离法",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP002",
+          "title": "概念偷换的识别机制",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "RP003",
+          "title": "套利通路的可达性校验",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H001",
+          "title": "任何承诺超常规回报且底层诀窍“秘而不宣”的项目，一律判定为庞氏骗局，坚决不碰",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H002",
+          "title": "面对任何套利话术，首先独立审计其结算“物理通路”的真实存在性",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "H003",
+          "title": "警惕大中介提供的概念偷换保单背书，核对保单底层物理条件",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A001",
+          "title": "零和博弈中绝对不可能凭空创造出真实价值",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A002",
+          "title": "任何套利都依赖于物理通路的客观存在",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A003",
+          "title": "商业与金融活动必须遵循“周期与均值回归”的铁律",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "A004",
+          "title": "庞大信用中介（如银行保单）可被用作诱惑和障眼法工具",
+          "evidence_hits": 10,
+          "has_evidence": true
+        },
+        {
+          "id": "B001",
+          "title": "主权信用担保下的资金滚动在周期上极其漫长",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B002",
+          "title": "早期风险投资具有高回报与高淘汰的非庞氏特征",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "B003",
+          "title": "极端狂热中理性人的抗退潮能力受限于社会网络",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T001",
+          "title": "投资者“明知其为骗局，但赌自己能跑掉”的荒谬博弈",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "T002",
+          "title": "虚假信用背书与事实破产的死胡同",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP001",
+          "title": "贪图高额固定收益，相信所谓的“零风险绝密套利诀窍”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP002",
+          "title": "看到大行保单或大中介为项目背书，便解除防备，解除对资产流向的审计",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "AP003",
+          "title": "在灰色套利成功后，欲望失控，为了社会名誉而死扛不退，最终身败名裂",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P001",
+          "title": "资产配置的“物理硬约束核验原则”（底层防线）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P002",
+          "title": "渠道真实性的“物理通路核验原则”（通路核验）",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "P003",
+          "title": "信用担保的“概念偷换剔除规则”（标的核对）",
+          "evidence_hits": 6,
+          "has_evidence": true
+        },
+        {
+          "id": "I001",
+          "title": "庞氏骗局的精髓在于“利用了人性想做聪明人、走捷径的致命傲慢”",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I002",
+          "title": "必须高度警惕任何用“非同维度的资产”（如寿险保单）去作流动性债务担保的戏法",
+          "evidence_hits": 4,
+          "has_evidence": true
+        },
+        {
+          "id": "I003",
+          "title": "任何套利神话在核心结算国退出或政策变更时即告脑死亡",
+          "evidence_hits": 6,
+          "has_evidence": true
+        }
+      ],
+      "source_metadata": {
+        "source": "corpus/raw/021-骗局之王.md",
+        "source_exists": true,
+        "actual": {
+          "characters": 123065,
+          "lines": 3179,
+          "sha256": "c5ecd4a07cf5ccabc68b8d16946d35cc774dda13800d9367a42a135fd5326e41",
+          "declared_match": true
+        }
+      },
+      "adaptive_complexity": {
+        "status": "passed",
+        "declared_status": "passed",
+        "present": true,
+        "missing_fields": [],
+        "evidence_gaps": [],
+        "minimum_floors_ok": true,
+        "complexity_signature": "C=5;CL=4;CM=3;H=3;P=3",
+        "information_density_declared": true,
+        "redundancy_merge_declared": true,
+        "importance_threshold_declared": true,
+        "coverage_declared": true
+      }
+    }
+  ]
+}

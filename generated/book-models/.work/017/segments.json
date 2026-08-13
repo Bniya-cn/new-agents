@@ -2,52 +2,33 @@
   "book_id": "017",
   "segments": [
     {
+      "id": "S000",
+      "label": "preamble-before-first-structural-break",
+      "start_line": 1,
+      "end_line": 4013,
+      "characters": 302682,
+      "content_hash": "c088cf540d46b2f1",
+      "duplicate_of": null,
+      "weight": 1.0,
+      "synthetic": true
+    },
+    {
       "id": "S001",
       "label": "Chapter 1 What Is Social Psychology?",
       "start_line": 4014,
-      "end_line": 4494,
-      "characters": 34552,
-      "content_hash": "e435be8ea8fd77be",
+      "end_line": 5527,
+      "characters": 106695,
+      "content_hash": "e5bfa98502a4afe4",
       "duplicate_of": null,
       "weight": 1.0
     },
     {
       "id": "S002",
-      "label": "Chapter 4 Conformity",
-      "start_line": 4495,
-      "end_line": 5075,
-      "characters": 41074,
-      "content_hash": "bed2d12b34fcc39e",
-      "duplicate_of": null,
-      "weight": 1.0
-    },
-    {
-      "id": "S003",
-      "label": "Chapter 6 Human Aggression",
-      "start_line": 5076,
-      "end_line": 5527,
-      "characters": 31067,
-      "content_hash": "f095b97ba5527ba2",
-      "duplicate_of": null,
-      "weight": 1.0
-    },
-    {
-      "id": "S004",
       "label": "Chapter 7 Prejudice",
       "start_line": 5528,
-      "end_line": 5919,
-      "characters": 30255,
-      "content_hash": "cf89d7822d73972f",
-      "duplicate_of": null,
-      "weight": 1.0
-    },
-    {
-      "id": "S005",
-      "label": "Chapter 8 Liking, Loving, and Connecting",
-      "start_line": 5920,
       "end_line": 10824,
-      "characters": 79942,
-      "content_hash": "d4da57b088ce15a3",
+      "characters": 110198,
+      "content_hash": "a363ed31523c75de",
       "duplicate_of": null,
       "weight": 1.0
     }

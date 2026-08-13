@@ -282,14 +282,14 @@
       "stem": "018-素书",
       "ok": true,
       "model_meta": {
-        "source_hash": "14f08f86f78f6c382103f6f1947b9ef8bfba70db948e65842886f481c4ee8cc2",
+        "source_hash": "4215cf2a83570501e8bbbc23d76638926b03976eb577fe081116f0cc3cca9599",
         "characters": 83570,
-        "lines": 2862
+        "lines": 3176
       },
       "manifest_ground_truth": {
-        "source_hash": "14f08f86f78f6c382103f6f1947b9ef8bfba70db948e65842886f481c4ee8cc2",
+        "source_hash": "4215cf2a83570501e8bbbc23d76638926b03976eb577fe081116f0cc3cca9599",
         "characters": 83570,
-        "lines": 2862
+        "lines": 3176
       },
       "match_policy": "exact",
       "issues": []
@@ -299,14 +299,14 @@
       "stem": "019-罗织经",
       "ok": true,
       "model_meta": {
-        "source_hash": "a4d35e165d21a25cfcd432a90098cf3c64c39ebc6e8ebba63f281e05d09f7b11",
+        "source_hash": "c75aa18fa544e23fed36a07a876fc662a8fb5cfa1f32e684290c460f5f0b630b",
         "characters": 183294,
-        "lines": 5837
+        "lines": 9332
       },
       "manifest_ground_truth": {
-        "source_hash": "a4d35e165d21a25cfcd432a90098cf3c64c39ebc6e8ebba63f281e05d09f7b11",
+        "source_hash": "c75aa18fa544e23fed36a07a876fc662a8fb5cfa1f32e684290c460f5f0b630b",
         "characters": 183294,
-        "lines": 5837
+        "lines": 9332
       },
       "match_policy": "exact",
       "issues": []
@@ -316,14 +316,14 @@
       "stem": "021-骗局之王",
       "ok": true,
       "model_meta": {
-        "source_hash": "cc19abf182ea811d08e56112ba11a511ec7f0b5d92df9a98ef1f2ab7815df2aa",
+        "source_hash": "c5ecd4a07cf5ccabc68b8d16946d35cc774dda13800d9367a42a135fd5326e41",
         "characters": 123065,
-        "lines": 3522
+        "lines": 3179
       },
       "manifest_ground_truth": {
-        "source_hash": "cc19abf182ea811d08e56112ba11a511ec7f0b5d92df9a98ef1f2ab7815df2aa",
+        "source_hash": "c5ecd4a07cf5ccabc68b8d16946d35cc774dda13800d9367a42a135fd5326e41",
         "characters": 123065,
-        "lines": 3522
+        "lines": 3179
       },
       "match_policy": "exact",
       "issues": []

@@ -4,7 +4,8 @@
   "characters": 252756,
   "lines": 7880,
   "break_count": 0,
-  "sample_breaks": [],
-  "segment_count": 11,
-  "mode_hint": "hierarchical"
+  "segment_count": 4,
+  "mode_hint": "hierarchical",
+  "generated_by": "scripts/build_segment_cognition.py",
+  "generated_at": "2026-08-13T03:57:41.333538+00:00"
 }

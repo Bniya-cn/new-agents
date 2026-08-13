@@ -1,8 +1,62 @@
 [
   {
+    "old_id": "P101",
+    "new_id": "P101",
+    "status": "preserve",
+    "reason": "稳定 ID 保留；新一轮来源集群、证据、边界和信度已重新计算。旧标题：事实质证与信息污染隔离；新标题：事实质证与信息污染隔离"
+  },
+  {
+    "old_id": "P102",
+    "new_id": "P102",
+    "status": "preserve",
+    "reason": "稳定 ID 保留；新一轮来源集群、证据、边界和信度已重新计算。旧标题：信任关系与社会信誉隔离；新标题：信任关系与社会信誉隔离"
+  },
+  {
+    "old_id": "P201",
+    "new_id": "P201",
+    "status": "preserve",
+    "reason": "稳定 ID 保留；新一轮来源集群、证据、边界和信度已重新计算。旧标题：实权资源与名义位置分离；新标题：实权资源与名义位置分离"
+  },
+  {
+    "old_id": "P202",
+    "new_id": "P202",
+    "status": "preserve",
+    "reason": "稳定 ID 保留；新一轮来源集群、证据、边界和信度已重新计算。旧标题：权力风险中的退路与边界保护；新标题：权力风险中的退路与边界保护"
+  },
+  {
+    "old_id": "P203",
+    "new_id": "P203",
+    "status": "preserve",
+    "reason": "稳定 ID 保留；新一轮来源集群、证据、边界和信度已重新计算。旧标题：反馈通道与执行纠偏；新标题：反馈通道与执行纠偏"
+  },
+  {
+    "old_id": "P301",
+    "new_id": "P301",
+    "status": "preserve",
+    "reason": "稳定 ID 保留；新一轮来源集群、证据、边界和信度已重新计算。旧标题：行动验证与知行闭环；新标题：行动验证与知行闭环"
+  },
+  {
+    "old_id": "P303",
+    "new_id": "P303",
+    "status": "preserve",
+    "reason": "稳定 ID 保留；新一轮来源集群、证据、边界和信度已重新计算。旧标题：道德判断与长期责任约束；新标题：道德判断与长期责任约束"
+  },
+  {
+    "old_id": "P401",
+    "new_id": "P401",
+    "status": "preserve",
+    "reason": "稳定 ID 保留；新一轮来源集群、证据、边界和信度已重新计算。旧标题：规模增长的物理边界与崩盘风险；新标题：规模增长的物理边界与崩盘风险"
+  },
+  {
+    "old_id": "P403",
+    "new_id": "P403",
+    "status": "preserve",
+    "reason": "稳定 ID 保留；新一轮来源集群、证据、边界和信度已重新计算。旧标题：群体压力下的独立判断；新标题：群体压力下的独立判断"
+  },
+  {
     "old_id": "P203_legacy",
     "new_id": "P203",
-    "status": "retained",
-    "reason": "Normalized bureaucratic maneuvers principle ID under Domain Mind v1.0.0"
+    "status": "rename",
+    "reason": "历史迁移记录指向当前稳定 P203；本轮核验其仍有跨书来源集群。"
   }
 ]

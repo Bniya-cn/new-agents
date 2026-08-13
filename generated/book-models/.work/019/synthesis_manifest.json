@@ -1,0 +1,69 @@
+{
+  "book_id": "019",
+  "generator": "scripts/build_segment_cognition.py",
+  "pipeline_version": "2.0.0",
+  "segment_first": true,
+  "source": "corpus/raw/019-罗织经.md",
+  "pipeline": [
+    "raw hierarchical book",
+    "segments.json",
+    "independent raw segment reading",
+    "Sxxx.model.md",
+    "per-segment gate",
+    "consolidation.json",
+    "whole-book cognitive model",
+    "whole-book report"
+  ],
+  "required_segments": [
+    {
+      "id": "S000",
+      "label": "preamble-before-first-structural-break",
+      "start_line": 1,
+      "end_line": 269,
+      "characters": 4783,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/019-罗织经.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/019/S000.model.md",
+      "gate": "generated/book-models/.work/019/S000.gate.json"
+    },
+    {
+      "id": "S001",
+      "label": "阅人卷第一",
+      "start_line": 270,
+      "end_line": 5042,
+      "characters": 92043,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/019-罗织经.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/019/S001.model.md",
+      "gate": "generated/book-models/.work/019/S001.gate.json"
+    },
+    {
+      "id": "S002",
+      "label": "保身卷第七",
+      "start_line": 5043,
+      "end_line": 9332,
+      "characters": 86465,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/019-罗织经.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/019/S002.model.md",
+      "gate": "generated/book-models/.work/019/S002.gate.json"
+    }
+  ],
+  "excluded_duplicate_segments": [],
+  "consolidation": "generated/book-models/.work/019/consolidation.json",
+  "segment_gate": "generated/book-models/.work/019/segment-gates.json",
+  "coverage": 1.0,
+  "status": "complete",
+  "synthesis_eligible": true,
+  "legacy_artifacts_preserved": [],
+  "generated_at": "2026-08-13T03:57:43.116268+00:00"
+}

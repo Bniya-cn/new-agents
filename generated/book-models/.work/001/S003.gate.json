@@ -1,0 +1,29 @@
+{
+  "book_id": "001",
+  "segment_id": "S003",
+  "source": "corpus/raw/001-20世纪五大传记书系.md",
+  "start_line": 4157,
+  "end_line": 5541,
+  "source_sha256": "0e5c85d22048834ccaca8efd041b9f687dec2881104572cc72d7dd9141b3e272",
+  "segment_sha256": "3c041d9ade72af6ef9190c6c1c3b657327eb9fb1e7e3684eac2246ac382ce668",
+  "model": "generated/book-models/.work/001/S003.model.md",
+  "required_sections": [
+    "Metadata",
+    "核心概念",
+    "主要判断",
+    "因果模型",
+    "判断规则",
+    "隐含前提",
+    "重要变量",
+    "边界条件",
+    "内部张力",
+    "可迁移原则候选",
+    "证据",
+    "Coverage"
+  ],
+  "independent_raw_read": true,
+  "whole_book_reverse_mapping": false,
+  "status": "passed",
+  "generated_at": "2026-08-13T03:57:41.220743+00:00",
+  "required_sections_present": true
+}

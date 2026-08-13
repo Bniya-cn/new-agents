@@ -1,0 +1,723 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-13T05:26:37.372693+00:00",
+  "segment_first": true,
+  "all_ok": true,
+  "books": [
+    {
+      "book_id": "001",
+      "status": "complete",
+      "coverage": 1.0,
+      "required_segment_count": 11,
+      "passed_segment_count": 11,
+      "segments": [
+        {
+          "segment_id": "S000",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S001",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S002",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S003",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S004",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S005",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S006",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S007",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S008",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S009",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S010",
+          "status": "passed",
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "artifacts": {
+        "segments": "generated/book-models/.work/001/segments.json",
+        "gates": "generated/book-models/.work/001/segment-gates.json",
+        "consolidation": "generated/book-models/.work/001/consolidation.json",
+        "synthesis_manifest": "generated/book-models/.work/001/synthesis_manifest.json"
+      }
+    },
+    {
+      "book_id": "003",
+      "status": "complete",
+      "coverage": 1.0,
+      "required_segment_count": 4,
+      "passed_segment_count": 4,
+      "segments": [
+        {
+          "segment_id": "S001",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S002",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S003",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S004",
+          "status": "passed",
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "artifacts": {
+        "segments": "generated/book-models/.work/003/segments.json",
+        "gates": "generated/book-models/.work/003/segment-gates.json",
+        "consolidation": "generated/book-models/.work/003/consolidation.json",
+        "synthesis_manifest": "generated/book-models/.work/003/synthesis_manifest.json"
+      }
+    },
+    {
+      "book_id": "005",
+      "status": "complete",
+      "coverage": 1.0,
+      "required_segment_count": 11,
+      "passed_segment_count": 11,
+      "segments": [
+        {
+          "segment_id": "S001",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S002",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S003",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S004",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S005",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S006",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S007",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S008",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S009",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S010",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S011",
+          "status": "passed",
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "artifacts": {
+        "segments": "generated/book-models/.work/005/segments.json",
+        "gates": "generated/book-models/.work/005/segment-gates.json",
+        "consolidation": "generated/book-models/.work/005/consolidation.json",
+        "synthesis_manifest": "generated/book-models/.work/005/synthesis_manifest.json"
+      }
+    },
+    {
+      "book_id": "009",
+      "status": "complete",
+      "coverage": 1.0,
+      "required_segment_count": 2,
+      "passed_segment_count": 2,
+      "segments": [
+        {
+          "segment_id": "S000",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S001",
+          "status": "passed",
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "artifacts": {
+        "segments": "generated/book-models/.work/009/segments.json",
+        "gates": "generated/book-models/.work/009/segment-gates.json",
+        "consolidation": "generated/book-models/.work/009/consolidation.json",
+        "synthesis_manifest": "generated/book-models/.work/009/synthesis_manifest.json"
+      }
+    },
+    {
+      "book_id": "011",
+      "status": "complete",
+      "coverage": 1.0,
+      "required_segment_count": 4,
+      "passed_segment_count": 4,
+      "segments": [
+        {
+          "segment_id": "S000",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S001",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S002",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S003",
+          "status": "passed",
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "artifacts": {
+        "segments": "generated/book-models/.work/011/segments.json",
+        "gates": "generated/book-models/.work/011/segment-gates.json",
+        "consolidation": "generated/book-models/.work/011/consolidation.json",
+        "synthesis_manifest": "generated/book-models/.work/011/synthesis_manifest.json"
+      }
+    },
+    {
+      "book_id": "013",
+      "status": "complete",
+      "coverage": 1.0,
+      "required_segment_count": 27,
+      "passed_segment_count": 27,
+      "segments": [
+        {
+          "segment_id": "S000",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S001",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S002",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S003",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S004",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S005",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S006",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S007",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S008",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S009",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S010",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S011",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S012",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S013",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S014",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S015",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S016",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S017",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S018",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S019",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S020",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S021",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S022",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S023",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S024",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S025",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S026",
+          "status": "passed",
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "artifacts": {
+        "segments": "generated/book-models/.work/013/segments.json",
+        "gates": "generated/book-models/.work/013/segment-gates.json",
+        "consolidation": "generated/book-models/.work/013/consolidation.json",
+        "synthesis_manifest": "generated/book-models/.work/013/synthesis_manifest.json"
+      }
+    },
+    {
+      "book_id": "015",
+      "status": "complete",
+      "coverage": 1.0,
+      "required_segment_count": 41,
+      "passed_segment_count": 41,
+      "segments": [
+        {
+          "segment_id": "S000",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S001",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S002",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S003",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S004",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S005",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S006",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S007",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S008",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S009",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S010",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S011",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S012",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S013",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S014",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S015",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S016",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S017",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S018",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S019",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S020",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S021",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S022",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S023",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S024",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S025",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S026",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S027",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S028",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S029",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S030",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S031",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S032",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S033",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S034",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S035",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S036",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S037",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S038",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S039",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S040",
+          "status": "passed",
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "artifacts": {
+        "segments": "generated/book-models/.work/015/segments.json",
+        "gates": "generated/book-models/.work/015/segment-gates.json",
+        "consolidation": "generated/book-models/.work/015/consolidation.json",
+        "synthesis_manifest": "generated/book-models/.work/015/synthesis_manifest.json"
+      }
+    },
+    {
+      "book_id": "016",
+      "status": "complete",
+      "coverage": 1.0,
+      "required_segment_count": 5,
+      "passed_segment_count": 5,
+      "segments": [
+        {
+          "segment_id": "S000",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S001",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S002",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S003",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S004",
+          "status": "passed",
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "artifacts": {
+        "segments": "generated/book-models/.work/016/segments.json",
+        "gates": "generated/book-models/.work/016/segment-gates.json",
+        "consolidation": "generated/book-models/.work/016/consolidation.json",
+        "synthesis_manifest": "generated/book-models/.work/016/synthesis_manifest.json"
+      }
+    },
+    {
+      "book_id": "017",
+      "status": "complete",
+      "coverage": 1.0,
+      "required_segment_count": 3,
+      "passed_segment_count": 3,
+      "segments": [
+        {
+          "segment_id": "S000",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S001",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S002",
+          "status": "passed",
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "artifacts": {
+        "segments": "generated/book-models/.work/017/segments.json",
+        "gates": "generated/book-models/.work/017/segment-gates.json",
+        "consolidation": "generated/book-models/.work/017/consolidation.json",
+        "synthesis_manifest": "generated/book-models/.work/017/synthesis_manifest.json"
+      }
+    },
+    {
+      "book_id": "019",
+      "status": "complete",
+      "coverage": 1.0,
+      "required_segment_count": 3,
+      "passed_segment_count": 3,
+      "segments": [
+        {
+          "segment_id": "S000",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S001",
+          "status": "passed",
+          "issues": []
+        },
+        {
+          "segment_id": "S002",
+          "status": "passed",
+          "issues": []
+        }
+      ],
+      "issues": [],
+      "artifacts": {
+        "segments": "generated/book-models/.work/019/segments.json",
+        "gates": "generated/book-models/.work/019/segment-gates.json",
+        "consolidation": "generated/book-models/.work/019/consolidation.json",
+        "synthesis_manifest": "generated/book-models/.work/019/synthesis_manifest.json"
+      }
+    }
+  ]
+}

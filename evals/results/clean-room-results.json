@@ -1,0 +1,27 @@
+{
+  "stage": "E11",
+  "status": "PASS",
+  "verdict": "PASS",
+  "runtime_bundle": "dist/healing-domain-mind",
+  "cases": [
+    {
+      "id": "E11-001",
+      "status": "PASS",
+      "missing_topics": [],
+      "forbidden_paths_observed": []
+    },
+    {
+      "id": "E11-002",
+      "status": "PASS",
+      "missing_topics": [],
+      "forbidden_paths_observed": []
+    },
+    {
+      "id": "E11-003",
+      "status": "PASS",
+      "missing_topics": [],
+      "forbidden_paths_observed": []
+    }
+  ],
+  "timestamp": "2026-08-13T05:26:38.308216+00:00"
+}

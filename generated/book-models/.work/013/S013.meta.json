@@ -1,9 +1,9 @@
 {
   "id": "S013",
-  "label": "第一篇",
-  "start_line": 73920,
-  "end_line": 79997,
-  "characters": 101811,
+  "label": "第七篇 历代厚黑学经典著述大全",
+  "start_line": 60552,
+  "end_line": 65080,
+  "characters": 81433,
   "duplicate_of": null,
   "weight": 1.0,
   "source": "corpus/raw/013-新厚黑学全书.md"

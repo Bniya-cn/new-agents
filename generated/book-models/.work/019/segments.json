@@ -1,0 +1,36 @@
+{
+  "book_id": "019",
+  "segments": [
+    {
+      "id": "S000",
+      "label": "preamble-before-first-structural-break",
+      "start_line": 1,
+      "end_line": 269,
+      "characters": 4783,
+      "content_hash": "7b23d0c025489a39",
+      "duplicate_of": null,
+      "weight": 1.0,
+      "synthetic": true
+    },
+    {
+      "id": "S001",
+      "label": "阅人卷第一",
+      "start_line": 270,
+      "end_line": 5042,
+      "characters": 92043,
+      "content_hash": "b2dd3817e4b8939a",
+      "duplicate_of": null,
+      "weight": 1.0
+    },
+    {
+      "id": "S002",
+      "label": "保身卷第七",
+      "start_line": 5043,
+      "end_line": 9332,
+      "characters": 86465,
+      "content_hash": "de47223340eaaf21",
+      "duplicate_of": null,
+      "weight": 1.0
+    }
+  ]
+}

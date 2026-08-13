@@ -59,6 +59,7 @@ knowledge:
     - knowledge/worldview.md
     - knowledge/ontology.md
     - knowledge/concepts.md
+    - knowledge/mental-models.md
     - knowledge/decision-framework.md
     - knowledge/problem-solving.md
     - knowledge/thinking-habits.md

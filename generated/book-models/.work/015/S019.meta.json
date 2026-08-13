@@ -1,9 +1,9 @@
 {
   "id": "S019",
-  "label": "卷第二百 唐纪十六",
-  "start_line": 49733,
-  "end_line": 53332,
-  "characters": 128402,
+  "label": "卷第一百三十六 齐纪二",
+  "start_line": 32932,
+  "end_line": 34637,
+  "characters": 80697,
   "duplicate_of": null,
   "weight": 1.0,
   "source": "corpus/raw/015-汇评精注资治通鉴.md"

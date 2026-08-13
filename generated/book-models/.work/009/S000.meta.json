@@ -1,0 +1,10 @@
+{
+  "id": "S000",
+  "label": "preamble-before-first-structural-break",
+  "start_line": 1,
+  "end_line": 14,
+  "characters": 146,
+  "duplicate_of": null,
+  "weight": 1.0,
+  "source": "corpus/raw/009-影响力.md"
+}

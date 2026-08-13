@@ -1,0 +1,10 @@
+{
+  "id": "S000",
+  "label": "preamble-before-first-structural-break",
+  "start_line": 1,
+  "end_line": 265,
+  "characters": 9557,
+  "duplicate_of": null,
+  "weight": 1.0,
+  "source": "corpus/raw/011-忽悠的原理与技巧.md"
+}

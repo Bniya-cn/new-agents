@@ -1,9 +1,9 @@
 {
   "id": "S010",
-  "label": "卷第一百二 晋纪二十四",
-  "start_line": 23869,
-  "end_line": 26530,
-  "characters": 126974,
+  "label": "卷第七十一 魏纪三",
+  "start_line": 15691,
+  "end_line": 17332,
+  "characters": 81520,
   "duplicate_of": null,
   "weight": 1.0,
   "source": "corpus/raw/015-汇评精注资治通鉴.md"

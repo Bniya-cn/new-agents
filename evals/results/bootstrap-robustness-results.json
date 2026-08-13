@@ -1,0 +1,43 @@
+{
+  "stage": "E12",
+  "status": "PASS",
+  "verdict": "PASS",
+  "cases": [
+    {
+      "id": "E12-001",
+      "status": "PASS",
+      "observed_keywords": [
+        "默认禁止",
+        "corpus/raw",
+        "knowledge/index.md"
+      ],
+      "evaluation_mode": "static-contract-only"
+    },
+    {
+      "id": "E12-002",
+      "status": "PASS",
+      "observed_keywords": [
+        "SOURCE",
+        "RECONSTRUCTION",
+        "INFERENCE",
+        "EVALUATION",
+        "文本展示",
+        "作者建议"
+      ],
+      "evaluation_mode": "static-contract-only"
+    },
+    {
+      "id": "E12-003",
+      "status": "PASS",
+      "observed_keywords": [
+        "provenance_location_status",
+        "provenance_semantic_status",
+        "untested",
+        "unsupported",
+        "failed"
+      ],
+      "evaluation_mode": "static-contract-only"
+    }
+  ],
+  "timestamp": "2026-08-13T05:26:38.308801+00:00"
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0.0",
+  "generated_by": "scripts/run_extended_evals.py",
+  "generated_at": "2026-08-13T05:26:38.308812+00:00",
+  "static": {
+    "stage": "E10-A",
+    "status": "PASS",
+    "verdict": "PASS",
+    "checks": [
+      {
+        "file": "AGENTS.md",
+        "exists": true
+      },
+      {
+        "file": "CLAUDE.md",
+        "exists": true
+      },
+      {
+        "file": "GEMINI.md",
+        "exists": true
+      },
+      {
+        "file": "knowledge/index.md",
+        "exists": true
+      },
+      {
+        "file": ".agents/skills/domain-mind/SKILL.md",
+        "exists": true
+      }
+    ],
+    "missing_markers": [],
+    "missing_router_topics": [],
+    "auditor": "static-bootstrap-validator",
+    "audit_version": "1.0.0",
+    "timestamp": "2026-08-13T05:26:38.305580+00:00"
+  },
+  "client_matrix": {
+    "stage": "E10-B",
+    "status": "PASS_WITH_LIMITATIONS",
+    "clients": [
+      {
+        "client": "Codex",
+        "command_runtime": "/Applications/ChatGPT.app/Contents/Resources/codex exec --ephemeral --sandbox read-only --skip-git-repo-check -C /Users/daijinglin/Desktop/格局Agents/healing-agents -o /var/folders/6_/ry_kb2792m39z28b6p6k6vw80000gn/T/healing-e10-codex-ny3ua2p_/last-message.txt",
+        "fresh_session_evidence": {
+          "launched": true,
+          "return_code": 0,
+          "ephemeral": true,
+          "timestamp": "2026-08-13T05:20:42.778156+00:00"
+        },
+        "question": "请只回答：你刚刚从仓库启动协议中识别出的 Runtime Bootstrap Protocol 有哪三项关键约束？不要修改文件。",
+        "observed_bootstrap": [
+          "knowledge/index.md",
+          "domain-mind",
+          "BOOTSTRAP_RULE"
+        ],
+        "files_loaded": [
+          "AGENTS.md",
+          "knowledge/index.md",
+          ".agents/skills/domain-mind/SKILL.md"
+        ],
+        "response": "1. 触发相关现实判断主题时，必须自动执行 8 步 Runtime Path。\n2. 必须渐进式披露，只加载相关知识节点，默认不读取 `corpus/raw/`、`generated/reports/` 或逐书全文。\n3. 默认只输出机制化判断，禁止输出书名、作者和物理行号，除非用户明确索要证据。\n\nBOOTSTRAP_FILES=/Users/daijinglin/Desktop/格局Agents/healing-agents/AGENTS.md;/Users/daijinglin/Desktop/格局Agents/healing-agents/knowledge/index.md;/Users/daijinglin/Desktop/格局Agents/healing-agents/.agents/skills/domain-mind/SKILL.md\nBOOTSTRAP_RULE=相关现实判断主题必须自动执行 Runtime Path，并遵循渐进式披露与按需证据追溯\nRAW_DEFAULT=NO",
+        "verdict": "PASS",
+        "timestamp": "2026-08-13T05:21:58.594946+00:00"
+      },
+      {
+        "client": "Claude Code",
+        "command_runtime": "command not found",
+        "fresh_session_evidence": {
+          "launched": false,
+          "reason": "environment command unavailable",
+          "timestamp": "2026-08-13T05:21:58.595226+00:00"
+        },
+        "question": "请只回答：你刚刚从仓库启动协议中识别出的 Runtime Bootstrap Protocol 有哪三项关键约束？不要修改文件。",
+        "observed_bootstrap": null,
+        "files_loaded": [],
+        "response": null,
+        "verdict": "NOT_RUN_ENV_UNAVAILABLE",
+        "timestamp": "2026-08-13T05:21:58.595231+00:00"
+      },
+      {
+        "client": "Gemini CLI",
+        "command_runtime": "command not found",
+        "fresh_session_evidence": {
+          "launched": false,
+          "reason": "environment command unavailable",
+          "timestamp": "2026-08-13T05:21:58.595233+00:00"
+        },
+        "question": "请只回答：你刚刚从仓库启动协议中识别出的 Runtime Bootstrap Protocol 有哪三项关键约束？不要修改文件。",
+        "observed_bootstrap": null,
+        "files_loaded": [],
+        "response": null,
+        "verdict": "NOT_RUN_ENV_UNAVAILABLE",
+        "timestamp": "2026-08-13T05:21:58.595235+00:00"
+      }
+    ],
+    "timestamp": "2026-08-13T05:21:58.595389+00:00"
+  },
+  "status": "PASS",
+  "verdict": "PASS_WITH_LIMITATIONS"
+}

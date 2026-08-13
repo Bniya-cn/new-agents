@@ -1,219 +1,161 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-healing-agents evaluation runner (deterministic + audit-trail gates).
+"""Healing Domain Mind v1.0.0 全量 Gate 编排器。
 
-IMPORTANT:
-- Does NOT overwrite evals/semantic_eval_cases.md by default.
-- To rebuild the human-readable report, use:
-    python3 scripts/render_semantic_eval_report.py
-- Optional empty template generation requires --init-template --force
+顺序固定为：单书模型/位置/语义/源一致性 → manifest → 跨书重合成 →
+运行时包 → E10/E11/E12 → unsupported PASS 检查 → build-status。
+任何缺失结果或不支持的 PASS 都会使本次 Gate 失败。
 """
 
 from __future__ import annotations
 
 import argparse
 import json
-import os
-import re
+import subprocess
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+RESULTS = ROOT / "evals" / "results"
 
 
-def run_deterministic_validators() -> bool:
-    print("=== 1. Deterministic Validators ===")
+def run_step(label: str, command: list[str]) -> int:
+    print(f"\n[PROGRESS] START {label}: {' '.join(command)}", flush=True)
+    result = subprocess.run(command, cwd=ROOT, check=False)
+    print(f"[PROGRESS] END {label}: exit={result.returncode}", flush=True)
+    return result.returncode
+
+
+def read_json(relative: str, default):
+    path = ROOT / relative
+    if not path.is_file():
+        return default
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return default
+
+
+def validate_artifacts() -> tuple[list[str], dict]:
     errors: list[str] = []
-    os.chdir(ROOT)
-
-    core_files = [
+    manifest = read_json("corpus/manifest.json", {})
+    model = read_json("evals/results/book-model-validation.json", {})
+    source = read_json("evals/results/source-consistency.json", {})
+    semantic = read_json("evals/results/book-semantic-provenance.json", {})
+    segment = read_json("evals/results/segment-coverage.json", {})
+    required_files = [
         "corpus/manifest.json",
-        "generated/reports/corpus-status.md",
-        "knowledge/index.md",
-        "knowledge/principles.md",
-        "knowledge/cognitive-model.md",
-        "knowledge/corpus-synthesis.report.md",
-        "evals/rubric.md",
-    ]
-    for f in core_files:
-        if Path(f).exists():
-            print(f"[PASS] core file: {f}")
-        else:
-            errors.append(f"missing core file: {f}")
-
-    prov_pattern = re.compile(r"\[\d{3}:L\d+\]")
-    for doc in [
-        "knowledge/index.md",
-        "knowledge/principles.md",
-        "knowledge/cognitive-model.md",
-        "knowledge/corpus-synthesis.report.md",
-    ]:
-        if not Path(doc).exists():
-            continue
-        content = Path(doc).read_text(encoding="utf-8")
-        matches = prov_pattern.findall(content)
-        if matches:
-            print(f"[PASS] {doc} provenance refs={len(matches)} sample={matches[0]}")
-        else:
-            errors.append(f"{doc} missing provenance refs")
-
-    validation_files = [
         "evals/results/book-model-validation.json",
         "evals/results/provenance-validation.json",
         "evals/results/source-consistency.json",
-        "evals/results/semantic-eval-results.json",
+        "evals/results/book-semantic-provenance.json",
+        "evals/results/segment-coverage.json",
+        "evals/results/cold-start-results.json",
+        "evals/results/clean-room-results.json",
+        "evals/results/bootstrap-robustness-results.json",
     ]
-    for vf in validation_files:
-        if Path(vf).exists():
-            print(f"[PASS] result file: {vf}")
-        else:
-            errors.append(f"missing result file: {vf}")
-
-    # Source consistency exactness
-    sc_path = Path("evals/results/source-consistency.json")
-    if sc_path.exists():
-        sc = json.loads(sc_path.read_text(encoding="utf-8"))
-        if isinstance(sc, list):
-            errors.append(
-                "source-consistency.json is legacy list format; re-run "
-                "scripts/validate_source_consistency.py for full audit object"
-            )
-        else:
-            if sc.get("match_policy") != "exact_hash_chars_lines":
-                errors.append("source-consistency match_policy must be exact_hash_chars_lines")
-            if sc.get("tolerance", 1) != 0:
-                errors.append("source-consistency tolerance must be 0")
-            items = sc.get("items") or []
-            if not sc.get("all_ok", False) or any(not x.get("ok") for x in items):
-                errors.append("source-consistency has failing items")
-            else:
-                # require model_meta present
-                if items and "model_meta" not in items[0]:
-                    errors.append("source-consistency items missing model_meta")
-                else:
-                    print(f"[PASS] source-consistency exact OK ({len(items)} books)")
-
-    # Semantic audit trail
-    sem_file = Path("evals/results/semantic-eval-results.json")
-    if sem_file.exists():
-        sem = json.loads(sem_file.read_text(encoding="utf-8"))
-        items = sem.get("items", [])
-        total = sem.get("total_questions_evaluated", 0)
-        if len(items) != 45 or total != 45:
-            errors.append(f"semantic items mismatch: len={len(items)} total={total}")
-        else:
-            adv = sum(1 for x in items if x.get("is_adversarial"))
-            missing_fields = 0
-            for it in items:
-                for k in ("domain_mind_response", "baseline_response", "attribution_response"):
-                    if not it.get(k) or "[待评测" in str(it.get(k)):
-                        missing_fields += 1
-                judge = it.get("judge") or {}
-                for k in ("model", "prompt_version", "rationale", "provenance_check_result"):
-                    if k not in judge:
-                        missing_fields += 1
-            if missing_fields:
-                errors.append(f"semantic audit trail incomplete missing_fields={missing_fields}")
-            else:
-                print(f"[PASS] semantic audit trail complete (45 items, adv={adv})")
-
-    # Fail-closed gates in manifest
-    if Path("corpus/manifest.json").exists():
-        manifest = json.loads(Path("corpus/manifest.json").read_text(encoding="utf-8"))
-        complete_count = manifest.get("complete_count", 0)
-        actual_models = len([x for x in os.listdir("generated/book-models") if x.endswith(".md")])
-        print(f"[PASS] manifest.complete_count={complete_count} models={actual_models}")
-        if complete_count != actual_models:
-            errors.append(
-                f"manifest.complete_count={complete_count} != models={actual_models}"
-            )
-        for b in manifest.get("books", []):
-            if b.get("status") == "complete":
-                if b.get("provenance_status") not in (None, "passed"):
-                    # allow missing field on older manifests, but if present must be passed
-                    if b.get("provenance_status") != "passed":
-                        errors.append(
-                            f"book {b.get('id')} provenance_status={b.get('provenance_status')}"
-                        )
-                if b.get("accepted_partial") and b.get("synthesis_eligible"):
-                    errors.append(
-                        f"fail-open leak: book {b.get('id')} accepted_partial && synthesis_eligible"
-                    )
-
-    # Hierarchical synthesis manifests for known large books
-    for bid in ("013", "015"):
-        syn = Path(f"generated/book-models/.work/{bid}/synthesis_manifest.json")
-        if syn.exists():
-            print(f"[PASS] hierarchical synthesis manifest: {syn}")
-        else:
-            errors.append(f"missing hierarchical synthesis manifest: {syn}")
-
-    if errors:
-        print("\nDeterministic validation FAILED:")
-        for err in errors:
-            print(f"- [ERROR] {err}")
-        return False
-
-    print("\nDeterministic validation ALL PASS\n")
-    return True
+    missing = [path for path in required_files if not (ROOT / path).is_file()]
+    errors.extend(f"missing result/artifact: {path}" for path in missing)
+    books = manifest.get("books", [])
+    canonical = [book for book in books if book.get("canonical") and book.get("duplicate_of") is None and book.get("status") != "blocked_ocr_unavailable"]
+    if len(canonical) != 19 or manifest.get("synthesis_eligible_count") != 19:
+        errors.append(f"manifest synthesis eligibility mismatch: canonical={len(canonical)} eligible={manifest.get('synthesis_eligible_count')}")
+    if not model.get("all_ok") or model.get("adaptive_complexity_status") != "passed":
+        errors.append("adaptive model validation is not passed")
+    if not source.get("all_ok"):
+        errors.append("source consistency is not passed")
+    if not semantic.get("all_ok"):
+        errors.append("semantic provenance is not passed")
+    unsupported = [item for item in semantic.get("items", []) if item.get("semantic_support") == "unsupported"]
+    if unsupported:
+        errors.append(f"semantic unsupported items present: {len(unsupported)}")
+    if not segment.get("all_ok"):
+        errors.append("segment-first coverage is not complete")
+    for book in canonical:
+        if not book.get("synthesis_eligible"):
+            errors.append(f"book {book.get('id')} is not synthesis eligible")
+        if book.get("complexity_status") not in {"passed"}:
+            errors.append(f"book {book.get('id')} complexity_status={book.get('complexity_status')}")
+        if book.get("provenance_semantic_status") != "passed":
+            errors.append(f"book {book.get('id')} provenance_semantic_status={book.get('provenance_semantic_status')}")
+    # 不能存在“build-status 写 PASS，但结果/产物不存在”的 fail-open 情况。
+    status = read_json("generated/build-status.json", {})
+    pass_keys = [key for key, value in status.items() if key.endswith("_eval") or key.endswith("_validation") or key in {"adaptive_distillation", "segment_first_hierarchical", "corpus_synthesis", "runtime_validation"}]
+    for key in pass_keys:
+        if str(status.get(key, "")).upper() in {"PASS", "PASSED", "APPROVED"} and missing:
+            errors.append(f"unsupported PASS: {key} is PASS while artifacts are missing")
+    return errors, {"manifest": manifest, "model": model, "source": source, "semantic": semantic, "segment": segment, "missing": missing}
 
 
-def init_template(force: bool = False) -> None:
-    """Dangerous helper: writes empty placeholders. Requires --force."""
-    output_template = Path("evals/semantic_eval_cases.TEMPLATE.md")
-    if not force:
-        print("[REFUSE] refusing to write empty template without --force")
-        print("Hint: use scripts/render_semantic_eval_report.py to refresh the real report.")
-        return
-
-    cases = []
-    for path in ("evals/questions.jsonl", "evals/adversarial.jsonl"):
-        with open(path, encoding="utf-8") as fh:
-            for line in fh:
-                if line.strip():
-                    item = json.loads(line)
-                    if "adversarial" in path:
-                        item["is_adversarial"] = True
-                    cases.append(item)
-
-    with output_template.open("w", encoding="utf-8") as fh:
-        fh.write("# EMPTY TEMPLATE — do not treat as completed eval\n\n")
-        for idx, case in enumerate(cases):
-            fh.write(f"### {case.get('id')}\n")
-            fh.write(f"- scenario: {case.get('scenario') or case.get('question')}\n")
-            fh.write("- Domain Mind: [待评测回答内容]\n\n")
-    print(f"[PASS] wrote empty template to {output_template} (not semantic_eval_cases.md)")
+def write_summary(errors: list[str], details: dict, step_results: list[dict]) -> None:
+    payload = {
+        "schema_version": "2.0.0",
+        "generated_by": "scripts/run_evals.py",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "all_ok": not errors,
+        "errors": errors,
+        "steps": step_results,
+        "counts": {
+            "canonical": sum(1 for book in details.get("manifest", {}).get("books", []) if book.get("canonical") and not book.get("duplicate_of") and book.get("status") != "blocked_ocr_unavailable"),
+            "semantic_items": len(details.get("semantic", {}).get("items", [])),
+            "segment_books": len(details.get("segment", {}).get("books", [])),
+        },
+    }
+    RESULTS.mkdir(parents=True, exist_ok=True)
+    (RESULTS / "eval-summary.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"[PROGRESS] 写入 evals/results/eval-summary.json all_ok={not errors}", flush=True)
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument(
-        "--init-template",
-        action="store_true",
-        help="write EMPTY template to semantic_eval_cases.TEMPLATE.md (requires --force)",
-    )
-    ap.add_argument("--force", action="store_true")
-    ap.add_argument(
-        "--render-report",
-        action="store_true",
-        help="also render semantic_eval_cases.md from results JSON",
-    )
-    args = ap.parse_args()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--render-report", action="store_true", help="在 Gate 后刷新 semantic_eval_cases.md")
+    parser.add_argument("--rerun-client", action="store_true", help="重新实际启动 E10-B 可用客户端；默认复用已有实际结果")
+    args = parser.parse_args()
+    steps: list[dict] = []
 
-    ok = run_deterministic_validators()
+    commands = [
+        ("book-model-validation", [sys.executable, "scripts/validate_book_model.py"]),
+        ("provenance-location", [sys.executable, "scripts/validate_provenance.py"]),
+        ("semantic-provenance", [sys.executable, "scripts/audit_semantic_provenance.py"]),
+        ("source-consistency", [sys.executable, "scripts/validate_source_consistency.py"]),
+        ("segment-first-coverage", [sys.executable, "scripts/validate_segment_coverage.py"]),
+        ("manifest", [sys.executable, "scripts/build_manifest.py"]),
+        ("corpus-synthesis", [sys.executable, "scripts/build_knowledge.py"]),
+        ("package-contract", [sys.executable, "scripts/validate_agent_package.py"]),
+        ("runtime-package", [sys.executable, "scripts/build_agent_release.py"]),
+    ]
+    for label, command in commands:
+        code = run_step(label, command)
+        steps.append({"label": label, "command": command, "exit_code": code, "status": "PASS" if code == 0 else "FAIL"})
 
-    if args.init_template:
-        init_template(force=args.force)
+    extended_command = [sys.executable, "scripts/run_extended_evals.py"]
+    if not args.rerun_client and (RESULTS / "cold-start-results.json").is_file():
+        extended_command.append("--skip-client-launch")
+    code = run_step("E10-E12", extended_command)
+    steps.append({"label": "E10-E12", "command": extended_command, "exit_code": code, "status": "PASS" if code == 0 else "FAIL"})
+
+    artifact_errors, details = validate_artifacts()
+    if artifact_errors:
+        print("\n[FAIL] artifact/gate audit:", flush=True)
+        for error in artifact_errors:
+            print(f"  - {error}", flush=True)
+    else:
+        print("\n[PASS] artifact/gate audit: no missing or unsupported PASS", flush=True)
+
+    status_code = run_step("build-status", [sys.executable, "scripts/build_status.py"])
+    steps.append({"label": "build-status", "command": [sys.executable, "scripts/build_status.py"], "exit_code": status_code, "status": "PASS" if status_code == 0 else "FAIL"})
+    write_summary(artifact_errors, details, steps)
 
     if args.render_report:
-        from subprocess import run
+        render_code = run_step("semantic-report-render", [sys.executable, "scripts/render_semantic_eval_report.py"])
+        if render_code != 0:
+            artifact_errors.append("semantic report render failed")
 
-        rc = run([sys.executable, str(ROOT / "scripts" / "render_semantic_eval_report.py")]).returncode
-        if rc != 0:
-            ok = False
-
-    return 0 if ok else 1
+    final_status = read_json("generated/build-status.json", {})
+    grade = final_status.get("quality_gate_grade", "FAIL")
+    print(f"\n[SUMMARY] quality_gate_grade={grade}; artifact_errors={len(artifact_errors)}; build_status_exit={status_code}", flush=True)
+    return 0 if grade != "FAIL" and not artifact_errors else 1
 
 
 if __name__ == "__main__":

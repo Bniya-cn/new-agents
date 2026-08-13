@@ -82,6 +82,44 @@ book → structural mapping → semantic segmentation
 
 分块模型只能作为中间证据，不能把 chunk1 summary + chunk2 summary 直接拼成最终答案。最后必须重新做全书级合并，并记录未可靠处理的区域。
 
+### 4.1 自适应复杂度，而非固定模板
+
+模型项数量必须由输入和论证的信息密度决定，不能把固定的 `C=5 / CL=3 / CM=2 / H=2 / P=3` 当作目标模板，也不能用固定数量证明“已经读懂”。数量判断至少同时考虑：
+
+- 独立概念数量，而不是同义改写的数量；
+- 可复述且有证据的主要判断数量；
+- 能闭合变量、机制、结果和边界的因果模型数量；
+- 可迁移规则的机制重要性与失效条件；
+- 原文长度、结构复杂度、章节/页面密度、重复与 OCR 噪声；
+- 证据覆盖范围和不同区域之间的论证差异。
+
+质量门槛只规定最低下限：C 至少 3 个、CL 至少 3 个、CM 至少 2 个、H 至少 2 个、P 至少 3 个。超过下限的项目必须有独立机制或独立证据，不能为了填数拆分同一观点。短而高度集中的文本可以在质量审计中说明为何接近下限；长书、复合书或论证分叉明显的书必须继续提取，不能因达到最低数就提前停止。
+
+每次炼化都必须进行三项自适应复杂度审计：
+
+1. **冗余合并**：同义、同因果、同证据的候选项先合并，并记录被合并的 ID 或理由；
+2. **重要性阈值**：只有会改变世界模型、因果判断、决策规则或边界判断的独立项才进入最终模型；
+3. **复杂度复核**：对信息密度、覆盖度、ID 数量分布和跨区域差异进行审计。若多个独立输入反复生成完全相同的 ID 数量签名，必须标为 `warning` 或 `failed`，不得自动判定 PASS。
+
+`Adaptive Complexity Audit` 必须写入模型，至少包含输入特征、数量决策、冗余合并结果、重要性阈值、覆盖判断、签名风险和审计结论。验证器只能根据该审计及真实模型结果判定 `passed`、`warning`、`failed` 或 `untested`，不得把缺少审计的模型默认成 `adaptive_passed`。
+
+### 4.2 Hierarchical 必须先分段再炼化
+
+Hierarchical 的真实执行顺序固定为：
+
+~~~text
+raw hierarchical book
+→ segments.json
+→ 独立读取每个非重复 raw segment
+→ Sxxx.model.md
+→ 每段 gate
+→ consolidation.json
+→ whole-book cognitive model
+→ whole-book report
+~~~
+
+`Sxxx.model.md` 必须引用自己的 raw 文件和精确行号，并至少登记 concepts、claims、causal models、heuristics、assumptions、variables、boundaries、tensions、principle candidates、evidence、coverage。禁止先读取全书模型，再把全书 ID 按行号反向映射成分段模型；旧的 `Sxxx.cog.md` 可以作为历史审计产物保留，但不得计入 segment-first 通过条件。
+
 ## 4. 结构检查与分段
 
 开始时记录文件路径、字符数、行数、编码、标题/章节/页码、目录和非正文区域、重复页、乱码、表格残留、异常长段和无法解释区域，并说明处理模式选择原因。

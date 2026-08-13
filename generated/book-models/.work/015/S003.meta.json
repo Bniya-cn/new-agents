@@ -1,9 +1,9 @@
 {
   "id": "S003",
-  "label": "卷第二十五 汉纪十七",
-  "start_line": 5377,
-  "end_line": 7837,
-  "characters": 131753,
+  "label": "卷第十七 汉纪九",
+  "start_line": 3586,
+  "end_line": 5376,
+  "characters": 86790,
   "duplicate_of": null,
   "weight": 1.0,
   "source": "corpus/raw/015-汇评精注资治通鉴.md"

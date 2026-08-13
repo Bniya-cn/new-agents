@@ -1,9 +1,9 @@
 {
   "id": "S016",
-  "label": "第三篇 战场厚黑学",
-  "start_line": 92149,
-  "end_line": 98328,
-  "characters": 102595,
+  "label": "第一篇官场厚黑学",
+  "start_line": 74612,
+  "end_line": 79451,
+  "characters": 81300,
   "duplicate_of": null,
   "weight": 1.0,
   "source": "corpus/raw/013-新厚黑学全书.md"

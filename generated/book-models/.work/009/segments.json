@@ -1,0 +1,26 @@
+{
+  "book_id": "009",
+  "segments": [
+    {
+      "id": "S000",
+      "label": "preamble-before-first-structural-break",
+      "start_line": 1,
+      "end_line": 14,
+      "characters": 146,
+      "content_hash": "eda39b4a85f49d5c",
+      "duplicate_of": null,
+      "weight": 1.0,
+      "synthetic": true
+    },
+    {
+      "id": "S001",
+      "label": "第1章影响力的武器",
+      "start_line": 15,
+      "end_line": 2488,
+      "characters": 166070,
+      "content_hash": "4783278f06c01127",
+      "duplicate_of": null,
+      "weight": 1.0
+    }
+  ]
+}

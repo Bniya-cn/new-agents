@@ -1,0 +1,114 @@
+{
+  "schema_version": "2.0.0",
+  "generated_by": "scripts/run_evals.py",
+  "generated_at": "2026-08-13T05:26:39.125257+00:00",
+  "all_ok": true,
+  "errors": [],
+  "steps": [
+    {
+      "label": "book-model-validation",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_book_model.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "provenance-location",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_provenance.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "semantic-provenance",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/audit_semantic_provenance.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "source-consistency",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_source_consistency.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "segment-first-coverage",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_segment_coverage.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "manifest",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/build_manifest.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "corpus-synthesis",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/build_knowledge.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "package-contract",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/validate_agent_package.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "runtime-package",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/build_agent_release.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "E10-E12",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/run_extended_evals.py",
+        "--skip-client-launch"
+      ],
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "label": "build-status",
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "scripts/build_status.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "canonical": 19,
+    "semantic_items": 715,
+    "segment_books": 10
+  }
+}

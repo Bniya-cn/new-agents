@@ -1,0 +1,55 @@
+{
+  "book_id": "009",
+  "generator": "scripts/build_segment_cognition.py",
+  "pipeline_version": "2.0.0",
+  "segment_first": true,
+  "source": "corpus/raw/009-影响力.md",
+  "pipeline": [
+    "raw hierarchical book",
+    "segments.json",
+    "independent raw segment reading",
+    "Sxxx.model.md",
+    "per-segment gate",
+    "consolidation.json",
+    "whole-book cognitive model",
+    "whole-book report"
+  ],
+  "required_segments": [
+    {
+      "id": "S000",
+      "label": "preamble-before-first-structural-break",
+      "start_line": 1,
+      "end_line": 14,
+      "characters": 146,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/009-影响力.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/009/S000.model.md",
+      "gate": "generated/book-models/.work/009/S000.gate.json"
+    },
+    {
+      "id": "S001",
+      "label": "第1章影响力的武器",
+      "start_line": 15,
+      "end_line": 2488,
+      "characters": 166070,
+      "duplicate_of": null,
+      "weight": 1.0,
+      "source": "corpus/raw/009-影响力.md",
+      "required": true,
+      "status": "passed",
+      "model": "generated/book-models/.work/009/S001.model.md",
+      "gate": "generated/book-models/.work/009/S001.gate.json"
+    }
+  ],
+  "excluded_duplicate_segments": [],
+  "consolidation": "generated/book-models/.work/009/consolidation.json",
+  "segment_gate": "generated/book-models/.work/009/segment-gates.json",
+  "coverage": 1.0,
+  "status": "complete",
+  "synthesis_eligible": true,
+  "legacy_artifacts_preserved": [],
+  "generated_at": "2026-08-13T03:57:41.450021+00:00"
+}

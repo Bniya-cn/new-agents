@@ -16,7 +16,9 @@ Verifies:
 from __future__ import annotations
 
 import argparse
+import json
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -115,6 +117,18 @@ def check_knowledge_nodes() -> list[str]:
         "knowledge/cognitive-model.md",
         "knowledge/principles.md",
         "knowledge/causal-models.md",
+        "knowledge/worldview.md",
+        "knowledge/ontology.md",
+        "knowledge/concepts.md",
+        "knowledge/mental-models.md",
+        "knowledge/tensions.md",
+        "knowledge/boundaries.md",
+        "knowledge/decision-framework.md",
+        "knowledge/problem-solving.md",
+        "knowledge/thinking-habits.md",
+        "knowledge/anti-patterns.md",
+        "knowledge/source-map.json",
+        "knowledge/id-migrations.json",
     ]
     for node in required_nodes:
         if not (ROOT / node).exists():
@@ -196,6 +210,21 @@ def main() -> int:
             all_errors.extend(errs)
         else:
             print(f"[PASS] Distribution package clean ({dist_dir.relative_to(ROOT)})")
+
+    result_name = "package-validation-dist.json" if args.check_dist else "package-validation.json"
+    result_path = ROOT / "evals" / "results" / result_name
+    result_path.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "schema_version": "1.0.0",
+        "generated_by": "scripts/validate_agent_package.py",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "check_dist": args.check_dist,
+        "status": "failed" if all_errors else "passed",
+        "all_ok": not all_errors,
+        "errors": all_errors,
+    }
+    result_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"[RESULT] wrote {result_path.relative_to(ROOT)}")
 
     if all_errors:
         print("\nPackage Validation FAILED:")

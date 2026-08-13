@@ -2,72 +2,43 @@
   "book_id": "011",
   "segments": [
     {
+      "id": "S000",
+      "label": "preamble-before-first-structural-break",
+      "start_line": 1,
+      "end_line": 265,
+      "characters": 9557,
+      "content_hash": "0c7f39370b5b9de5",
+      "duplicate_of": null,
+      "weight": 1.0,
+      "synthetic": true
+    },
+    {
       "id": "S001",
       "label": "第一节模糊标准",
       "start_line": 266,
-      "end_line": 1193,
-      "characters": 30163,
-      "content_hash": "e8b057976ea973d6",
+      "end_line": 2766,
+      "characters": 80796,
+      "content_hash": "8cce3a2fb4e15af0",
       "duplicate_of": null,
       "weight": 1.0
     },
     {
       "id": "S002",
-      "label": "第二章无法自证的身高——赌赛罗生门",
-      "start_line": 1194,
-      "end_line": 1961,
-      "characters": 25156,
-      "content_hash": "3a6bfb560d10652c",
+      "label": "第二节诉诸公众",
+      "start_line": 2767,
+      "end_line": 5163,
+      "characters": 83839,
+      "content_hash": "81d17fd7886d5938",
       "duplicate_of": null,
       "weight": 1.0
     },
     {
       "id": "S003",
-      "label": "第三节语言陷阱",
-      "start_line": 1962,
-      "end_line": 2766,
-      "characters": 25475,
-      "content_hash": "ff8a3bd8a5def092",
-      "duplicate_of": null,
-      "weight": 1.0
-    },
-    {
-      "id": "S004",
-      "label": "第二节诉诸公众",
-      "start_line": 2767,
-      "end_line": 3731,
-      "characters": 35565,
-      "content_hash": "12d85b880f485c50",
-      "duplicate_of": null,
-      "weight": 1.0
-    },
-    {
-      "id": "S005",
-      "label": "第四章社会信任的溃败——肖传国之争",
-      "start_line": 3732,
-      "end_line": 4807,
-      "characters": 35510,
-      "content_hash": "638f3777fb0c359c",
-      "duplicate_of": null,
-      "weight": 1.0
-    },
-    {
-      "id": "S006",
-      "label": "第二节社会信任的溃败",
-      "start_line": 4808,
-      "end_line": 5673,
-      "characters": 33167,
-      "content_hash": "758bee7d75a16eb7",
-      "duplicate_of": null,
-      "weight": 1.0
-    },
-    {
-      "id": "S007",
-      "label": "第三章我写得不好，谈下思路。",
-      "start_line": 5674,
+      "label": "第三节正义感杀人",
+      "start_line": 5164,
       "end_line": 6023,
-      "characters": 12733,
-      "content_hash": "ad733e5b4b8c1c32",
+      "characters": 33138,
+      "content_hash": "9f097903946f3120",
       "duplicate_of": null,
       "weight": 1.0
     }
