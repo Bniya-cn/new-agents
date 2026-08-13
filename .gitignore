@@ -8,10 +8,15 @@ dist/
 .dev/
 .cursor/rules/auto-sync-remotes.mdc
 
+# 凭证：只允许说明与示例入库；明文输入与密文实体均不进 git
+/secrets/*
+!/secrets/README.md
+!/secrets/*.example
+
 # 旧目录（已迁移至 corpus/raw/）
 _markdown/
 
-# .work 内真正的临时缓存文件 (Sxxx.model.md, consolidation.json, synthesis_manifest.json 正常版本控制)
+# .work 内真正的临时缓存文件
 generated/book-models/.work/**/tmp/
 generated/book-models/.work/**/cache/
 generated/book-models/.work/**/*.tmp
