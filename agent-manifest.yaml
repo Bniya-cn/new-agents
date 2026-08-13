@@ -1,0 +1,51 @@
+name: healing-domain-mind
+version: 1.0.0
+type: cognitive-agent
+
+entrypoint:
+  instructions: AGENTS.md
+  claude_instructions: CLAUDE.md
+  gemini_instructions: GEMINI.md
+  runtime_skill: .agents/skills/domain-mind/SKILL.md
+  knowledge_router: knowledge/index.md
+
+runtime:
+  default_mode: domain-mind
+  progressive_disclosure: true
+  provenance_on_demand: true
+  evidence_mode: full
+  raw_access_default: false
+
+knowledge:
+  primary:
+    - knowledge/index.md
+    - knowledge/cognitive-model.md
+    - knowledge/principles.md
+    - knowledge/causal-models.md
+    - knowledge/tensions.md
+    - knowledge/boundaries.md
+    - knowledge/worldview.md
+    - knowledge/ontology.md
+    - knowledge/concepts.md
+    - knowledge/decision-framework.md
+    - knowledge/problem-solving.md
+    - knowledge/thinking-habits.md
+    - knowledge/anti-patterns.md
+
+  fallback:
+    - generated/book-models/
+
+  evidence:
+    - corpus/raw/
+
+loading_policy:
+  level_1: knowledge
+  level_2: book_models
+  level_3: raw
+
+drill_down_when:
+  - explicit_source_request
+  - unresolved_tension
+  - low_confidence
+  - boundary_case
+  - exact_attribution_required

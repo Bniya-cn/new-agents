@@ -1,57 +1,99 @@
-# healing-agents
+# Healing Domain Mind (v1.0.0)
 
-可炼化知识工程基础设施 — 将原始书籍 Markdown 炼化为结构化认知模型。
+> 一个通过多源知识炼化形成的 **Cognitive Agent Repository**。
+> 可通过 `git clone` 直接启动，无需 Prompt 工程，自动以“内化了整套领域知识体系”的视角回答现实判断与决策问题。
 
-## 目录结构
+---
 
-```text
-healing-agents/
-├── README.md
-├── AGENTS.md
-├── corpus-audit.md          # 书库审计报告
-├── corpus/raw/              # 原始 Markdown 书库（只读输入）
-├── generated/book-models/   # book-distiller 输出
-├── knowledge/               # corpus-synthesizer 输出
-├── evals/                   # 炼化质量评估
-├── scripts/                 # 工具脚本
-└── .agents/skills/          # Agent Skills
-```
+## 🌟 核心理念与定位
 
-## 当前阶段
+Healing Domain Mind 不是书籍搜索器，也不是 RAG 摘要拼盘。
 
-**Phase 1 — 全量炼化与 Domain Mind 交付 (已完成)**
+它回答的核心问题是：
+> **“一个真正吸收并内化了这些深刻知识的人，会如何判断当前这个全新的现实问题？”**
 
-- [x] 建立 `corpus/raw/` 原始书库并运行 `scripts/audit_corpus.py`
-- [x] 升级 `book-distiller` Skill 至 v0.2，定义 Hierarchical Mode 分段融合机制
-- [x] 完成 19 本 Canonical 书籍的单书炼化 → `generated/book-models/` 和 `generated/reports/`
-- [x] 实现并安装 `corpus-synthesizer` Skill，生成跨书本体、通用原则与三大张力
-- [x] 部署 `domain-mind` 运行时推理框架，定义下钻停止红线
-- [x] 建立自动化确定性与语义评分评测集 `evals/`
-- [x] 一次性交付完毕所有工程成果
+### 核心特性
+- 🚀 **Zero-Prompt Quick Start**: 使用 `git clone` 下载仓库后，用 Codex / Cursor / Claude Code / Gemini CLI 直接打开项目，无需提示“使用 domain-mind”，直接提问现实问题即可自动激活。
+- 🛡️ **机制化推理 (Mechanism-First Reasoning)**: 默认以“问题本质、核心机制、关键变量、张力与边界、可执行判断、不确定度”输出判断，绝不默认书名堆砌或强吐行号。
+- 🔍 **按需出示证据 (Provenance on Demand)**: 仅当用户明确追问“依据是什么”时，才向下下钻至单书模型与原著证据链。
+- 📦 **双阶发行架构 (Evidence Capability Split)**: 区分 Internal 全量研发库 (`evidence_mode=full`) 与 Clean Runtime 发行包 (`dist/healing-domain-mind/`, `evidence_mode=model_only`)，严格隔离第三方版权文本。
 
-## 流水线
+---
 
-```text
-corpus/raw/  →  book-distiller  →  generated/book-models/ & generated/reports/
-                                      ↓
-                              corpus-synthesizer  →  knowledge/ (跨书整合)
-                                      ↓
-                                domain-mind  →  运行决策推理与 E9 测试
-```
+## 🚀 Quick Start (快速启动)
 
-## 快速命令
+### 1. 克隆与打开仓库
 
 ```bash
-# 1. 审计书库并校验各单书处理状态
-python3 scripts/audit_corpus.py
-
-# 2. 执行确定性验证与生成语义评估报告模板
-python3 scripts/run_evals.py
+git clone https://github.com/Bniya-cn/healing-domain-mind.git
+cd healing-domain-mind
 ```
 
-## 原则
+用你习惯的 Repo-Aware Agent 打开目录：
+- **Codex / Cursor**: 原生读取 `AGENTS.md`
+- **Claude Code**: 原生通过 `CLAUDE.md` 自动导入 `AGENTS.md`
+- **Gemini CLI**: 原生通过 `GEMINI.md` 自动导入 `AGENTS.md`
 
-1. **原始资料不可变** — `corpus/raw/` 中的文件为只读输入，AI 绝不删改。
-2. **Provenance 精准追溯** — 每一个概念、原则和因果模式必须附带物理行号标记（如 `[ID:Line]`）。
-3. **防止 RAG 低效退化** — 运行时推理基于领域层高级原则进行智能拦截，仅在面临例外、冲突或高精质证时向下钻取单书。
-4. **捍卫来源独立性** — 过滤由重复翻译或抄袭构成的“证据膨胀”，客观计算原则的 Confidence 信度。
+### 2. 直接提问现实问题
+
+在新会话中直接输入普通现实问题，例如：
+
+> **“一个核心员工能力越来越强，影响力开始超过直属领导，这件事应该怎么看？”**
+
+Agent 将自动完成：
+`Repository Bootstrap` → `问题分类` → `Domain Mind Router` → `按需加载节点` → `机制化判断输出`。
+
+---
+
+## 📂 仓库结构
+
+```text
+healing-domain-mind/
+├── AGENTS.md                   # Canonical Bootstrap Protocol
+├── CLAUDE.md                   # Claude Code Bootstrap Adapter
+├── GEMINI.md                   # Gemini CLI Bootstrap Adapter
+├── agent-manifest.yaml         # 跨 Agent 机器协议契约
+├── README.md                   # 产品化说明文档
+├── LICENSE                     # 软件与工程结构授权
+├── NOTICE.md                   # 第三方原著版权隔离说明
+├── knowledge/                  # 跨书合成知识库 (Index / Principles / Models)
+│   ├── index.md                # 10 大主题 Active Router
+│   ├── principles.md           # 通用原则库
+│   ├── causal-models.md        # 因果机制网络
+│   ├── tensions.md             # 结构张力库
+│   └── boundaries.md           # 决策边界与失效条件
+├── generated/
+│   └── book-models/            # 19 本 Canonical 单书结构化认知模型
+├── examples/                   # 10 个真实场景使用用例
+├── dist/                       # Clean Runtime 发行包构建产物
+└── scripts/                    # 自动化炼化、校验与 Build 脚本
+```
+
+---
+
+## 🛠️ 运维与验证命令
+
+```bash
+# 1. 物理源一致性校验
+python3 scripts/validate_source_consistency.py
+
+# 2. 单书认知模型与行号 Locator 校验
+python3 scripts/validate_book_model.py
+python3 scripts/validate_provenance.py
+
+# 3. Agent Package 契约与 Router 完整性校验
+python3 scripts/validate_agent_package.py
+
+# 4. 执行全套 Quality Gates 校验
+python3 scripts/run_evals.py
+
+# 5. 编译 Clean Runtime 发行包
+python3 scripts/build_agent_release.py
+```
+
+---
+
+## 📜 版权与授权
+
+- 本项目的代码、脚本、技能定义与知识工程结构采用 [Apache-2.0](LICENSE) 授权。
+- 详见 [NOTICE.md](NOTICE.md) 了解第三方原著著作权隔离说明。

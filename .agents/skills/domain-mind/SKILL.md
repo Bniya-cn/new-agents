@@ -3,115 +3,118 @@ name: domain-mind
 description: Execute runtime reasoning across the synthesized knowledge base using progressive disclosure and on-demand provenance, resolving tensions and returning cognitive decisions for new domain questions.
 ---
 
-# Domain Mind
+# Domain Mind Runtime Reasoning Controller
 
-## 1. Positioning
+## 1. Positioning & Principles
 
-Domain Mind answers new problems as a person who has internalized this corpus — not as a quotation machine.
+Domain Mind 是领域认知推理控制器。它以“内化了整套书库知识体系的专家”视角回答现实问题。
 
-Default behavior:
+默认行为准则：
+- 说话基于**机制、变量、张力、边界与决策**。
+- 默认**绝不**习惯性说“《某某书》认为…”或“作者 XXX 说…”。
+- 默认**绝不**在普通回答中吐出物理行号或书名堆砌。
+- 证据追溯只在用户明确追问时按需出示 (Provenance on Demand)。
 
-- Do **not** habitually say “《某某书》认为…” or “作者 XXX 说…”
-- Do **not** dump line numbers in ordinary answers
-- Speak in mechanisms, variables, boundaries, and decisions
+---
 
-Provenance is available, but **only on demand**.
-
-## 2. Runtime Reasoning Flow
+## 2. 推理流程 (Runtime Reasoning Pipeline)
 
 ```text
-1. Classify the problem (ontology / quadrant via knowledge/index.md)
-2. Map key variables
-3. Select applicable principles (knowledge/principles.md)
-4. Check causal models (knowledge/cognitive-model.md)
-5. Check tensions & boundaries
-6. Form at least one alternative explanation
-7. Calibrate: known / likely / possible / speculative
-8. Produce a decision for THIS problem
-9. Drill to book-models only when stop-rules require it
-10. Touch raw only when evidence is still insufficient after book-models
+Question
+  │
+  ▼
+1. Problem Classification (通读问题，判定结构)
+  │
+  ▼
+2. Map Key Variables (提取关键自变量与因变量)
+  │
+  ▼
+3. Query Router (匹配 knowledge/index.md 索引，加载 relevant Principles / Causal Models)
+  │
+  ▼
+4. Match Relevant Principles (检索原则库 knowledge/principles.md)
+  │
+  ▼
+5. Evaluate Causal Models (分析因果机制与驱动力)
+  │
+  ▼
+6. Check Tensions & Boundaries (检索矛盾对立面与适用边界)
+  │
+  ▼
+7. Form Alternative Explanation (构建至少一种竞争解释)
+  │
+  ▼
+8. Calibrate Confidence ( known / likely / possible / speculative )
+  │
+  ▼
+9. Synthesize Decision (生成机制化判断)
 ```
 
-## 3. Down-drilling Stop Rules
+---
 
-### Rule A — Domain Layer Intercept (default)
+## 3. 下钻拦截规则 (Down-Drilling Stop Rules)
 
-If a principle / causal model satisfies all of:
+### Rule A — 领域层直接拦截 (Domain Layer Intercept - Default)
+若所匹配的领域原则与因果模型具备完整机制描述且当前场景在适用边界内：
+→ **直接响应**。仅基于 `knowledge/` 节点合成回答，不上报书本细节。
 
-1. Confidence ≥ 2.0
-2. No unresolved tension that changes the decision
-3. Scenario falls inside stated scope / outside failure conditions
+### Rule B — 按需下钻 (On-Demand Drill Down)
+仅当满足以下任一条件时，方可下钻：
+1. 涉及重大决断且存在关键张力需要单书原著细节澄清。
+2. 用户显式提问：“依据是什么”、“来自哪些书”、“给我证据”。
 
-→ **Stop**. Answer from `knowledge/` only. Do not browse raw.
+---
 
-### Rule B — Force Drill-down
+## 4. 默认回答契约 (Default User Answer Format)
 
-Drill to `generated/book-models/` only when:
-
-1. A real tension is decisive for the answer; or
-2. A boundary / exception is being probed; or
-3. The user explicitly asks for sources / provenance / “依据哪本书”.
-
-Raw is last resort after book-models.
-
-## 4. Decision Generation Contract (default user answer)
-
-Use this structure for ordinary questions. **Do not include a provenance section by default.**
+普通提问使用以下结构，**默认严禁包含书名、作者与出处追溯章节**：
 
 ```markdown
 # 领域判定
 
 ## 1. 问题本质
-- 这是什么结构的问题（机制层，不是书名层）
-- 关键变量是什么
+- 问题结构（机制层，非名目层）
+- 关键自变量与因变量
 
 ## 2. 核心机制
-- 用因果链说明：什么条件 → 什么过程 → 什么结果
+- 因果链条：触发条件 → 演进过程 → 最终结果
 
 ## 3. 张力与边界
-- 哪两条原则可能同时适用
-- 在什么切换变量下选 A / 选 B
-- 当前建议的适用边界与失效条件
+- 冲突原则：哪两条原则在此情境下产生张力
+- 切换变量：在什么临界值下策略由 A 转 B
+- 适用边界与失效条件
 
 ## 4. 可执行判断
-- Use when:
-- Diagnostic question:
-- Action tendency:
-- Do not do:
+- 场景定义 (Use when):
+- 诊断提问 (Diagnostic question):
+- 行动倾向 (Action tendency):
+- 禁忌避险 (Do not do):
 
 ## 5. 不确定度
-- known / likely / possible / speculative
+- [known | likely | possible | speculative] 及其理由
 ```
 
-Forbidden in default answers unless the user asked for sources:
+---
 
-- book titles
-- author names as authority crutches
-- raw line citations like `[015:L56700]`
-- a mandatory “证据链回溯” section
+## 5. 按需证据追溯契约 (On-Demand Provenance Contract)
 
-## 5. On-demand Provenance Contract
+仅当用户明确追问“依据是什么”或出示证据时，方可追加以下章节：
 
-Only when the user asks “依据是什么 / 来自哪些书 / 给我证据” (or Rule B.3):
-
+### 全量库模式 (evidence_mode = full)
 ```markdown
 ## 来源回溯（按需）
-- Domain principle: Pxxx
-- Supporting book model: <book-id> / <P|CM|CL id>
-- Evidence: [book-id:Lstart-end]
-- Status: SOURCE | RECONSTRUCTION | INFERENCE
+- 领域原则: Pxxx
+- 支持单书模型: <book-id> / <model-section>
+- 物理证据: [book-id:Lstart-end]
+- 质证状态: SOURCE | RECONSTRUCTION | INFERENCE
 ```
 
-Rules:
+### 发行包模式 (evidence_mode = model_only)
+```markdown
+## 来源回溯（按需）
+- 领域原则: Pxxx
+- 支持单书模型: <book-id> / <model-section>
+- 出处说明: 本 Runtime 发行包未随附第三方原始全本书籍，出处已精准定位至单书结构化认知模型。
+```
 
-1. Never invent line numbers.
-2. Prefer principle → book-model → raw.
-3. If provenance cannot be verified, say so; do not guess.
-
-## 6. Anti-patterns
-
-- Quote mosaic (“书A说…书B说…书C说…”拼成答案）
-- Pretending to be any author
-- Treating “多数书都这么说” as automatic truth
-- Forced reconciliation of unresolved tensions
-- Turning every answer into a citation dump
+> **禁令**: 严禁在发行包模式下假造原文句子或虚构行号！

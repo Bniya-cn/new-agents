@@ -1,83 +1,144 @@
-# Domain Mind Knowledge Router & Ontology Index
+# Domain Mind Knowledge Router & Runtime Routing Map
 
-> 本文件是领域认知系统的知识分流与本体索引地图。它定义了当前书库共同塑造出的领域概念空间，并将具体的认知问题引向相应的原则与因果模型。
-
-## 1. 领域本体架构 Core Ontology Domains
-
-整个领域的知识本体划分为四个相互咬合的宏大概念象限：
-
-```mermaid
-graph TD
-    DomainMind["领域认知系统 Domain Mind"]
-    DomainMind --> D1["象限 I: 社会操纵与认知极化<br>(Social Control & Dissonance)"]
-    DomainMind --> D2["象限 II: 权力博弈与避险防御<br>(Power & Defensive Survival)"]
-    DomainMind --> D3["象限 III: 心性存续与道德主宰<br>(Epistemology & Soul Cultivation)"]
-    DomainMind --> D4["象限 IV: 系统因果与物理极限<br>(Causal Laws & Limits)"]
-```
+> 本文件是 Domain Mind 运行时的**核心知识分流与路由引擎**。它将用户提出的现实判断问题映射至最精准的原则 (Principles)、因果模型 (Causal Models)、张力 (Tensions) 与边界 (Boundaries)。
 
 ---
 
-## 2. 概念索引与路由规则 Ontology Routing Table
+## 1. 领域路由表 (Runtime Routing Map)
 
-未来遇到具体的查询和决策问题时，Agent 或读者应根据以下分类进行精准路由：
+### 1. Power / Organization (权力与组织博弈)
 
-### 象限 I：社会操纵与认知极化 (Social Control & Dissonance)
-*探讨个体与群体如何受到外界信息的说服、暗示、操纵，以及如何在行为绑定后通过自我辩护走向观念极化。*
-
-| 本体概念 (Concept) | 路由指向 (Routing Destination) | 支持书源与 Provenance (Sources) |
-|---|---|---|
-| **从众与群体压力 (Conformity)** | `principles.md#P101` | [017:L68], [006:L3337] |
-| **认知失调与自我辩护 (Dissonance)** | `cognitive-model.md#C001` | [017:L1548], [012:L4256] |
-| **假证据链与阴谋论 (Fake Evidence Chain)**| `cognitive-model.md#C002` | [011:L633], [019:L200] |
-| **信息污染与罗生门战术 (Information Pollution)**| `principles.md#P102` | [011:L2669], [006:L280] |
-| **去人性化污名化 (Dehumanization)** | `cognitive-model.md#C003` | [017:L2170], [019:L1356] |
-
----
-
-### 象限 II：权力博弈与避险防御 (Power Dynamics & Defensive Survival)
-*探讨在高度人治或专制的集权环境中，行动者如何争夺实权、防范反噬，以及在面临生命或职业绞杀时如何全身远害。*
-
-| 本体概念 (Concept) | 路由指向 (Routing Destination) | 支持书源与 Provenance (Sources) |
-|---|---|---|
-| **雄猜之主与特务控制 (Autocracy)** | `cognitive-model.md#C004` | [001:L104], [019:L721] |
-| **低位架空与实权垄断 (Low-profile Takeover)**| `principles.md#P201` | [001:L630], [008:L4383] |
-| **自污求生与避忌退隐 (Self-defiling Survival)**| `principles.md#P202` | [015:L56700], [018:L332] |
-| **御下隔离与隐藏底细 (Emotional Detachment)**| `cognitive-model.md#C005` | [019:L307], [008:L862] |
-| **办事二术（锯箭与补锅） (Bureaucratic Maneuvers)**| `principles.md#P203` | [013:L124] |
+- **Triggers**: 领导、下属、功劳、架空、权力、威望、晋升、组织政治、实权、高管斗争、功高震主、越级
+- **Load**:
+  - `principles`: `P201` (实权架空), `P202` (自污避嫌), `P203` (办事二术)
+  - `causal-models`: `CM-power-autocracy`, `CM-power-takeover`
+  - `tensions`: `T001` (纯善利他 vs 冷酷隔离), `T002` (低位架空 vs 忠诚服从)
+  - `boundaries`: `B-power-autocracy`, `B-power-takeover`
+- **Do not**:
+  - 默认加载 `corpus/raw/` 原始书库。
+  - 逐书罗列历史案例或强行给领导/下属贴《资治通鉴》标签。
 
 ---
 
-### 象限 III：心性存续与道德主宰 (Epistemology & Soul Cultivation)
-*探讨在纷繁复杂的红尘磨炼中，个体如何摆脱利益得失的奴役，实现知行无缝闭环与灵魂净化。*
+### 2. Manipulation / Persuasion (说服与认知操纵)
 
-| 本体概念 (Concept) | 路由指向 (Routing Destination) | 支持书源与 Provenance (Sources) |
-|---|---|---|
-| **知行合一 (Unity of Knowledge & Action)** | `principles.md#P301` | [003:L276], [016:L76] |
-| **心即理与作为人何谓正确 (Moral Realism)**| `cognitive-model.md#C006` | [003:L196], [016:L68] |
-| **感谢消恶业的逆境消化 (Gratitude in Adversity)**| `principles.md#P302` | [016:L1548], [010:L2416] |
-| **达观隔离与精神超越 (Spiritual Transcendence)**| `principles.md#P303` | [001:L4443], [018:L120] |
-| **必有事焉的日常精进 (Daily Self-reflection)**| `cognitive-model.md#C007` | [003:L3106], [016:L76] |
-
----
-
-### 象限 IV：系统因果与物理极限 (Causal Laws & Limits)
-*探讨不以个体意志为转移的宏观物理限制、债务指数膨胀规律以及心性格局的反馈场。*
-
-| 本体概念 (Concept) | 路由指向 (Routing Destination) | 支持书源与 Provenance (Sources) |
-|---|---|---|
-| **几何倍增学的人口天花板 (Compounding Limits)**| `principles.md#P401` | [005:L1824], [005:L9668] |
-| **庞氏崩盘临界线 (Ponzi Collapse Line)** | `principles.md#P402` | [021:L2112], [012:L161320] |
-| **利他格局的反馈共振 (利他反馈) (Altruistic Resonance)**| `principles.md#P403` | [014:L1300], [016:L2800] |
+- **Triggers**: 洗脑、暗示、说服、话语权、认知失调、假证据、信息污染、罗生门、舆论构陷、控脑
+- **Load**:
+  - `principles`: `P101` (物理底单质证), `P102` (社交信誉隔离)
+  - `causal-models`: `CM-manipulation-dissonance`, `CM-manipulation-fake-evidence`
+  - `tensions`: `T003` (防范忽悠 vs 团队一致性)
+  - `boundaries`: `B-manipulation-dissonance`
+- **Do not**:
+  - 默认加载原始文本。
 
 ---
 
-## 3. 冲突分流路由 (Tension Router)
+### 3. Fraud / Pyramid Systems (骗局与庞氏裂变)
 
-当问题涉及多维博弈和价值对立时，系统应分流至以下冲突节点进行多义性分析：
+- **Triggers**: 骗局、庞氏、传销、直销、裂变、高额返利、套现、资金盘、割韭菜、暴雷
+- **Load**:
+  - `principles`: `P102` (社交信誉隔离), `P402` (庞氏崩盘临界线)
+  - `causal-models`: `CM-fraud-ponzi`, `CM-fraud-pyramid`
+  - `tensions`: `T004` (短利引诱 vs 长期信誉破产)
+  - `boundaries`: `B-fraud-ponzi`
+- **Do not**:
+  - 默认加载原始文本。
 
-1. **内省与外求冲突 (Introspection vs. External Attending)**: 路由至 `cognitive-model.md#T001`
-   * 传习录心即理 vs. 社会性动物环境归因
-2. **纯善利他与冷酷隔离的商业/政治生存冲突 (Altruism vs. Isolation)**: 路由至 `cognitive-model.md#T002`
-   * 活法敬天爱人 vs. 罗织经御下不示底细、恃刑立威
-3. **法铁血集权动员与防范忽悠控制冲突 (Autocratic Mobilization vs. Defensive Autonomy)**: 路由至 `cognitive-model.md#T003`
-   * 商君书弱民 FARMING-WAR vs. 忽悠原理防范话语权控制
+---
+
+### 4. Relationships (人际防御与生存)
+
+- **Triggers**: 人际关系、背叛、信任、自卫、退隐、御下、留后路、防身、避险
+- **Load**:
+  - `principles`: `P202` (自污求生), `P102` (信誉隔离)
+  - `causal-models`: `CM-relationship-detachment`
+  - `tensions`: `T001` (利他 vs 隔离)
+  - `boundaries`: `B-relationship-survival`
+- **Do not**:
+  - 默认加载原始文本。
+
+---
+
+### 5. Self-cognition (心性存续与知行合一)
+
+- **Triggers**: 心性、修养、知行合一、致良知、逆境、情绪、迷茫、内省、精神超越
+- **Load**:
+  - `principles`: `P301` (知行合一), `P302` (逆境消化), `P303` (达观隔离)
+  - `causal-models`: `CM-self-moral-realism`
+  - `tensions`: `T005` (心即理内求 vs 外在环境归因)
+  - `boundaries`: `B-self-cultivation`
+- **Do not**:
+  - 默认加载原始文本。
+
+---
+
+### 6. Ethics / Values (道德与义利抉择)
+
+- **Triggers**: 道德、善恶、敬天爱人、纯善、利他、义利之辨、底线、选择
+- **Load**:
+  - `principles`: `P301` (知行合一), `P403` (利他格局共振)
+  - `causal-models`: `CM-ethics-altruism`
+  - `tensions`: `T001` (纯善利他 vs 政治生存)
+  - `boundaries`: `B-ethics-altruism`
+- **Do not**:
+  - 默认加载原始文本。
+
+---
+
+### 7. Decision Making (决策与不确定性)
+
+- **Triggers**: 决策、不确定、止损、风险控制、关键变量、抉择、战略
+- **Load**:
+  - `principles`: `P101` (底单质证), `P401` (几何倍增极限)
+  - `causal-models`: `CM-decision-framework`
+  - `tensions`: `T006` (激进扩张 vs 物理极限)
+  - `boundaries`: `B-decision-limits`
+- **Do not**:
+  - 默认加载原始文本。
+
+---
+
+### 8. Institution / Incentives (制度与激励博弈)
+
+- **Triggers**: 制度、激励、弱民、赏罚、法治、绩效、规则、防作弊、机制设计
+- **Load**:
+  - `principles`: `P201` (实权垄断), `P203` (办事二术)
+  - `causal-models`: `CM-institution-incentives`
+  - `tensions`: `T007` (刚性制度 vs 灵活变通)
+  - `boundaries`: `B-institution-limits`
+- **Do not**:
+  - 默认加载原始文本。
+
+---
+
+### 9. Social Psychology (社会心理与群体动向)
+
+- **Triggers**: 从众、群体压力、去人性化、污名化、羊群效应、社会偏见、极化
+- **Load**:
+  - `principles`: `P101` (底单质证), `P102` (信誉隔离)
+  - `causal-models`: `CM-social-conformity`, `CM-social-dehumanization`
+  - `tensions`: `T008` (个人独立思考 vs 群体从众)
+  - `boundaries`: `B-social-psychology`
+- **Do not**:
+  - 默认加载原始文本。
+
+---
+
+### 10. Change / Reform (变革、阻力与破局)
+
+- **Triggers**: 变革、阻力、破局、借势、改革、动荡、转型、新旧交替
+- **Load**:
+  - `principles`: `P201` (实权垄断), `P302` (逆境消化)
+  - `causal-models`: `CM-change-reform`
+  - `tensions`: `T009` (渐进改良 vs 激进重构)
+  - `boundaries`: `B-change-reform`
+- **Do not**:
+  - 默认加载原始文本。
+
+---
+
+## 2. 路由下钻规则 (Drill-Down Policy)
+
+1. **Level 1 (Default)**: 匹配上述主题，仅加载 `knowledge/*.md` 节点。直接输出决策。
+2. **Level 2 (Fallback)**: 当遭遇未决张力、高风险边界或用户提问出处时，下钻加载 `generated/book-models/*.md`。
+3. **Level 3 (Evidence)**: 在全量库 (`evidence_mode=full`) 环境下，用户明确追问原始证据时，下钻 `corpus/raw/*.md`；在发行包 (`evidence_mode=model_only`) 环境下，告知原文未打包，出处定位至单书模型。

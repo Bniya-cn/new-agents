@@ -1,61 +1,74 @@
-# AGENTS.md — healing-agents
+# AGENTS.md — Healing Domain Mind Repository Bootstrap
 
-## 项目定位
+## 1. Runtime Bootstrap Protocol
 
-`healing-agents` 是一个**可炼化知识工程**仓库，不是通用 Agent 项目。
+当在本项目中接收到任何涉及以下主题的现实判断与决策问题时：
 
-当前阶段目标：建立可靠的书库输入 → 炼化流水线基础设施。
+> `decision`, `organization`, `relationship`, `power`, `incentive`, `persuasion`, `conflict`, `social behavior`, `risk`, `self-cognition`, `strategy`
 
-## 目录职责
+**必须默认自动按照以下 8 步执行 Runtime Path**：
 
-| 目录 | 职责 | 写入权限 |
-|------|------|----------|
-| `corpus/raw/` | 原始 Markdown 书籍 | **只读**，禁止 AI 修改 |
-| `generated/book-models/` | 单书结构化认知模型 | book-distiller 写入 |
-| `knowledge/` | 跨书合成知识 | corpus-synthesizer 写入 |
-| `evals/` | 炼化质量评估 | 评估脚本写入 |
-| `scripts/` | 工具脚本 | 人工维护 |
-| `.agents/skills/` | Agent Skills 定义 | 人工维护 |
-
-## 强制规则
-
-### P0 — 原始资料保护
-
-1. **禁止**修改 `corpus/raw/` 中的任何文件内容
-2. **禁止**在审计阶段进行总结、合并、删章节
-3. **禁止**跳过审计直接炼化
-
-### P1 — 炼化流程
-
-1. 每次扩充书库后，运行 `python3 scripts/audit_corpus.py`
-2. 先读 `corpus-audit.md`，确认无阻塞项
-3. 从中等篇幅的书开始 book-distiller 试点
-4. 输出写入 `generated/book-models/`，不写入 `corpus/raw/`
-
-### P2 — Skill 加载顺序
-
-1. `.agents/skills/book-distiller/SKILL.md` (已就绪)
-2. `.agents/skills/corpus-synthesizer/SKILL.md` (已就绪)
-3. `.agents/skills/domain-mind/SKILL.md` (已就绪)
-4. 项目 `AGENTS.md`
-5. 本文件
-
-## 当前可用 Skill
-
-| Skill | 状态 | 职责 |
-|-------|------|------|
-| `book-distiller` | 已就绪 | 一本书 → 一个结构化认知模型与人读报告 |
-| `corpus-synthesizer` | 已就绪 | 19本书结构化模型 → 跨书本体与通用原则整合 |
-| `domain-mind` | 已就绪 | 跨书原则因果网络 → 运行时未知场景推理与决策 |
-
-## 验证命令
-
-```bash
-python3 scripts/audit_corpus.py   # 书库审计与状态校验
-python3 scripts/run_evals.py      # 执行确定性验证与生成语义打分模板
+```text
+1. Activate domain-mind (.agents/skills/domain-mind/SKILL.md)
+2. Read knowledge/index.md Router
+3. Load ONLY relevant knowledge nodes (principles, causal models, tensions, boundaries)
+4. Check principles (knowledge/principles.md)
+5. Check causal models (knowledge/causal-models.md)
+6. Check tensions (knowledge/tensions.md / cognitive-model.md)
+7. Check boundaries (knowledge/boundaries.md)
+8. Formulate mechanism-based decision for current problem
 ```
 
-## 语言
+### 默认禁令 (Default Forbid)
+- 🚫 禁止从 `corpus/raw/` 原始书库开始阅读。
+- 🚫 禁止从 `generated/reports/` 总结报告开始阅读。
+- 🚫 禁止逐书全文扫描或按书名总结（如“《书A》说……《书B》说……”）。
+- 🚫 默认禁止输出书名、作者或 `[015:Lxxxxx]` 行号；仅当用户明确提问“依据是什么 / 来自哪些书 / 给我证据”时才下钻出示。
 
-- 文档、报告、审计结论：中文
-- 代码、路径、命令：英文
+### 证据能力分级 (Evidence Capability Split)
+- **全量炼化库 (evidence_mode=full)**: 追溯路径为 `knowledge → book-model → raw`。
+- **Runtime 发行包 (evidence_mode=model_only)**: 追溯路径为 `knowledge → book-model → source metadata`。若用户要求查阅原始全文，明确说明：“本 Runtime 发行包未随附第三方原始全本书籍，出处已精准定位至单书认知模型”，**绝对禁止伪造原文或假行号**。
+
+---
+
+## 2. 项目定位与目录职责
+
+`healing-agents` 是一个**可炼化知识工程与认知推理**仓库。
+
+| 目录 | 职责 | 访问权限 |
+|------|------|----------|
+| `agent-manifest.yaml` | 跨 Agent 机器协议契约 | 读取 |
+| `knowledge/` | 跨书合成知识库与 Router 索引 | **优先读取 (Level 1)** |
+| `generated/book-models/` | 单书结构化认知模型 | **下钻读取 (Level 2)** |
+| `corpus/raw/` | 原始 Markdown 书籍 | **按需盲查 (Level 3, 只读)** |
+| `.agents/skills/` | Agent Reasoning Skills | 运行时推理引擎 |
+| `evals/` | 质量评估与 Benchmark | 评估脚本维护 |
+| `scripts/` | 自动化炼化与验证脚本 | 工具维护 |
+
+---
+
+## 3. 核心强制规则 (P0)
+
+1. **原始资料保护**: `corpus/raw/` 只读，禁止删改。
+2. **渐进式披露 (Progressive Disclosure)**: 机制层解答问题，拦截低效 RAG 退化。
+3. **来源独立性**: 剔除重复翻译或抄袭构成的证据膨胀。
+4. **验证门禁 Fail-Closed**: 任何未通过 Gate 验证的模型禁止加入合成知识库。
+
+---
+
+## 4. 验证与运维命令
+
+```bash
+python3 scripts/validate_source_consistency.py   # 物理源一致性校验
+python3 scripts/validate_book_model.py           # 单书模型与 Provenance 校验
+python3 scripts/validate_provenance.py           # 行号定位精确校验
+python3 scripts/validate_agent_package.py        # Agent Package 契约与 Router 校验
+python3 scripts/run_evals.py                     # 执行 Gate 校验与 E10-E12 评估
+```
+
+---
+
+## 5. 语言规范
+
+- 架构说明、技术推理、评估报告、回答自然语言：**中文**
+- 代码、命令、路径、字段、变量名：**英文**
