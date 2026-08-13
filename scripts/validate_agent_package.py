@@ -162,6 +162,19 @@ def check_dist_package(dist_dir: Path) -> list[str]:
         if "[待评测" in text or "[TODO: UNRESOLVED]" in text:
             errors.append(f"dist file {f.relative_to(dist_dir)} contains unresolved placeholders")
 
+    allowed_source_notice_files = {"README.md", "NOTICE.md"}
+    for f in dist_dir.rglob("*"):
+        if not f.is_file() or f.suffix.lower() not in {".md", ".json", ".yaml", ".yml", ".txt"}:
+            continue
+        text = f.read_text(encoding="utf-8", errors="replace")
+        relative = f.relative_to(dist_dir)
+        if "corpus/raw" in text and f.name not in allowed_source_notice_files:
+            errors.append(f"dist file {relative} exposes unavailable raw evidence path")
+        if "generated/book-models/.work" in text:
+            errors.append(f"dist file {relative} exposes unavailable .work path")
+        if "/Users/" in text or "/Desktop/" in text:
+            errors.append(f"dist file {relative} exposes a personal filesystem path")
+
     return errors
 
 

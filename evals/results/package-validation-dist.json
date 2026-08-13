@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "generated_by": "scripts/validate_agent_package.py",
-  "generated_at": "2026-08-13T05:26:38.259343+00:00",
+  "generated_at": "2026-08-13T06:03:03.174365+00:00",
   "check_dist": true,
   "status": "passed",
   "all_ok": true,
